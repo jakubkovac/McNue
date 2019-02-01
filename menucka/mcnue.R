@@ -9,6 +9,7 @@ mcnue <- function(){
   url_bluebear <- "http://blue-bear.sk/denne-menu-blue-bear/"
   url_dilema <- "https://restauracie.sme.sk/restauracia/dilema-restaurant_731-stare-mesto_2949/denne-menu"
   url_mnamka <- "https://restauracie.sme.sk/restauracia/bistro-mnamka_9954-stare-mesto_2949/denne-menu"
+  url_mestiansky <- "https://restauracie.sme.sk/restauracia/bratislavsky-mestiansky-pivovar-drevena_3951-stare-mesto_2949/denne-menu"
   #KASA3
   download.file(url_kasa, destfile = "scrapedpage.html", quiet=TRUE)
   raw <- read_html("scrapedpage.html")
@@ -91,6 +92,27 @@ mcnue <- function(){
   menu[5,] <- c("Bistro Mnamka", jedlo5)
   menu
   
+  # BRATISLAVSKY MESTIANSKY PIVOVAR
+  download.file(url_mestiansky, destfile = "scrapedpage.html", quiet=TRUE)
+  raw <- read_html("scrapedpage.html")
+  jedlo6 <- raw %>% 
+    html_nodes(".dnesne_menu .jedlo_polozka .left") %>% 
+    html_text()
+  jedlo6 <- str_trim(jedlo6)
+  jedlo6 <- jedlo6[c(2,4,5)]
+  jedlo6[1] <- 
+    jedlo6[1] %>% 
+    str_extract("l(.*)") %>%
+    str_sub(start = 3) %>%
+    str_trim()
+   jedlo6[2:3] <-
+    jedlo6[2:3] %>%
+    str_extract("g(.*)") %>%
+    str_sub(start = 3) %>%
+    str_trim()
+  menu[6,] <- c("Mestiansky piv.",jedlo6,"","")
+  #################################################################################
+  
   spec_chrs <- read_table("special_chars_sk.txt",col_names = F)[[1]]
   spec_chrs <- c(spec_chrs,str_to_lower(spec_chrs))
   r_spec_chrs <- c("a","a","c","d","e","e","i","l","l","n","o","o","r","s","t","u","y","z")
@@ -105,7 +127,7 @@ mcnue <- function(){
     menu %>%
     mutate_all(.fun = function(x) str_replace_all(x,r_spec_chrs))
   menu
-  menu <- menu[sample(1:5,5),]
+  menu <- menu[sample(1:nrow(menu),nrow(menu)),]
   menu_ascii <- pandoc.table.return(menu, style = "grid", split.tables = Inf)
   menu_ascii <- str_trim(menu_ascii)
   menu_ascii
