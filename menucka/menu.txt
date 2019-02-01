@@ -1,0 +1,27 @@
++---------------+------------------------------+--------------------------------+--------------------------------+------------------------------+--------------------------------+
+|    podnik     |           polievka           |            jedlo_1             |            jedlo_2             |           jedlo_3            |            jedlo_4             |
++===============+==============================+================================+================================+==============================+================================+
+|    Veglife    | Mrkvova polievka s hraskom a |   Sosovicove gulky v masale    | Gnocchi so syrovo-brokolicovou | Maslova fazula so spenatom a |    Moussaka s paradajkami,     |
+|               |        pohankou (B,V)        |   omacke, pecene zemiaky B,V   |       omackou a pazitkou       |   tahini, ryza natural B,V   |      baklazanom a fetou B      |
++---------------+------------------------------+--------------------------------+--------------------------------+------------------------------+--------------------------------+
+| Bistro Mnamka |  Spenatova kremova, krutony  |   Zapekane kuracie prsia so    |  Bolognese lasagne, parmezan   | Salat s kuracimi nugetkami,  | Tirolska buchta s cokoladovym  |
+|               |           (1,3,7)            |  sunkou a syrom, dusena ryza   |            (1,3,7)             |   cesnakovy dresing, pizza   | kremom, orechovy posyp (1,3,7) |
+|               |                              |            (1,3,7)             |                                |        chlieb (1,3,7)        |                                |
++---------------+------------------------------+--------------------------------+--------------------------------+------------------------------+--------------------------------+
+|    Dilema     |   Hokkaido krem /1,7/ –    | Menu 1 Kuraci steak zapeceny s | Menu 2 Bravcovy rezen, dusena  |  Menu 3 Vyprazany ostiepok,  | Menu 4 150g Panenka zapekana s |
+|               |                              |    ananasom a syrom, pecene    |  ryza, kapustovo – mrkvovy   |  hranolky, tatarska omacka   |    gorgonzolou a dubakovym     |
+|               |                              |  zemiaky, brusnicovy dressing  |         salat /1,3,7/          |           /1,3,7/            |  kremom, zemiaky na grile /7/  |
+|               |                              |             /3,7/              |                                |                              |                                |
++---------------+------------------------------+--------------------------------+--------------------------------+------------------------------+--------------------------------+
+|    Kasa 3     |        Tekvicovy krem        |      Pastiersky kolac (9)      |   Zeleninova strudla (1, 7)    |                              |                                |
++---------------+------------------------------+--------------------------------+--------------------------------+------------------------------+--------------------------------+
+|   BlueBear    | Fazulova polievka s klobasou | Pecena fasirka plnena vajickom |    Vyprazana morcacia rolka    |    Grilovany hermelin na     |                                |
+|               |                              | so zemiakovou kasou a kyslou  |    plnena slaninou, pecene    |          maslovych           |                                |
+|               |                              |            uhorkou             |            zemiaky             |  zemiackoch s brusnicovym  |                                |
+|               |                              |                                |                                |            dzemom            |                                |
++---------------+------------------------------+--------------------------------+--------------------------------+------------------------------+--------------------------------+
+
+ 
+
+I'm a bot, beep-boop-bop. 
+If you have any questions or suggestions, please contact my creator jakub.kovac@zurich.com by mail or skype.
