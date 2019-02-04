@@ -17,6 +17,7 @@ mcnue <- function(){
     html_nodes(".dnesne_menu .jedlo_polozka .left") %>% 
     html_text()
   jedlo1 <- str_trim(jedlo1)
+  jedlo1 <- str_replace_all(jedlo1, "([\n\t])", "")
   menu <- tibble(podnik = character(), polievka = character(), jedlo_1 = character(), jedlo_2 = character(), jedlo_3 = character(), jedlo_4 = character())
   menu[1,] <- c("Kasa 3",jedlo1[1:3],"","")
   menu
@@ -34,6 +35,7 @@ mcnue <- function(){
   jedlo2 <- str_sub(jedlo2,3) %>% str_trim()
   jedlo2[1] <- str_sub(jedlo2[1],9)
   jedlo2
+  jedlo2 <- str_replace_all(jedlo2, "([\n\t])", "")
   menu[2,] <- c("Veglife",jedlo2)
   
   #BLUEBEAR
@@ -60,6 +62,7 @@ mcnue <- function(){
     str_extract("ml(.*)obsahuje") %>%
     str_sub(start = 3, end = -9) %>%
     str_trim()
+  jedlo3 <- str_replace_all(jedlo3, "([\n\t])", "")
   menu[3,] <- c("BlueBear",jedlo3,"")
   
   #DILEMA
@@ -70,6 +73,7 @@ mcnue <- function(){
     html_text() %>% 
     str_trim()
   jedlo4 <- jedlo4[c(2,5:8)]
+  jedlo4 <- str_replace_all(jedlo4, "([\n\t])", "")
   menu[4,] <- c("Dilema",jedlo4)
   
   #BISTRO MNAMKA 
@@ -88,7 +92,8 @@ mcnue <- function(){
     str_sub(start = 2) %>%
     str_trim()
   
-  jedlo5[1] <- jedlo5[1] %>% str_sub(15) %>% str_trim()
+  jedlo5[1] <- jedlo5[1] %>% str_sub(start = 16) %>% str_trim()
+  jedlo5 <- str_replace_all(jedlo5, "([\n\t])", "")
   menu[5,] <- c("Bistro Mnamka", jedlo5)
   menu
   
@@ -110,6 +115,7 @@ mcnue <- function(){
     str_extract("g(.*)") %>%
     str_sub(start = 3) %>%
     str_trim()
+  jedlo6 <- str_replace_all(jedlo6, "([\n\t])", "")
   menu[6,] <- c("Mestiansky piv.",jedlo6,"","")
   #################################################################################
   
