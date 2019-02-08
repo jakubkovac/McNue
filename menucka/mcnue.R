@@ -1,9 +1,4 @@
 mcnue <- function(){
-  library(tidyverse)
-  library(stringr)
-  library(rvest)
-  library(lubridate)
-  library(pander)
   url_kasa <- "https://restauracie.sme.sk/restauracia/kasa-3_9938-stare-mesto_2949/denne-menu"
   url_veglife <- "http://www.veglife.sk/sk/"
   url_bluebear <- "http://blue-bear.sk/denne-menu-blue-bear/"
@@ -68,12 +63,16 @@ mcnue <- function(){
   #DILEMA
   download.file(url_dilema, destfile = "scrapedpage.html", quiet=TRUE)
   raw <- read_html("scrapedpage.html")
-  jedlo4 <- raw %>% 
-    html_nodes(".dnesne_menu .jedlo_polozka .left") %>% 
-    html_text() %>% 
+  jedlo4 <- raw %>%
+    html_nodes(".dnesne_menu .jedlo_polozka .left") %>%
+    html_text() %>%
     str_trim()
   jedlo4 <- jedlo4[c(2,5:8)]
   jedlo4 <- str_replace_all(jedlo4, "([\n\t])", "")
+  jedlo4 <- str_replace_all(jedlo4, "-", "")
+  jedlo4 <- str_replace_all(jedlo4, "\u00bd", "0.5")
+  jedlo4[2:5] <- str_sub(jedlo4[2:5], start = 7)
+  jedlo4 <- str_trim(jedlo4)
   menu[4,] <- c("Dilema",jedlo4)
   
   #BISTRO MNAMKA 
@@ -124,22 +123,12 @@ mcnue <- function(){
   r_spec_chrs <- c("a","a","c","d","e","e","i","l","l","n","o","o","r","s","t","u","y","z")
   r_spec_chrs <- c(str_to_upper(r_spec_chrs),r_spec_chrs)
   names(r_spec_chrs) <- spec_chrs #this creates a named vector that represents the mapping of letters
-  # menu$polievka <- str_replace_all(menu$polievka,r_spec_chrs) 
-  # menu$jedlo_1 <- str_replace_all(menu$jedlo_1,r_spec_chrs) 
-  # menu$jedlo_2 <- str_replace_all(menu$jedlo_2,r_spec_chrs) 
-  # menu$jedlo_3 <- str_replace_all(menu$jedlo_3,r_spec_chrs) 
-  # menu$jedlo_4 <- str_replace_all(menu$jedlo_4,r_spec_chrs) 
   menu <-
     menu %>%
     mutate_all(.fun = function(x) str_replace_all(x,r_spec_chrs))
-  menu
+  menu <-
+    menu %>%
+    mutate_all(.fun = function(x) str_replace_all(x,"–", ""))
   menu <- menu[sample(1:nrow(menu),nrow(menu)),]
-  menu_ascii <- pandoc.table.return(menu, style = "grid", split.tables = Inf)
-  menu_ascii <- str_trim(menu_ascii)
-  menu_ascii
-  write.table(menu_ascii,file = "menu.txt", row.names = F, col.names = F, quote = F)
-  beep <- readChar("beep_boop.txt",file.info("beep_boop.txt")$size)
-  write.table("\n \n",file = "menu.txt",append = T, col.names = F, row.names = F, quote = F)
-  write.table(beep,file = "menu.txt",append = T, col.names = F, row.names = F, quote = F)
   return(menu)
 }
