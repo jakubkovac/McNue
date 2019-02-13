@@ -103,7 +103,7 @@ mcnue <- function(){
     html_nodes(".dnesne_menu .jedlo_polozka .left") %>% 
     html_text()
   jedlo6 <- str_trim(jedlo6)
-  jedlo6 <- jedlo6[c(2,4,5)]
+  #jedlo6 <- jedlo6[c(2,4,5)]
   jedlo6[1] <- 
     jedlo6[1] %>% 
     str_extract("l(.*)") %>%
@@ -117,18 +117,6 @@ mcnue <- function(){
   jedlo6 <- str_replace_all(jedlo6, "([\n\t])", "")
   menu[6,] <- c("Mestiansky piv.",jedlo6,"","")
   #################################################################################
-  
-  spec_chrs <- read_table("special_chars_sk.txt",col_names = F)[[1]]
-  spec_chrs <- c(spec_chrs,str_to_lower(spec_chrs))
-  r_spec_chrs <- c("a","a","c","d","e","e","i","l","l","n","o","o","r","s","t","u","y","z")
-  r_spec_chrs <- c(str_to_upper(r_spec_chrs),r_spec_chrs)
-  names(r_spec_chrs) <- spec_chrs #this creates a named vector that represents the mapping of letters
-  menu <-
-    menu %>%
-    mutate_all(.fun = function(x) str_replace_all(x,r_spec_chrs))
-  menu <-
-    menu %>%
-    mutate_all(.fun = function(x) str_replace_all(x,"–", ""))
   menu <- menu[sample(1:nrow(menu),nrow(menu)),]
   return(menu)
 }
