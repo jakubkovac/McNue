@@ -1,5 +1,4 @@
 library(tidyverse)
-library(stringr)
 library(rvest)
 library(lubridate)
 library(pander)
@@ -23,7 +22,7 @@ menu <-
 View(menu)
 
 #save the menu in a text file as an ascii table
-menu_ascii <- pandoc.table.return(menu, style = "grid", split.tables = Inf, split.cells = 35)
+menu_ascii <- pandoc.table.return(menu, style = "grid", split.tables = Inf, split.cells = 30)
 menu_ascii
 write.table(menu_ascii,file = "menu.txt", row.names = F, col.names = F, quote = F)
 beep <- readChar("beep_boop.txt",file.info("beep_boop.txt")$size)
