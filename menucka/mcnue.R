@@ -5,6 +5,7 @@ mcnue <- function(){
   url_dilema <- "https://restauracie.sme.sk/restauracia/dilema-restaurant_731-stare-mesto_2949/denne-menu"
   url_mnamka <- "https://restauracie.sme.sk/restauracia/bistro-mnamka_9954-stare-mesto_2949/denne-menu"
   url_mestiansky <- "https://restauracie.sme.sk/restauracia/bratislavsky-mestiansky-pivovar-drevena_3951-stare-mesto_2949/denne-menu"
+  url_lenka <- "https://www.jedlalenka.sk/"
   #KASA3
   download.file(url_kasa, destfile = "scrapedpage.html", quiet=TRUE)
   raw <- read_html("scrapedpage.html")
@@ -116,7 +117,20 @@ mcnue <- function(){
     str_trim()
   jedlo6 <- str_replace_all(jedlo6, "([\n\t])", "")
   menu[6,] <- c("Mestiansky piv.",jedlo6,"","")
+  
+  # JEDLA LENKA
+  download.file(url_lenka, destfile = "scrapedpage.html", quiet=TRUE)
+  raw <- read_html("scrapedpage.html")
+  jedlo7 <- raw %>% 
+    html_nodes(".insert-page-30") %>%
+    html_children() %>%
+    html_text()
+  jedlo7 <- jedlo7[2:9]
+  a <- str_split(jedlo7[1]," ") %>% unlist()
+  kde <- str_match(a,"^[[:upper:]]") %>% is.na() %>% `!` %>% which()
+  jedlo7[1] <- paste(a[kde],collapse = "/")
+  menu2 <- tibble(Jedla_lenka = jedlo7)
   #################################################################################
   menu <- menu[sample(1:nrow(menu),nrow(menu)),]
-  return(menu)
+  return(list(menu,menu2))
 }
