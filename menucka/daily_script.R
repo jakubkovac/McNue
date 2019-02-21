@@ -9,7 +9,7 @@ list_menu <- mcnue()
 menu <- list_menu[[1]]
 menu2 <- list_menu[[2]]
 View(menu)
-
+#menu <- na.omit(menu)
 #remove special slovak characters
 source("C:\\Users\\jakub.kovac\\Documents\\LEARNING\\MOJE\\menucka\\slovak_language_destroyer.R",encoding="utf-8")
 menu <-
