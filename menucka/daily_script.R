@@ -8,7 +8,6 @@ source("C:\\Users\\jakub.kovac\\Documents\\LEARNING\\MOJE\\menucka\\mcnue.R")
 list_menu <- mcnue()
 menu <- list_menu[[1]]
 menu2 <- list_menu[[2]]
-View(menu)
 #menu <- na.omit(menu)
 #remove special slovak characters
 source("C:\\Users\\jakub.kovac\\Documents\\LEARNING\\MOJE\\menucka\\slovak_language_destroyer.R",encoding="utf-8")
@@ -25,8 +24,8 @@ source("C:\\Users\\jakub.kovac\\Documents\\LEARNING\\MOJE\\menucka\\benson_strin
 menu <-
   menu %>%
   mutate_all(.fun = function(x) benson_string_destroyer(x))
-View(menu)
-
+menu
+menu2
 #save the menu in a text file as an ascii table
 menu_ascii <- pandoc.table.return(menu, style = "grid", split.tables = Inf, split.cells = 30)
 menu_ascii
