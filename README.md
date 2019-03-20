@@ -1,2 +1,2 @@
 # McNue
-![](/menucka/mcnue.jpg)
+![](mcnue.jpg)
