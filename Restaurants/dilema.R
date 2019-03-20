@@ -1,0 +1,16 @@
+dilema <- function(){
+  url_dilema <- "https://restauracie.sme.sk/restauracia/dilema-restaurant_731-stare-mesto_2949/denne-menu"
+  download.file(url_dilema, destfile = "scrapedpage.html", quiet=TRUE)
+  raw <- read_html("scrapedpage.html")
+  jedlo <- raw %>%
+    html_nodes(".dnesne_menu .jedlo_polozka .left") %>%
+    html_text() %>%
+    str_trim()
+  jedlo <- jedlo[-6]
+  jedlo <- str_replace_all(jedlo, "([\n\t])", "")
+  jedlo <- str_replace_all(jedlo, "-", "")
+  jedlo <- str_replace_all(jedlo, "\u00bd", "0.5")
+  jedlo[3:5] <- str_sub(jedlo[3:5], start = 7)
+  jedlo <- str_trim(jedlo)
+  return(c("Dilema",jedlo))
+}
