@@ -1,0 +1,67 @@
+
+
++----------------+--------------------------------+--------------------------------+-------------------------------+-------------------------------+-------------------------------+
+|     podnik     |            polievka            |            jedlo_1             |            jedlo_2            |            jedlo_3            |            jedlo_4            |
++================+================================+================================+===============================+===============================+===============================+
+|    Bioland     | Kremova z korenovej zeleniny s |  Zapekane francuzske zemiaky   |   Africky gulasovy kotlik s   |       Veganske brownies       |                               |
+|                |            pazitkou            |                                |             ryzou             |                               |                               |
++----------------+--------------------------------+--------------------------------+-------------------------------+-------------------------------+-------------------------------+
+|    BlueBear    |  Koprova polievka so zemiakmi  |  Domace parene buchty plnene   |  Grilovane kuracie stvrte na  | Zeleninove vysmazane krokety  |                               |
+|                |                                |   makovo ceresnovou plnkou s   | cesnakovej cukete s maslovymi |      so zemiakovou kasou      |                               |
+|                |                                |        maslom a cukrom         |           zemiakmi            |                               |                               |
++----------------+--------------------------------+--------------------------------+-------------------------------+-------------------------------+-------------------------------+
+|   Ceska pivn   |    Slepaci vyvar s masom a     |       Gulasova polievka        |  kuraci platok s fazulovymi   |  Bravcova rolada s vajickom   |   Listovy salat s kuracimi    |
+|                |           rezancami            |                                |  luskami prirodnou omackou a  |      zemiakovy privarok       |    prsiami sojovou omackou    |
+|                |                                |                                |             ryzou             |                               | sezamovym olejom a semiackami |
++----------------+--------------------------------+--------------------------------+-------------------------------+-------------------------------+-------------------------------+
+|     Dilema     |     Kapustovo paradajkova      |  Slepaci vyvar s rezancami a   |   Zapekane kuracie prsia s    | Hovadzia svieckova na smotane | Zapekane Francuzske palacinky |
+|                |                                |           zeleninou            | bryndzou a pazitkovou omackou |         parena knedla         | s nutelou a vanilkovym kremom |
+|                |                                |                                |  dusena ryza listovy salat s  |                               |                               |
+|                |                                |                                |        jarnou cibulkou        |                               |                               |
++----------------+--------------------------------+--------------------------------+-------------------------------+-------------------------------+-------------------------------+
+|      Kasa      |    Biela fazulova polievka     |         Zeleninovy wok         | Bravcove na jablkach a muste  |                               |                               |
++----------------+--------------------------------+--------------------------------+-------------------------------+-------------------------------+-------------------------------+
+| Mestiansky piv |    Hovadzi vyvar s masom a     | Hovadzie stehno s francuzskou  |  Kremove sparglove rizoto s   |                               |                               |
+|                |           cestovinou           | horcicovou omackou dom kysnuta |   grilovanym kuracim masom    |                               |                               |
+|                |                                |             knedla             |                               |                               |                               |
++----------------+--------------------------------+--------------------------------+-------------------------------+-------------------------------+-------------------------------+
+| Bistro Mnamka  |  Slepaci vyvar so zeleninou a  | Kuracia pecienka na cibulke a  |       Vepro knedlo zelo       |   Salat s vyprazanym udenym   | Domace parene buchty poliate  |
+|                |           rezancami            |    chilli dusena ryza kysle    |                               | korbacikom majonezovy chilli  |  horkou cokoladou a posypane  |
+|                |                                |             uhorky             |                               |       dip pizza chlieb        |            kokosom            |
++----------------+--------------------------------+--------------------------------+-------------------------------+-------------------------------+-------------------------------+
+|      Veda      |       thajska tekvicova        |  knedliky s cicerovej muky v   |  zemiaky a biela redkovka s   |  miesana zelenina v indickej  |  farebna paprika a fazula v   |
+|                |                                |   indickej jogurtovej omacke   |   indickym drvenym korenim    |            omacke             |        indickej omacke        |
++----------------+--------------------------------+--------------------------------+-------------------------------+-------------------------------+-------------------------------+
+|    Veglife     |   Fazulova polievka na kyslo   |  Fasirky z batatov a spenatu   |   Seitan ragu na korenovej    | Hubovnik s cervenou kapustou  |         Vegan Paella          |
+|                |                                |   zemiakovo karfiolove pyre    |     zelenine ryza natural     |        pecene zemiaky         |                               |
++----------------+--------------------------------+--------------------------------+-------------------------------+-------------------------------+-------------------------------+
+
+
+
+
++--------------------------------+
+|          Jedla_lenka           |
++================================+
+|            Slepaci             |
++--------------------------------+
+| Hraskova polievka s mrvenickou |
++--------------------------------+
+|    Telacie na hrasku, ryza     |
++--------------------------------+
+|  Bravcovy segedinsky gulas,   |
+|             knedla             |
++--------------------------------+
+| Vyprazany plneny morcaci rezen |
+|  (sunka, syr), zemiakova kasa  |
++--------------------------------+
+|   Svedske gulicky, brusnice,   |
+|         varene zemiaky         |
++--------------------------------+
+|      Granatiersky pochod       |
++--------------------------------+
+|    Parene buchty s posypkou    |
++--------------------------------+
+
+
+I'm LunchBOT, beep-boop-bop. 
+If you have any questions or suggestions, please contact my creator jakub.kovac@zurich.com by mail. Please use LunchBOT as a subject.
