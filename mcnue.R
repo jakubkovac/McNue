@@ -15,6 +15,7 @@ menu <- tibble(podnik = character(), polievka = character(), jedlo_1 = character
 (menu[7,] <- mnamka())
 (menu[8,] <- veda())
 (menu[9,] <- veglife())
+(menu[10,] <- realstar())
 (menu2 <- lenka())
 
 #menu <- na.omit(menu)
@@ -34,6 +35,8 @@ menu <-
   menu %>%
   mutate_all(.fun = function(x) benson_string_destroyer(x))
 menu
+menu[10,] <- menu[10,] %>% str_replace("  l","") %>% str_replace("  g","") %>% str_trim()
+
 menu <- menu[sample(1:nrow(menu),nrow(menu)),]
 
 
