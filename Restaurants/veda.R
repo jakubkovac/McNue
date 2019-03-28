@@ -8,5 +8,5 @@ veda <- function(){
   jedlo <- jedlo %>% str_replace("VEGAN","") %>% str_replace("NOT","")
   jedlo <- jedlo %>% str_sub(start =2) %>% str_trim()
   jedlo <- jedlo %>% str_to_lower()
-  return(c("Veda",jedlo))
+  return(c("Veda",str_to_title(jedlo)))
 }

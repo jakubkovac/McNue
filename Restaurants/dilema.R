@@ -6,7 +6,7 @@ dilema <- function(){
     html_nodes(".dnesne_menu .jedlo_polozka .left") %>%
     html_text() %>%
     str_trim()
-  jedlo <- jedlo[-6]
+  jedlo <- jedlo[-2]
   jedlo <- str_replace_all(jedlo, "([\n\t])", "")
   jedlo <- str_replace_all(jedlo, "-", "")
   jedlo <- str_replace_all(jedlo, "\u00bd", "0.5")

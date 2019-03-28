@@ -5,7 +5,8 @@ ceska <- function(){
   jedlo <- raw %>%
     html_nodes(".dnesne_menu .jedlo_polozka .left") %>% html_text()
   jedlo[1:2] <- jedlo[1:2] %>% str_sub(2) %>% str_trim() %>% str_sub(6)
-  jedlo[3:5] <- jedlo[3:5] %>% str_sub(4) %>% str_trim() %>% str_sub(8)
-  jedlo[6] <- jedlo[6] %>% str_sub(3) %>% str_trim()
+  jedlo[3:4] <- jedlo[3:4] %>% str_sub(4) %>% str_trim() %>% str_sub(8)
+  jedlo[5] <- jedlo[5] %>% str_sub(4) %>% str_trim() %>% str_sub(3)
+  jedlo[6] <- jedlo[6] %>% str_sub(3) %>% str_trim() %>% str_sub(3)
   return(c("Ceska pivn.",jedlo[-6]))
 }
