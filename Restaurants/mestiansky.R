@@ -7,16 +7,20 @@ mestiansky <- function(){
     html_text()
   jedlo <- str_trim(jedlo)
   #jedlo <- jedlo[c(2,4,5)]
-  jedlo[1] <- 
-    jedlo[1] %>% 
-    str_extract("3l(.*)") %>%
-    str_sub(start = 3) %>%
-    str_trim()
-  jedlo[2:3] <-
-    jedlo[2:3] %>%
-    str_extract("g(.*)") %>%
-    str_sub(start = 3) %>%
-    str_trim()
+  # jedlo[1] <- 
+  #   jedlo[1] %>% 
+  #   str_extract("3l(.*)") %>%
+  #   str_sub(start = 3) %>%
+  #   str_trim()
+  # jedlo[2:3] <-
+  #   jedlo[2:3] %>%
+  #   str_extract("g(.*)") %>%
+  #   str_sub(start = 3) %>%
+  #   str_trim()
   jedlo <- str_replace_all(jedlo, "([\n\t])", "")
+  jedlo <- str_replace_all(jedlo,"polievka","")
+  jedlo[2] <- paste(jedlo[2],jedlo[3],collapse = " ")
+  jedlo[3] <- jedlo[4]
+  jedlo <- jedlo[1:3]
   return(c("Mestiansky piv.",jedlo,"",""))
 }

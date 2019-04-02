@@ -8,7 +8,7 @@ bluebear <- function(){
     html_nodes(".menux > div:nth-child(1)") %>%
     html_children() %>%
     html_text()
-  day_index <- c(1,7,13,19,25)
+  day_index <- c(1,8,15,23,30)
   day_menu <- jedlo3[day_index] %>% dmy
   today_i <- day_index[which(Sys.Date() == day_menu)]
   jedlo3 <- jedlo3[(today_i+1):(today_i + 5)]
