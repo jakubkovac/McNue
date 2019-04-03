@@ -10,7 +10,7 @@ dilema <- function(){
   jedlo <- str_replace_all(jedlo, "([\n\t])", "")
   jedlo <- str_replace_all(jedlo, "-", "")
   jedlo <- str_replace_all(jedlo, "\u00bd", "0.5")
-  jedlo[3:5] <- str_sub(jedlo[3:5], start = 7)
+  jedlo[2:5] <- str_sub(jedlo[2:5], start = 7)
   jedlo <- str_trim(jedlo)
   return(c("Dilema",jedlo))
 }

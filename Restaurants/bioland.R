@@ -9,7 +9,7 @@ bioland <- function(){
   
   jedlo <- jedlo[11:54]
   jedlo <- jedlo[str_length(jedlo) >0]
-  day_index <- seq(1,20,by = 4)
+  day_index <- seq(1,25,by = 5)
   
   days_of_the_week <- c("Monday", "Tuesday", "Wednesday", "Thursday","Friday", "Saturday","Sunday")
   today <- format(Sys.Date(), "%A")
@@ -17,6 +17,6 @@ bioland <- function(){
 
  
   
-  jedlo <- jedlo[(today_i+2):(today_i + 5)]
+  jedlo <- jedlo[(today_i+1):(today_i + 4)]
   return(c("Bioland",jedlo,""))
 }

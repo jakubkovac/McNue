@@ -19,8 +19,5 @@ mestiansky <- function(){
   #   str_trim()
   jedlo <- str_replace_all(jedlo, "([\n\t])", "")
   jedlo <- str_replace_all(jedlo,"polievka","")
-  jedlo[2] <- paste(jedlo[2],jedlo[3],collapse = " ")
-  jedlo[3] <- jedlo[4]
-  jedlo <- jedlo[1:3]
   return(c("Mestiansky piv.",jedlo,"",""))
 }

@@ -10,7 +10,7 @@ menu <- tibble(podnik = character(), polievka = character(), jedlo_1 = character
 (menu[2,] <- bluebear())
 (menu[3,] <- ceska())
 (menu[4,] <- dilema())
-(menu[5,] <- kasa())
+(menu[5,] <- kasa(sme = TRUE))
 (menu[6,] <- mestiansky())
 (menu[7,] <- mnamka())
 (menu[8,] <- veda())
@@ -20,7 +20,7 @@ menu <- tibble(podnik = character(), polievka = character(), jedlo_1 = character
 
 #menu <- na.omit(menu)
 #remove special slovak characters
-source("C:\\Users\\jakub.kovac\\Documents\\LEARNING\\MOJE\\menucka\\slovak_language_destroyer.R",encoding="utf-8")
+source("slovak_language_destroyer.R",encoding="utf-8")
 menu <-
   menu %>%
   mutate_all(.fun = function(x) slovak_language_destroyer(x))
@@ -30,14 +30,15 @@ menu2 <-
   mutate_all(.fun = function(x) slovak_language_destroyer(x))
 
 #destroy the nuances in data
-source("C:\\Users\\jakub.kovac\\Documents\\LEARNING\\MOJE\\menucka\\benson_string_destroyer.R")
+source("benson_string_destroyer.R")
 menu <-
   menu %>%
   mutate_all(.fun = function(x) benson_string_destroyer(x))
 menu
 menu[10,] <- menu[10,] %>% str_replace("  l","") %>% str_replace("  g","") %>% str_trim()
 
-menu <- menu[sample(1:nrow(menu),nrow(menu)),]
+#randomize order
+#menu <- menu[sample(1:nrow(menu),nrow(menu)),]
 
 
 menu2
