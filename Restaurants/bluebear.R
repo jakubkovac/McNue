@@ -8,8 +8,8 @@ bluebear <- function(){
     html_nodes(".menux > div:nth-child(1)") %>%
     html_children() %>%
     html_text()
-  tyzden <- jedlo[length(jedlo) -3]
-  day_index <- c(1,8,15,23,30)
+  tyzden <- jedlo[length(jedlo) -2]
+  day_index <- c(1,7,13,19,25)
   days_of_the_week <- c("Monday", "Tuesday", "Wednesday", "Thursday","Friday", "Saturday","Sunday")
   today <- format(Sys.Date(), "%A")
   today_i <- day_index[which(days_of_the_week %in% today)]

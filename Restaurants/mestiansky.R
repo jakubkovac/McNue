@@ -19,5 +19,6 @@ mestiansky <- function(){
   #   str_trim()
   jedlo <- str_replace_all(jedlo, "([\n\t])", "")
   jedlo <- str_replace_all(jedlo,"polievka","")
+  if(length(jedlo) >= 4) jedlo <- jedlo[-3]
   return(c("Mestiansky piv.",jedlo,"",""))
 }

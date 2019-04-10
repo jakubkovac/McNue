@@ -4,7 +4,7 @@ veda <- function(){
   raw <- read_html("scrapedpage.html")
   jedlo <- raw %>%
     html_nodes(".dnesne_menu .jedlo_polozka .left") %>% html_text()
-  jedlo <- jedlo[c(5,10,12,14,16)] %>% str_trim()
+  jedlo <- jedlo[c(4,seq(9,16,by = 2))] %>% str_trim()
   jedlo <- jedlo %>% str_replace("VEGAN","") %>% str_replace("NOT","")
   jedlo <- jedlo %>% str_sub(start =2) %>% str_trim()
   jedlo <- jedlo %>% str_to_lower()

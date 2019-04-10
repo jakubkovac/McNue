@@ -27,6 +27,7 @@ menu <- tibble(podnik = character(), polievka = character(), jedlo_1 = character
 (menu[8,] <- veda())
 (menu[9,] <- veglife())
 (menu[10,] <- realstar())
+(menu[11,] <- suvlaki())
 (menu2 <- lenka())
 
 
