@@ -5,9 +5,10 @@ bioland <- function(){
   jedlo <- raw %>% 
     html_nodes(".td_content_body") %>% 
     html_children() %>%
+    html_children() %>%
     html_text()
   
-  jedlo <- jedlo[11:54]
+  jedlo <- jedlo[12:41]
   jedlo <- jedlo[str_length(jedlo) >0]
   day_index <- seq(1,25,by = 5)
   
@@ -17,6 +18,6 @@ bioland <- function(){
 
  
   
-  jedlo <- jedlo[(today_i+1):(today_i + 4)]
+  jedlo <- jedlo[(today_i):(today_i + 3)]
   return(c("Bioland",jedlo,""))
 }

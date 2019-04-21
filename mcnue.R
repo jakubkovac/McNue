@@ -48,8 +48,25 @@ source("benson_string_destroyer.R")
 menu <-
   menu %>%
   mutate_all(.fun = benson_string_destroyer)
+
+menu2 <-
+  menu2 %>%
+  mutate_all(.fun = benson_string_destroyer)
+
 menu
-menu[10,] <- menu[10,] %>% str_replace("  l","") %>% str_replace("  g","") %>% str_trim()
+remove_g_l <- function(x){
+  x <- 
+    x %>% 
+    str_replace_all("  l","") %>% 
+    str_replace_all("  g","") %>% 
+    str_replace_all(" g ","") %>%
+    str_replace_all("g ","") %>%
+    str_replace_all(" l ","") %>%
+    str_trim()
+  return(x)
+}
+menu <- 
+  menu %>% mutate_all(.fun = remove_g_l)
 
 menu <-
   menu %>%
@@ -70,3 +87,4 @@ menu2_ascii <- pandoc.table.return(menu2, style = "grid", split.tables = Inf, sp
 write.table(menu2_ascii,file = "menu.txt",append = T, col.names = F, row.names = F, quote = F)
 beep <- readChar("beep_boop.txt",file.info("beep_boop.txt")$size)
 write.table(beep,file = "menu.txt",append = T, col.names = F, row.names = F, quote = F)
+
