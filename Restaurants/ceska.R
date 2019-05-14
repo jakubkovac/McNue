@@ -4,10 +4,10 @@ ceska <- function(){
   raw <- read_html("scrapedpage.html")
   jedlo <- raw %>%
     html_nodes(".dnesne_menu .jedlo_polozka .left") %>% html_text()
-  jedlo <- jedlo[-1]
+  if(length(jedlo) > 5) jedlo <- jedlo[-1]
   jedlo <- str_trim(jedlo)
-  # jedlo[1:4] <- jedlo[1:2] %>% str_sub(2) %>% str_trim() %>% str_sub(8)
+   jedlo[2:5] <- jedlo[2:5] %>% str_sub(9) %>% str_trim()
   # jedlo[5] <- jedlo[5] %>% str_sub(4) %>% str_trim() %>% str_sub(5)
   # jedlo[6] <- jedlo[6] %>% str_sub(3) %>% str_trim() %>% str_sub(4)
-  return(c("Ceska pivn.",jedlo,NA))
+  return(c("Ceska pivn.",jedlo))
 }

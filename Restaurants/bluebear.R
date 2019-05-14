@@ -10,20 +10,21 @@ bluebear <- function(){
     html_text()
   jedlo <- str_trim(jedlo)
   jedlo <- jedlo[str_length(jedlo) >0]
-  tyzden <- jedlo[length(jedlo) -1]
-  day_index <- c(1,7,13,20,26)
+  source("slovak_language_destroyer.R",encoding="utf-8")
+  tyzden <- jedlo[which(str_detect(slovak_language_destroyer(jedlo),"Tyzdenna ponuka")) + 1]
+  #day_index <- c(1,7,13,20,26)
+  day_index <- which(str_detect(jedlo,"Pondelok|Utorok|Streda|Štvrtok|Piatok"))
   days_of_the_week <- c("Monday", "Tuesday", "Wednesday", "Thursday","Friday", "Saturday","Sunday")
   today <- format(Sys.Date(), "%A")
   today_i <- day_index[which(days_of_the_week %in% today)]
-  jedlo <- jedlo[(today_i+1):(today_i + 6)]
-  if(today_i == 15){
-    jedlo <- jedlo[-5]
-  } else jedlo <- jedlo[-6]
+  message(today_i)
+  jedlo <- jedlo[(today_i+1):(today_i + 5)]
+
   jedlo <- jedlo[-2]
   jedlo[2:4] <- 
     jedlo[2:4] %>% 
-    str_extract("g(.*)obsahuje") %>% 
-    str_sub(start = 2, end = -9) %>%
+    str_replace_all("obsahuje","") %>%
+    str_sub(start = 12) %>%
     str_trim()
   jedlo[1] <- 
     jedlo[1] %>% 
@@ -32,5 +33,6 @@ bluebear <- function(){
     str_trim()
   jedlo <- str_replace_all(jedlo, "([\n\t])", "")
   jedlo[is.na(jedlo)] <- ""
-  return(c("BlueBear",jedlo,paste("TYZDENNE",tyzden)))
+  jedlo[5] <- paste("TYZDENNE",tyzden)
+  return(c("BlueBear",jedlo))
 }

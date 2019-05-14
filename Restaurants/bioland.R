@@ -2,22 +2,19 @@ bioland <- function(){
   url_bioland <- "https://www.bioland.sk/restauracia-bratislava/"
   download.file(url_bioland, destfile = "scrapedpage.html", quiet=TRUE)
   raw <- read_html("scrapedpage.html")
-  jedlo <- raw %>% 
+  jedlo <-
+    raw %>% 
     html_nodes(".td_content_body") %>% 
-    html_children() %>%
     html_children() %>%
     html_text()
   
-  jedlo <- jedlo[12:41]
+  jedlo <- str_trim(jedlo)
   jedlo <- jedlo[str_length(jedlo) >0]
-  day_index <- seq(1,25,by = 5)
-  
+  day_index <- which(str_detect(jedlo,"Pondelok|Utorok|Streda|Štvrtok|Piatok"))
   days_of_the_week <- c("Monday", "Tuesday", "Wednesday", "Thursday","Friday", "Saturday","Sunday")
   today <- format(Sys.Date(), "%A")
   today_i <- day_index[which(days_of_the_week %in% today)]
-
- 
   
-  jedlo <- jedlo[(today_i):(today_i + 3)]
+  jedlo <- jedlo[(today_i+1):(today_i + 4)]
   return(c("Bioland",jedlo,""))
 }

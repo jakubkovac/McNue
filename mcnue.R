@@ -4,7 +4,8 @@ library(lubridate)
 library(pander)
 
 #run web scraper
-R.utils::sourceDirectory("Restaurants")
+R.utils::sourceDirectory("Restaurants",encoding = "UTF-8")
+#lapply(list.files("Restaurants"),function(x) source(paste0("Restaurants/",x)))
 
 str_to_1up <- function(x) {
   substr(x, 1, 1) <- toupper(substr(x, 1, 1))
@@ -30,7 +31,7 @@ menu <- tibble(podnik = character(), polievka = character(), jedlo_1 = character
 (menu[11,] <- suvlaki())
 (menu2 <- lenka())
 
-
+# menu[11,2:6] <- c("Paradajková polievka","Pečené bravčové karbonátky s tymiánom, paradajková omáčka","Dusené bravčové mäso s paprikou","Pečené kura s rozmarínom, horčicová omáčka","Zapečený baklažan s cesnakom, jogurtom, syrom a gréckymi bylinkami")
 
 #menu <- na.omit(menu)
 #remove special slovak characters

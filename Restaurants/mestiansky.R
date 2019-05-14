@@ -17,10 +17,10 @@ mestiansky <- function(){
   #   str_extract("g(.*)") %>%
   #   str_sub(start = 3) %>%
   #   str_trim()
+  jedlo <- str_replace_all(jedlo, "g[\t]","")
+  jedlo <- str_replace_all(jedlo, "l[\t]","")
   jedlo <- str_replace_all(jedlo, "([\n\t])", "")
   if(length(jedlo) >= 4) jedlo <- jedlo[-which(str_length(jedlo) == min(str_length(jedlo)))]
   jedlo <- str_replace_all(jedlo,"polievka","")
-  jedlo[1] <- jedlo[1] %>% str_sub(6)
-  jedlo[2:3] <- jedlo[2:3] %>% str_sub(7)
   return(c("Mestiansky piv.",jedlo,"",""))
 }

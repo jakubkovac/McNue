@@ -11,7 +11,8 @@ kasa <- function(sme = TRUE){
   jedlo <-
     raw %>%
     html_nodes("#denne-menu > article:nth-child(13)") %>% html_children() %>% html_text()
-  day_index <- seq(1,25,by = 5)
+  #day_index <- seq(1,25,by = 5)
+  day_index <- c(1,4,9,14,19)
   days_of_the_week <- c("Monday", "Tuesday", "Wednesday", "Thursday","Friday", "Saturday","Sunday")
   today <- format(Sys.Date(), "%A")
   today_i <- day_index[which(days_of_the_week %in% today)]

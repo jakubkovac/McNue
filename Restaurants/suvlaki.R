@@ -9,3 +9,4 @@ suvlaki <- function(){
     jedlo %>% str_trim()
   return(c("Suvlaki",jedlo))
 }
+
