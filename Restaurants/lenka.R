@@ -6,9 +6,10 @@ lenka <- function(){
     html_nodes(".insert-page-30") %>%
     html_children() %>%
     html_text()
-  jedlo <- jedlo[2:9]
-  a <- str_split(jedlo[1]," ") %>% unlist()
-  kde <- str_match(a,"^[[:upper:]]") %>% is.na() %>% `!` %>% which()
-  jedlo[1] <- paste(a[kde],collapse = "/")
-  return(tibble(Jedla_lenka = jedlo))
+  #jedlo <- jedlo[2:6]
+  jedlo <- str_split(jedlo,"\r") %>% unlist() %>% str_remove("\n")
+  jedlo <- jedlo[2:6]
+  # kde <- str_match(a,"^[[:upper:]]") %>% is.na() %>% `!` %>% which()
+  # jedlo[1] <- paste(a[kde],collapse = "/")
+  return(c("Jedla_lenka",jedlo))
 }
