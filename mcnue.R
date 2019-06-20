@@ -32,8 +32,17 @@ menu <- tibble(podnik = character(), polievka = character(), jedlo_1 = character
 (menu[12,] <- lenka())
 (menu[13,] <- svadbykari())
 (menu[14,] <- redcafe())
+(menu[15,] <- hasic())
+(menu[16,] <- alzbetka())
+(menu[17,] <- centralna_klubovna())
 
-# menu[11,2:6] <- c("Karfiólová polievka","Pečené rybacie filety s cesnakom, rozmarínom a paradajkami","Dusené bravčové mäso s cuketou a gréckými bylinkami","Zapečené cestoviny s kuracím mäsom, červenou paprikou a syrovým bešamelom","OKRA so zemiakmi, paradajková omáčka")
+failed <- filter(menu,!complete.cases(menu)) %>% pull(podnik)
+if(length(failed) > 0) {
+  message(paste("These restaurants failed:", paste(failed, collapse = ", ")))
+} else message("All good.")
+# menu[11,2:6] <- c("RYBACIA polievka","Grilované jahňacie karbonátky","Dusené bravčové mäso s cícerom","Pečené morčacie kabonátky, paradajková omáčka","Špenátová omeleta")
+
+# menu[13,2:4] <- c("Zeleninová polievka so šampiňónmi","Indické Aloo Gobi s karfiolom, hráškom a zemiakmi, chilli-paradajkové čatní","Thajské žlté kari s hovädzím mäsom, farebnými paprikami, cuketou a batátmi, ľadový šalát s limetkovým dressingom")
 
 #menu <- na.omit(menu)
 #remove special slovak characters
@@ -64,6 +73,7 @@ remove_g_l <- function(x){
     str_replace_all("  g","") %>% 
     str_replace_all(" g ","") %>%
     str_replace_all(" l ","") %>%
+    str_replace_all("NA","") %>%
     str_trim()
   y <- 
     x %>% 
@@ -96,3 +106,19 @@ write.table(menu_ascii,file = "menu.txt", row.names = F, col.names = F, quote = 
 beep <- readChar("beep_boop.txt",file.info("beep_boop.txt")$size)
 write.table(beep,file = "menu.txt",append = T, col.names = F, row.names = F, quote = F)
 
+
+
+
+tabulecka <- tibble(Podnik = c("Bioland", "Ceska pivnica", "Dilema", "Kasa", "Mestiansky pivovar",
+  "Bistro Mnamka", "Veda", "Suvlaki", "Jedla lenka", "Svadby a kari", "Red Cafe", "U Hasica","Alzbetka", "Centr. klub."),
+  Ulica = c("Mytna 23", "Radlinskeho 39","Sancova 70","Radlinskeho 11",
+  "Drevena 8","Vazovova 9", "Zilinska 2","Krizna 8","Cajkovskeho 14", "Americka 2",
+  "Racianske myto 1/A","Wilsonova 1","Mickiewiczova 1","Krizna 64"), TR_karta = T, karta = T)
+tabulecka[8,3] <- F
+tabulecka[12,3] <- F
+tabulecka[13,3] <- F
+tabulecka[8,4] <- F
+tabulecka[12,4] <- F
+tabulecka <- arrange(tabulecka, Podnik)
+tabulecka <- pandoc.table.return(tabulecka, style = "grid", split.tables = Inf, split.cells = 30) %>% str_sub(3)
+write.table(tabulecka,file = "menu.txt",append = T, col.names = F, row.names = F, quote = F)
