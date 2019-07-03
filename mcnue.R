@@ -30,19 +30,19 @@ menu <- tibble(podnik = character(), polievka = character(), jedlo_1 = character
 (menu[10,] <- realstar())
 (menu[11,] <- suvlaki())
 (menu[12,] <- lenka())
-(menu[13,] <- svadbykari())
+(menu[13,] <- svadbykari(sme = TRUE))
 (menu[14,] <- redcafe())
 (menu[15,] <- hasic())
-(menu[16,] <- alzbetka())
+(menu[16,] <- alzbetka(sme = FALSE))
 (menu[17,] <- centralna_klubovna())
 
 failed <- filter(menu,!complete.cases(menu)) %>% pull(podnik)
-if(length(failed) > 0) {
+if(length(failed) > 0){
   message(paste("These restaurants failed:", paste(failed, collapse = ", ")))
 } else message("All good.")
-# menu[11,2:6] <- c("RYBACIA polievka","Grilované jahňacie karbonátky","Dusené bravčové mäso s cícerom","Pečené morčacie kabonátky, paradajková omáčka","Špenátová omeleta")
+# menu[11,2:6] <- c("Šošovicová polievka","Grilované kuracie SUVLAKI s domácimi hranolkami, pita chlieb, tzatziki dip, cibuľka","Vyprážané rybacie Filety","Pečené kura s rozmarínom a paprikou","Zeleninová omeleta s hráškom, mrkvou a olivami")
 
-# menu[13,2:4] <- c("Zeleninová polievka so šampiňónmi","Indické Aloo Gobi s karfiolom, hráškom a zemiakmi, chilli-paradajkové čatní","Thajské žlté kari s hovädzím mäsom, farebnými paprikami, cuketou a batátmi, ľadový šalát s limetkovým dressingom")
+# menu[13,2:4] <- c("Studený cuketový krém s rukolovým pestom","Indické tekvicové kari so šampiňónmi, hráškom, paradajkami a kokosom, mrkvový šalát s pórom VEGAN","Thajské hovädzie Massaman kari s batátmi, cuketou a paradajkami v arašidovej omáčke, šalát z bielej reďkovky so sezamom")
 
 #menu <- na.omit(menu)
 #remove special slovak characters
@@ -105,7 +105,7 @@ write.table(menu_ascii,file = "menu.txt", row.names = F, col.names = F, quote = 
 # write.table(menu2_ascii,file = "menu.txt",append = T, col.names = F, row.names = F, quote = F)
 beep <- readChar("beep_boop.txt",file.info("beep_boop.txt")$size)
 write.table(beep,file = "menu.txt",append = T, col.names = F, row.names = F, quote = F)
-
+write.table("\n",file = "menu.txt", append = T, col.names = F, row.names = F, quote = F)
 
 
 

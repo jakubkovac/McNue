@@ -13,9 +13,10 @@ centralna_klubovna <- function(){
   source("slovak_language_destroyer.R",encoding="utf-8")
   source("benson_string_destroyer.R")
   jedlo <- slovak_language_destroyer(jedlo)
-  match_day <- paste0(dni[which(today == days_of_the_week)],
-                      " ",
-                      unlist(str_split(format(Sys.Date(), "%D"),"/"))[2])
+  match_day <- paste0(dni[which(today == days_of_the_week)])#,
+                     # " ",
+                     # unlist(str_split(format(Sys.Date(), "%D"),"/"))[2])
+  dnes <- which(str_detect(jedlo,match_day))
   jedlo <- jedlo[(dnes+1):(dnes+4)]
   jedlo <- 
     jedlo %>%

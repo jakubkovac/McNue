@@ -31,7 +31,8 @@ bluebear <- function(){
     str_extract("ml(.*)obsahuje") %>%
     str_sub(start = 3, end = -9) %>%
     str_trim()
-  jedlo <- str_replace_all(jedlo, "([\n\t])", "")
+  jedlo <- str_remove_all(jedlo, "([\n\t])") %>% str_remove_all("obsahuje") %>% str_remove_all("EUR")
+  tyzden <- str_remove_all(tyzden,"obsahuje") %>% str_remove_all("EUR")
   jedlo[is.na(jedlo)] <- ""
   jedlo[5] <- paste("TYZDENNE",tyzden)
   return(c("BlueBear",jedlo))
