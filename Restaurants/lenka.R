@@ -11,5 +11,5 @@ lenka <- function(){
   jedlo <- jedlo[2:6]
   # kde <- str_match(a,"^[[:upper:]]") %>% is.na() %>% `!` %>% which()
   # jedlo[1] <- paste(a[kde],collapse = "/")
-  return(c("Jedla_lenka",jedlo))
+  return(c("Jedla lenka",jedlo))
 }

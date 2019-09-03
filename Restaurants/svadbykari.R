@@ -16,9 +16,11 @@ svadbykari <- function(sme = FALSE){
     raw <- read_html("scrapedpage.html")
     jedlo <- 
       raw %>%
-      html_nodes(".cff-post-text") %>% html_text() %>%
-      str_split("- ") %>% unlist() 
-    jedlo <- jedlo[-1]
+      html_nodes(".cff-text") %>% 
+      as.character() %>% 
+      str_split("<br>") %>% 
+      unlist()
+    jedlo <- jedlo[-1] %>% str_remove("</span>")
     jedlo <- str_trim(jedlo)
     jedlo <- jedlo %>% str_trim()
     jedlo <- str_remove_all(jedlo,"[A][0-9]")
@@ -27,5 +29,3 @@ svadbykari <- function(sme = FALSE){
   }
   return(c("Svadby a Kari",jedlo,"",""))
 }
-
-

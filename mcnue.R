@@ -30,20 +30,24 @@ menu <- tibble(podnik = character(), polievka = character(), jedlo_1 = character
 (menu[10,] <- realstar())
 (menu[11,] <- suvlaki())
 (menu[12,] <- lenka())
-(menu[13,] <- svadbykari(sme = TRUE))
+(menu[13,] <- svadbykari(sme = F))
 (menu[14,] <- redcafe())
 (menu[15,] <- hasic())
-(menu[16,] <- alzbetka(sme = FALSE))
+(menu[16,] <- alzbetka(sme = T))
 (menu[17,] <- centralna_klubovna())
+(menu[18,] <- prazsky_pub())
 
 failed <- filter(menu,!complete.cases(menu)) %>% pull(podnik)
 if(length(failed) > 0){
   message(paste("These restaurants failed:", paste(failed, collapse = ", ")))
 } else message("All good.")
-# menu[11,2:6] <- c("Šošovicová polievka","Grilované kuracie SUVLAKI s domácimi hranolkami, pita chlieb, tzatziki dip, cibuľka","Vyprážané rybacie Filety","Pečené kura s rozmarínom a paprikou","Zeleninová omeleta s hráškom, mrkvou a olivami")
+# menu[11,2:6] <- c("Fazuľová polievka","Grilované SARDINKY so šalátom, paradajkami a cibuľkou","CHIRINO KLEFTIKO - Dusené bravčové mäso so zemiakmi a syrom, podávané v papieri na pečenie","Dusené morčacie mäso s červenou paprikou, olivami, horčicová omáčka","Domates #JEMISTA – Zapečené paradajky plnené ryžou na grécky spôsob")
 
-# menu[13,2:4] <- c("Studený cuketový krém s rukolovým pestom","Indické tekvicové kari so šampiňónmi, hráškom, paradajkami a kokosom, mrkvový šalát s pórom VEGAN","Thajské hovädzie Massaman kari s batátmi, cuketou a paradajkami v arašidovej omáčke, šalát z bielej reďkovky so sezamom")
+# menu[8,2:6] <- c("Thai corn soup","Zemiaky s jarnou cibulkou v indickej omacke","Miesana zelenina v omacke s kokosovym mliekom a thajskym zelenym korenim","karfiol v indickej omacke","sampiony a cibula v indickej omacke")
 
+# menu[13,2:4] <- c("Cviklový krém s ananásom","Thajské arašidové kari s kuracím mäsom, karfiolom, cuketou, paradajkami a hráškom, kapustový šalát s koriandrom","Indické tekvicové kari s paradajkami, špenátom a cuketou, opekané mandľové lupienky")
+
+menu <- menu %>% transmute_all(~replace_na(.,"")) # same as transmute_all(function(x) replace_na(x,""))
 #menu <- na.omit(menu)
 #remove special slovak characters
 source("slovak_language_destroyer.R",encoding="utf-8")
@@ -74,6 +78,7 @@ remove_g_l <- function(x){
     str_replace_all(" g ","") %>%
     str_replace_all(" l ","") %>%
     str_replace_all("NA","") %>%
+    str_replace_all(" ks","") %>%
     str_trim()
   y <- 
     x %>% 
@@ -110,15 +115,14 @@ write.table("\n",file = "menu.txt", append = T, col.names = F, row.names = F, qu
 
 
 tabulecka <- tibble(Podnik = c("Bioland", "Ceska pivnica", "Dilema", "Kasa", "Mestiansky pivovar",
-  "Bistro Mnamka", "Veda", "Suvlaki", "Jedla lenka", "Svadby a kari", "Red Cafe", "U Hasica","Alzbetka", "Centr. klub."),
+  "Bistro Mnamka", "Veda", "Suvlaki", "Jedla lenka", "Svadby a kari", "Red Cafe", "U Hasica","Alzbetka", "Centr. klub.","Prazsky pub"),
   Ulica = c("Mytna 23", "Radlinskeho 39","Sancova 70","Radlinskeho 11",
   "Drevena 8","Vazovova 9", "Zilinska 2","Krizna 8","Cajkovskeho 14", "Americka 2",
-  "Racianske myto 1/A","Wilsonova 1","Mickiewiczova 1","Krizna 64"), TR_karta = T, karta = T)
+  "Racianske myto 1/A","Wilsonova 1","Mickiewiczova 1","Krizna 64", "Kominarska 1552/3A"), TR_karta = T, karta = T)
 tabulecka[8,3] <- F
 tabulecka[12,3] <- F
 tabulecka[13,3] <- F
 tabulecka[8,4] <- F
-tabulecka[12,4] <- F
 tabulecka <- arrange(tabulecka, Podnik)
 tabulecka <- pandoc.table.return(tabulecka, style = "grid", split.tables = Inf, split.cells = 30) %>% str_sub(3)
 write.table(tabulecka,file = "menu.txt",append = T, col.names = F, row.names = F, quote = F)
