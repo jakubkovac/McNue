@@ -10,6 +10,7 @@ bioland <- function(){
   
   jedlo <- str_trim(jedlo)
   jedlo <- jedlo[str_length(jedlo) >0]
+  jedlo[6] <- "Pondelok 09.09"
   day_index <- which(str_detect(jedlo,"Pondelok|Utorok|Streda|Štvrtok|Piatok"))
   days_of_the_week <- c("Monday", "Tuesday", "Wednesday", "Thursday","Friday", "Saturday","Sunday")
   today <- format(Sys.Date(), "%A")

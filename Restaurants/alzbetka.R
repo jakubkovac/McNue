@@ -38,7 +38,7 @@ alzbetka <- function(sme = FALSE){
       str_remove_all("P2") %>%
       str_remove_all("M1") %>%
       str_remove_all("M2") %>%
-      str_trim()
+      str_trim() %>% benson_string_destroyer()
   }
-  return(c("Alzbetka", jedlo))
+  return(c("Alzbetka", jedlo[1:5]))
 }
