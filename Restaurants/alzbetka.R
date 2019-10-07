@@ -26,7 +26,7 @@ alzbetka <- function(sme = FALSE){
     dni <- str_to_upper(c("pondelok", "utorok", "streda", "stvrtok", "piatok", "sobota", "nedela"))
     today <- format(Sys.Date(), "%A")
     source("slovak_language_destroyer.R",encoding="utf-8")
-    source("benson_string_destroyer.R")
+
     jedlo <- slovak_language_destroyer(jedlo)
     
     jedlo <- jedlo[which(str_detect(jedlo,dni[which(today == days_of_the_week)])) +1]
@@ -38,7 +38,7 @@ alzbetka <- function(sme = FALSE){
       str_remove_all("P2") %>%
       str_remove_all("M1") %>%
       str_remove_all("M2") %>%
-      str_trim() %>% benson_string_destroyer()
+      str_trim()
   }
   return(c("Alzbetka", jedlo[1:5]))
 }

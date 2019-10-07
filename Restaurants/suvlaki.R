@@ -4,7 +4,7 @@ suvlaki <- function(){
   raw <- read_html("scrapedpage.html")
   jedlo <- raw %>%
     html_nodes(".dnesne_menu .jedlo_polozka .left") %>% html_text() %>% str_trim()
-  jedlo <- jedlo[c(1,4:7)]
+  jedlo <- jedlo[c(2,5:8)]
   jedlo <- 
     jedlo %>% str_trim()
   return(c("Suvlaki",jedlo))

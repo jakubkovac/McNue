@@ -30,10 +30,10 @@ menu <- tibble(podnik = character(), polievka = character(), jedlo_1 = character
 (menu[10,] <- realstar())
 (menu[11,] <- suvlaki())
 (menu[12,] <- lenka())
-(menu[13,] <- svadbykari(sme = T))
+(menu[13,] <- svadbykari(sme = F))
 (menu[14,] <- redcafe())
 (menu[15,] <- hasic())
-(menu[16,] <- alzbetka(sme = F))
+(menu[16,] <- alzbetka(sme = T))
 (menu[17,] <- centralna_klubovna())
 (menu[18,] <- prazsky_pub())
 (menu[19,] <- rtvs())
@@ -43,42 +43,27 @@ if(length(failed) > 0){
   message(paste("These restaurants failed:", paste(failed, collapse = ", ")))
 } else message("All good.")
 # 
- menu[11,2:6] <- c("Paradajková polievka",
-"MUSAKA",
-"JUVETSI - Dusené bravčové mäso s gréckou cestovinou Kritharaki a škoricou",
-"Dusené kuracie mäso so slaninkou, pórom, paradajková omáčka",
-"Zapečená paprika plnená 4 druhmi syra")
+#  menu[11,2:6] <- c("Karfiolová polievka",
+# "Grilované #SUVLAKI zo syra CHALUMI (3ks), so šalátom, cibuľka, paradajky",
+# "Pečené rybacie filety s olivami, rozmarínom a cesnakom",
+# "Pečená bravčová rolka plnená syrom, paprikou, pivová omáčka",
+# "Pečené kuracie karbonátky s tymiánom, horčicová omáčka")
 
   # menu[13,2:4] <- c("Krémová zeleninová polievka s limetkovou šťavou a kokosovým mliekom",
   #                   "Vegan Chilli sin Carne s fazuľami, kukuričkou, mrkvou, paradajkami a paprikou, paradajkový šalát s olivami",
   #                   "Indická mandľová Korma s kuracím mäsom, paradajkami, maslovou tekvicou, fazuľkami a hrozienkami, paradajkový dip")
-
+original_menu <- menu
 menu <- menu %>% transmute_all(~replace_na(.,"")) # same as transmute_all(function(x) replace_na(x,""))
-#menu <- na.omit(menu)
-#remove special slovak characters
-source("slovak_language_destroyer.R",encoding="utf-8")
-menu <-
-  menu %>%
-  mutate_all(.fun = slovak_language_destroyer)
 
-# menu2 <-
-#   menu2 %>%
-#   mutate_all(.fun = slovak_language_destroyer)
-
-#destroy the nuances in data
-source("benson_string_destroyer.R")
-menu <-
-  menu %>%
-  mutate_all(.fun = benson_string_destroyer)
-
-# menu2 <-
-#   menu2 %>%
-#   mutate_all(.fun = benson_string_destroyer)
 
 menu
 remove_g_l <- function(x){
   x <- 
     x %>% 
+    str_remove_all(paste0(c("120g","150g","200g", "240g",
+                            "300g","400g","0,33l","0.33l", "0.30 l", "0.33 l", "0.20 l", "0,25l",
+                            "0,20 l", "140g", "320 g", "360 g", "400 g",
+                            "0,30 l", "120 g", "250 g", "180 g", "150 g" , "300 g", "130 g"), collapse = "|")) %>%
     str_replace_all(" l ","") %>% 
     str_replace_all(" g "," ") %>% 
     str_replace_all("NA","") %>%
@@ -100,6 +85,26 @@ menu <-
 menu <-
   menu %>%
   mutate_all(.fun = str_remove_1gl)
+#menu <- na.omit(menu)
+#remove special slovak characters
+source("slovak_language_destroyer.R",encoding="utf-8")
+menu <-
+  menu %>%
+  mutate_all(.fun = slovak_language_destroyer)
+
+# menu2 <-
+#   menu2 %>%
+#   mutate_all(.fun = slovak_language_destroyer)
+
+#destroy the nuances in data
+source("benson_string_destroyer.R")
+menu <-
+  menu %>%
+  mutate_all(.fun = benson_string_destroyer)
+
+# menu2 <-
+#   menu2 %>%
+#   mutate_all(.fun = benson_string_destroyer)
 #randomize order
 #menu <- menu[sample(1:nrow(menu),nrow(menu)),]
 menu <-
