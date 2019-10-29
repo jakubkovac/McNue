@@ -36,5 +36,6 @@ rtvs <- function(){
   
   
   jedlo <- str_trim(tyzdenne_jedlo[[which(today == days_of_the_week)]])
+  if(length(jedlo) == 4) jedlo <- c(jedlo, "")
   return(c("RTVS",jedlo))
 }

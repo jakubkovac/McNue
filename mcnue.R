@@ -22,7 +22,7 @@ menu <- tibble(podnik = character(), polievka = character(), jedlo_1 = character
 (menu[2,] <- bluebear())
 (menu[3,] <- ceska())
 (menu[4,] <- dilema())
-(menu[5,] <- kasa(sme = TRUE))
+(menu[5,] <- kasa(sme = T))
 (menu[6,] <- mestiansky())
 (menu[7,] <- mnamka())
 (menu[8,] <- veda())
@@ -37,17 +37,18 @@ menu <- tibble(podnik = character(), polievka = character(), jedlo_1 = character
 (menu[17,] <- centralna_klubovna())
 (menu[18,] <- prazsky_pub())
 (menu[19,] <- rtvs())
+(menu[20,] <- milton())
 
 failed <- filter(menu,!complete.cases(menu)) %>% pull(podnik)
-if(length(failed) > 0){
+if(length(failed) > 0 | nrow(menu) < 20){
   message(paste("These restaurants failed:", paste(failed, collapse = ", ")))
 } else message("All good.")
 # 
-#  menu[11,2:6] <- c("Karfiolová polievka",
-# "Grilované #SUVLAKI zo syra CHALUMI (3ks), so šalátom, cibuľka, paradajky",
-# "Pečené rybacie filety s olivami, rozmarínom a cesnakom",
-# "Pečená bravčová rolka plnená syrom, paprikou, pivová omáčka",
-# "Pečené kuracie karbonátky s tymiánom, horčicová omáčka")
+#  menu[11,2:6] <- c("Karfiólová polievka",
+# "GYROS tanier – Bravčové gyros mäsko s domácimi hranolkami, pita chlieb, paradajky, cibuľka, tzatziki dip",
+# "Pečené rybacie filety s kaparmi, cesnakom a rozmarínom",
+# "Dusené bravčové mäso s klobásou, horčicová omáčka",
+# "Zapečená tortila plnená kuracím mäsom, červenou paprikou, jogurtom a syrom")
 
   # menu[13,2:4] <- c("Krémová zeleninová polievka s limetkovou šťavou a kokosovým mliekom",
   #                   "Vegan Chilli sin Carne s fazuľami, kukuričkou, mrkvou, paradajkami a paprikou, paradajkový šalát s olivami",
@@ -60,10 +61,10 @@ menu
 remove_g_l <- function(x){
   x <- 
     x %>% 
-    str_remove_all(paste0(c("120g","150g","200g", "240g",
+    str_remove_all(paste0(c("120g","150g","200g", "240g", "250ml", "250g", "70g",
                             "300g","400g","0,33l","0.33l", "0.30 l", "0.33 l", "0.20 l", "0,25l",
-                            "0,20 l", "140g", "320 g", "360 g", "400 g",
-                            "0,30 l", "120 g", "250 g", "180 g", "150 g" , "300 g", "130 g"), collapse = "|")) %>%
+                            "0,20 l", "140g", "320 g", "360 g", "400 g", "50ml", "50 ml", "350 g", "5 g", "0 g","50 g",
+                            "0,30 l", "120 g", "250 g", "180 g", "150 g" , "300 g", "130 g", "5g", "0g"), collapse = "|")) %>%
     str_replace_all(" l ","") %>% 
     str_replace_all(" g "," ") %>% 
     str_replace_all("NA","") %>%
@@ -127,14 +128,12 @@ write.table("\n",file = "menu.txt", append = T, col.names = F, row.names = F, qu
 
 tabulecka <- tibble(Podnik = c("Bioland", "Ceska pivnica", "Dilema", "Kasa", "Mestiansky pivovar",
   "Bistro Mnamka", "Veda", "Suvlaki", "Jedla lenka", "Svadby a kari", "Red Cafe", "U Hasica",
-  "Alzbetka", "Centr. klub.","Prazsky pub", "RTVS"),
+  "Alzbetka", "Centr. klub.","Prazsky pub", "RTVS", "Milton"),
   Ulica = c("Mytna 23", "Radlinskeho 39","Sancova 70","Radlinskeho 11",
   "Drevena 8","Vazovova 9", "Zilinska 2","Krizna 8","Cajkovskeho 14", "Americka 2",
-  "Racianske myto 1/A","Wilsonova 1","Mickiewiczova 1","Krizna 64", "Kominarska 1552/3A", "Mytna 1"), TR_karta = T, karta = T)
-tabulecka[8,3] <- F
+  "Racianske myto 1/A","Wilsonova 1","Mickiewiczova 1","Krizna 64", "Kominarska 1552/3A", "Mytna 1", "Soltesovej 14"), TR_karta = T, karta = T)
 tabulecka[12,3] <- F
 tabulecka[13,3] <- F
-tabulecka[8,4] <- F
 tabulecka <- arrange(tabulecka, Podnik)
 tabulecka <- pandoc.table.return(tabulecka, style = "grid", split.tables = Inf, split.cells = 30) %>% str_sub(3)
 write.table(tabulecka,file = "menu.txt",append = T, col.names = F, row.names = F, quote = F)
