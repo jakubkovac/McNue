@@ -30,7 +30,7 @@ menu <- tibble(podnik = character(), polievka = character(), jedlo_1 = character
 (menu[10,] <- realstar())
 (menu[11,] <- suvlaki())
 (menu[12,] <- lenka())
-(menu[13,] <- svadbykari(sme = F))
+(menu[13,] <- svadbykari(sme = T))
 (menu[14,] <- redcafe())
 (menu[15,] <- hasic())
 (menu[16,] <- alzbetka(sme = T))
@@ -44,11 +44,11 @@ if(length(failed) > 0 | nrow(menu) < 20){
   message(paste("These restaurants failed:", paste(failed, collapse = ", ")))
 } else message("All good.")
 # 
-#  menu[11,2:6] <- c("Karfiólová polievka",
-# "GYROS tanier – Bravčové gyros mäsko s domácimi hranolkami, pita chlieb, paradajky, cibuľka, tzatziki dip",
-# "Pečené rybacie filety s kaparmi, cesnakom a rozmarínom",
-# "Dusené bravčové mäso s klobásou, horčicová omáčka",
-# "Zapečená tortila plnená kuracím mäsom, červenou paprikou, jogurtom a syrom")
+#  menu[11,2:6] <- c("Šampiňonová krémová polievka",
+# "GYROS TANIER – bravčové gyros mäsko s domácimi hranolkami, pita chlieb, paradajky, cibuľka, #tzatziki dip",
+# "Grilované jahňacie karbonátky",
+# "Dusené bravčové mäso so zelenou fazuľkou, paradajková omáčka",
+# "Zapečená tortila plnené kuracím mäsom, sušenými paradajkami, syrom Chulumi a jogurtom")
 
   # menu[13,2:4] <- c("Krémová zeleninová polievka s limetkovou šťavou a kokosovým mliekom",
   #                   "Vegan Chilli sin Carne s fazuľami, kukuričkou, mrkvou, paradajkami a paprikou, paradajkový šalát s olivami",

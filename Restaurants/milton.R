@@ -3,7 +3,7 @@ milton <- function(){
   download.file(milton_url, destfile = "scrapedpage.html", quiet=TRUE)
   raw <- read_html("scrapedpage.html")
   day_diff <- as.numeric(ymd(Sys.Date()) - ymd("2019-10-21")) #thursday
-  daily_menu_number <- 7751 + day_diff + day_diff %/% 7
+  daily_menu_number <- 7750 + day_diff #+ #day_diff %/% 7
   jedlo <-
     raw %>%
     html_nodes(paste0("#dailymenu-", daily_menu_number ," > div:nth-child(1)")) %>%
