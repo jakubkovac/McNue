@@ -12,5 +12,7 @@ dilema <- function(){
   jedlo <- str_replace_all(jedlo, "\u00bd", "0.5")
   jedlo[2:5] <- str_sub(jedlo[2:5], start = 7)
   jedlo <- str_trim(jedlo)
+  if(length(jedlo) == 6) jedlo <- jedlo[-5]
+  if(length(jedlo) == 7) jedlo <- jedlo[-c(6,7)]
   return(c("Dilema",jedlo))
 }

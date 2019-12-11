@@ -24,6 +24,7 @@ svadbykari <- function(sme = FALSE){
     jedlo <- str_trim(jedlo)
     jedlo <- jedlo %>% str_trim()
     jedlo <- str_remove_all(jedlo,"[A][0-9]")
+    jedlo <- jedlo[jedlo != ""]
     jedlo <- jedlo[c(3:1)] 
     jedlo <- str_remove_all(jedlo,"See MoreSee Less")
   }

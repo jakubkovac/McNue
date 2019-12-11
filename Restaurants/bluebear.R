@@ -11,7 +11,7 @@ bluebear <- function(){
   jedlo <- str_trim(jedlo)
   jedlo <- jedlo[str_length(jedlo) >0]
   source("slovak_language_destroyer.R",encoding="utf-8")
-  tyzden <- jedlo[which(str_detect(slovak_language_destroyer(jedlo),"Tyzdenna ponuka|Business menu")) + 1]
+  tyzden <- jedlo[which(str_detect(slovak_language_destroyer(jedlo),"Tyzdenna ponuka|Business menu")) + 3]
   tyzden <- tyzden[1]
   #day_index <- c(1,7,13,20,26)
   day_index <- which(str_detect(jedlo,"Pondelok|Utorok|Streda|Štvrtok|Piatok"))

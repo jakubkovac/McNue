@@ -26,7 +26,7 @@ menu <- tibble(podnik = character(), polievka = character(), jedlo_1 = character
 (menu[6,] <- mestiansky())
 (menu[7,] <- mnamka())
 (menu[8,] <- veda())
-(menu[9,] <- veglife())
+(menu[9,] <- veglife(sme = T))
 (menu[10,] <- realstar())
 (menu[11,] <- suvlaki())
 (menu[12,] <- lenka())
@@ -44,11 +44,11 @@ if(length(failed) > 0 | nrow(menu) < 20){
   message(paste("These restaurants failed:", paste(failed, collapse = ", ")))
 } else message("All good.")
 # 
-#  menu[11,2:6] <- c("Šampiňonová krémová polievka",
-# "GYROS TANIER – bravčové gyros mäsko s domácimi hranolkami, pita chlieb, paradajky, cibuľka, #tzatziki dip",
-# "Grilované jahňacie karbonátky",
-# "Dusené bravčové mäso so zelenou fazuľkou, paradajková omáčka",
-# "Zapečená tortila plnené kuracím mäsom, sušenými paradajkami, syrom Chulumi a jogurtom")
+#  menu[11,2:6] <- c("Fazuľová polievka",
+# "GYROS Mix, bravčové-kuracie Gyros mäsko, domáce hranolky, pita chlieb, paradajky, cibuľka, #tzatziki dip",
+# "Pečené kačacie stehno s hruškami a jabklami",
+# "Zapečená kuracia rolka plnená syrom Chalumi a baklažanom",
+# "Zapečená tortila plnená cuketou, avokádom, bazalkou a feta syrom")
 
   # menu[13,2:4] <- c("Krémová zeleninová polievka s limetkovou šťavou a kokosovým mliekom",
   #                   "Vegan Chilli sin Carne s fazuľami, kukuričkou, mrkvou, paradajkami a paprikou, paradajkový šalát s olivami",

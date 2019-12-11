@@ -3,7 +3,7 @@ hasic <- function(){
   #download.file(url, destfile = "scrapedpage.html", quiet=TRUE)
   #we need to download the html once a week
   #how to do this automatically
-  raw <- read_html("hasic.htm")
+  raw <- read_html("hasic.html")
   jedlo <- 
     raw %>% 
     html_nodes(".tmi-groups") %>% 
