@@ -21,14 +21,21 @@ rtvs <- function(){
   
   rtvs_sheets <- function(x){
     y <- case_when(length(x) == 4 ~ rev(x[c(1,3,4,2,3,4)]),
-              length(x) == 5 ~ rev(x[c(1,2,5,3,4,5)]),
-              length(x) == 3 ~ rev(c(x[c(1,3)],year(today_full), x[c(2,3)],year(today_full))))
+                   length(x) == 5 ~ rev(x[c(1,2,5,3,4,5)]),
+                   length(x) == 3 ~ rev(c(x[c(1,3)],year(today_full), x[c(2,3)],year(today_full))))
     return(y)
   }
   sheets <- map(sheets, rtvs_sheets)
   int1 <- lubridate::interval( ymd(paste0(sheets[[1]][4:6], collapse = "-")), ymd(paste0(sheets[[1]][1:3], collapse = "-")))
-  int2 <- lubridate::interval( ymd(paste0(sheets[[2]][4:6], collapse = "-")), ymd(paste0(sheets[[2]][1:3], collapse = "-")))
-  which_sheet <- which(today_full %within% c(int1, int2))
+  int2 <- NULL
+  if(length(sheets) > 1){
+    int2 <- lubridate::interval( ymd(paste0(sheets[[2]][4:6], collapse = "-")), ymd(paste0(sheets[[2]][1:3], collapse = "-")))
+    which_sheet <- which(today_full %within% c(int1, int2))
+  }else{
+    which_sheet<- which(today_full %within% int1)
+  }
+  
+  
   
   raw <- readxl::read_excel("rtvs.xls", col_names = FALSE, sheet = which_sheet)
   raw <- raw[-(1:4), seq(2,10,by =2)]

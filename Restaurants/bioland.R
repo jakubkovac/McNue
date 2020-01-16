@@ -10,12 +10,17 @@ bioland <- function(){
   
   jedlo <- str_trim(jedlo)
   jedlo <- jedlo[str_length(jedlo) >0]
-  jedlo[6] <- "Pondelok 09.09"
-  day_index <- which(str_detect(jedlo,"Pondelok|Utorok|Streda|Štvrtok|Piatok"))
-  days_of_the_week <- c("Monday", "Tuesday", "Wednesday", "Thursday","Friday", "Saturday","Sunday")
-  today <- format(Sys.Date(), "%A")
-  today_i <- day_index[which(days_of_the_week %in% today)]
   
-  jedlo <- jedlo[(today_i+1):(today_i + 4)]
-  return(c("Bioland",jedlo,""))
+
+  today <- format(Sys.Date(), "%A")
+  today <- dplyr::case_when(today == "Monday" ~ "Pondelok",
+                            today == "Tuesday" ~ "Utorok",
+                            today == "Wednesday" ~ "Streda",
+                            today == "Thursday" ~ "Štvrtok",
+                            today == "Friday" ~ "Piatok",
+                            TRUE ~ NA_character_)
+  day_index <- which(str_detect(jedlo,today))  
+  jedlo <- jedlo[day_index +1] %>% str_split("\\)") %>% unlist()
+  #jedlo <- jedlo[(day_index+1):(day_index + 4)]
+  return(c("Bioland",jedlo))
 }

@@ -38,21 +38,38 @@ menu <- tibble(podnik = character(), polievka = character(), jedlo_1 = character
 (menu[18,] <- prazsky_pub())
 (menu[19,] <- rtvs())
 (menu[20,] <- milton())
+(menu[21,] <- galileo())
 
 failed <- filter(menu,!complete.cases(menu)) %>% pull(podnik)
-if(length(failed) > 0 | nrow(menu) < 20){
+if(length(failed) > 0 | nrow(menu) < 21){
   message(paste("These restaurants failed:", paste(failed, collapse = ", ")))
 } else message("All good.")
 # 
-#  menu[11,2:6] <- c("Fazuľová polievka",
-# "GYROS Mix, bravčové-kuracie Gyros mäsko, domáce hranolky, pita chlieb, paradajky, cibuľka, #tzatziki dip",
-# "Pečené kačacie stehno s hruškami a jabklami",
-# "Zapečená kuracia rolka plnená syrom Chalumi a baklažanom",
-# "Zapečená tortila plnená cuketou, avokádom, bazalkou a feta syrom")
+menu[11,2:6] <- c("Fazuľová polievka",
+                  "#MELITZANES #PAPUTSAKIA – Zapečený baklažan plnený mletým mäsom, bešamel omáčka",
+                  "Dusené bravčové mäso s červenou paprikou, horčicová omáčka",
+                  "Pečené kura s tymiánom na grécky spôsob",
+                  "Zapečené cestoviny so zeleninou, paradajkovou omáčkou a syrom")
 
-  # menu[13,2:4] <- c("Krémová zeleninová polievka s limetkovou šťavou a kokosovým mliekom",
-  #                   "Vegan Chilli sin Carne s fazuľami, kukuričkou, mrkvou, paradajkami a paprikou, paradajkový šalát s olivami",
-  #                   "Indická mandľová Korma s kuracím mäsom, paradajkami, maslovou tekvicou, fazuľkami a hrozienkami, paradajkový dip")
+# menu[8,2:6] <- c("Sosovicova so zeleninou",
+#                  "Zemiaky, kukurica, cibula a hrasok s indickym drvenim korenim",
+#                  "Farebna paprika a domaci syr s drvenym korenim",
+#                  "Kapustove fasirky v indickej omacke",
+#                  "Cerstva miesana zelenina v omacke s kokosovym mliekom a thajskym zelenym kari"
+#               )
+
+# menu[8,2:6] <-c("Cuketova polievka",
+#                 "Farebna paprika a cicer v indickej omacke",
+#                 "Zemiaky a sampiony v indickej omacke",
+#                 "Hraskove fasirky v indickej omacke",
+#                 "Cerstva miesana zelenina v omacke z kokosoveho mlieka s thajskym zltym kari"
+#   
+# )
+
+# menu[13,2:4] <- c("Šampiňónová polievka s bylinkami VEGAN",
+#                   "Jamajské kuracie kari so zemiakmi a karfiólom, cibuľové chutney",
+#                   "Indonézske arašidové Satay kari s maslovou tekvicou, paradajkami a hráškom, paradajkovo - uhorkový šalát")
+
 original_menu <- menu
 menu <- menu %>% transmute_all(~replace_na(.,"")) # same as transmute_all(function(x) replace_na(x,""))
 
@@ -127,11 +144,11 @@ write.table("\n",file = "menu.txt", append = T, col.names = F, row.names = F, qu
 
 
 tabulecka <- tibble(Podnik = c("Bioland", "Ceska pivnica", "Dilema", "Kasa", "Mestiansky pivovar",
-  "Bistro Mnamka", "Veda", "Suvlaki", "Jedla lenka", "Svadby a kari", "Red Cafe", "U Hasica",
-  "Alzbetka", "Centr. klub.","Prazsky pub", "RTVS", "Milton"),
-  Ulica = c("Mytna 23", "Radlinskeho 39","Sancova 70","Radlinskeho 11",
-  "Drevena 8","Vazovova 9", "Zilinska 2","Krizna 8","Cajkovskeho 14", "Americka 2",
-  "Racianske myto 1/A","Wilsonova 1","Mickiewiczova 1","Krizna 64", "Kominarska 1552/3A", "Mytna 1", "Soltesovej 14"), TR_karta = T, karta = T)
+                               "Bistro Mnamka", "Veda", "Suvlaki", "Jedla lenka", "Svadby a kari", "Red Cafe", "U Hasica",
+                               "Alzbetka", "Centr. klub.","Prazsky pub", "RTVS", "Milton"),
+                    Ulica = c("Mytna 23", "Radlinskeho 39","Sancova 70","Radlinskeho 11",
+                              "Drevena 8","Vazovova 9", "Zilinska 2","Krizna 8","Cajkovskeho 14", "Americka 2",
+                              "Racianske myto 1/A","Wilsonova 1","Mickiewiczova 1","Krizna 64", "Kominarska 1552/3A", "Mytna 1", "Soltesovej 14"), TR_karta = T, karta = T)
 tabulecka[12,3] <- F
 tabulecka[13,3] <- F
 tabulecka <- arrange(tabulecka, Podnik)
