@@ -20,11 +20,17 @@ svadbykari <- function(sme = FALSE){
       as.character() %>% 
       str_split("<br>") %>% 
       unlist()
-    jedlo <- jedlo[-1] %>% str_remove("</span>")
+    today <- format(Sys.Date(), "%A")
+    today <- dplyr::case_when(today == "Monday" ~ "Pondelok",
+                              today == "Tuesday" ~ "Utorok",
+                              today == "Wednesday" ~ "Streda",
+                              today == "Thursday" ~ "Štvrtok",
+                              today == "Friday" ~ "Piatok",
+                              TRUE ~ NA_character_)
+    day_index <- which(str_detect(jedlo,today))  
     jedlo <- str_trim(jedlo)
-    jedlo <- jedlo %>% str_trim()
+    jedlo <- jedlo[(day_index + 1):(day_index + 3)] %>% str_trim()
     jedlo <- str_remove_all(jedlo,"[A][0-9]")
-    jedlo <- jedlo[jedlo != ""]
     jedlo <- jedlo[c(3:1)] 
     jedlo <- str_remove_all(jedlo,"See MoreSee Less")
   }

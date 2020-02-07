@@ -8,10 +8,7 @@ bioland <- function(){
     html_children() %>%
     html_text()
   
-  jedlo <- str_trim(jedlo)
-  jedlo <- jedlo[str_length(jedlo) >0]
-  
-
+  jedlo <- str_trim(jedlo) %>% .[. != ""]
   today <- format(Sys.Date(), "%A")
   today <- dplyr::case_when(today == "Monday" ~ "Pondelok",
                             today == "Tuesday" ~ "Utorok",
@@ -20,7 +17,8 @@ bioland <- function(){
                             today == "Friday" ~ "Piatok",
                             TRUE ~ NA_character_)
   day_index <- which(str_detect(jedlo,today))  
-  jedlo <- jedlo[day_index +1] %>% str_split("\\)") %>% unlist()
-  #jedlo <- jedlo[(day_index+1):(day_index + 4)]
-  return(c("Bioland",jedlo))
+  #jedlo <- jedlo[day_index +1] %>% str_split("\\)") %>% unlist()
+  #jedlo <- jedlo[str_length(jedlo) >0] %>% str_remove_all("Hl. jedlo ")
+  jedlo <- jedlo[(day_index+1):(day_index + 4)]
+  return(c("Bioland",jedlo,""))
 }

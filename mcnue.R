@@ -29,7 +29,8 @@ menu <- tibble(podnik = character(), polievka = character(), jedlo_1 = character
 (menu[9,] <- veglife(sme = T))
 (menu[10,] <- realstar())
 (menu[11,] <- suvlaki())
-(menu[12,] <- lenka())
+(menu[12,] <- galileo())
+#(menu[12,] <- lenka())
 (menu[13,] <- svadbykari(sme = T))
 (menu[14,] <- redcafe())
 (menu[15,] <- hasic())
@@ -38,37 +39,29 @@ menu <- tibble(podnik = character(), polievka = character(), jedlo_1 = character
 (menu[18,] <- prazsky_pub())
 (menu[19,] <- rtvs())
 (menu[20,] <- milton())
-(menu[21,] <- galileo())
+
 
 failed <- filter(menu,!complete.cases(menu)) %>% pull(podnik)
 if(length(failed) > 0 | nrow(menu) < 21){
   message(paste("These restaurants failed:", paste(failed, collapse = ", ")))
 } else message("All good.")
 # 
-menu[11,2:6] <- c("Fazuľová polievka",
-                  "#MELITZANES #PAPUTSAKIA – Zapečený baklažan plnený mletým mäsom, bešamel omáčka",
-                  "Dusené bravčové mäso s červenou paprikou, horčicová omáčka",
-                  "Pečené kura s tymiánom na grécky spôsob",
-                  "Zapečené cestoviny so zeleninou, paradajkovou omáčkou a syrom")
-
-# menu[8,2:6] <- c("Sosovicova so zeleninou",
-#                  "Zemiaky, kukurica, cibula a hrasok s indickym drvenim korenim",
-#                  "Farebna paprika a domaci syr s drvenym korenim",
-#                  "Kapustove fasirky v indickej omacke",
-#                  "Cerstva miesana zelenina v omacke s kokosovym mliekom a thajskym zelenym kari"
+# menu[11,2:6] <- c("Paradajková polievka",
+#                   "Bravčový #GYROS s domácimi hranolkami, pita chlieb, #tzatziki dip",
+#                   "Dusené bravčové mäso so sušenými paradajkami",
+#                   "Zapečená Tortila plnená kuracím mäsom, červenou paprikou, jogurtom a syrom",
+#                   "Vinný list plnený ryžou na grécky spôsob, #tzatziki dip")
+# 
+# menu[8,2:6] <- c("",
+#                  "",
+#                  "",
+#                  "",
+#                  ""
 #               )
 
-# menu[8,2:6] <-c("Cuketova polievka",
-#                 "Farebna paprika a cicer v indickej omacke",
-#                 "Zemiaky a sampiony v indickej omacke",
-#                 "Hraskove fasirky v indickej omacke",
-#                 "Cerstva miesana zelenina v omacke z kokosoveho mlieka s thajskym zltym kari"
-#   
-# )
-
-# menu[13,2:4] <- c("Šampiňónová polievka s bylinkami VEGAN",
-#                   "Jamajské kuracie kari so zemiakmi a karfiólom, cibuľové chutney",
-#                   "Indonézske arašidové Satay kari s maslovou tekvicou, paradajkami a hráškom, paradajkovo - uhorkový šalát")
+# menu[13,2:4] <- c("Japonská Miso polievka",
+#                  "Thajské zelené VEGAN kari s cícerom, cuketou, mrkvou a zelenými fazuľkami, uhorkovo-hruškový šalát",
+#                  "Mandľové voňavé kari s hovädzím mäsom, cviklou, brusnicami a zemiakmi, raita")
 
 original_menu <- menu
 menu <- menu %>% transmute_all(~replace_na(.,"")) # same as transmute_all(function(x) replace_na(x,""))

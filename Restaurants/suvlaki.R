@@ -5,7 +5,7 @@ suvlaki <- function(sme = TRUE){
   raw <- read_html("scrapedpage.html")
   jedlo <- raw %>%
     html_nodes(".dnesne_menu .jedlo_polozka .left") %>% html_text() %>% str_trim()
-  jedlo <- jedlo[c(2,4:7)]
+  jedlo <- jedlo[c(2,5:8)]
   jedlo <- 
     jedlo %>% str_trim()
   }else{

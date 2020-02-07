@@ -6,6 +6,6 @@ galileo <- function(){
     html_nodes(".dnesne_menu .jedlo_polozka .left") %>%
     html_text() %>%
     str_trim()
-  jedlo <- jedlo[-5]
+  jedlo <- c(jedlo[2],str_subset(jedlo, "[0-9]\\."))[-5]
   return(c("Galileo",jedlo))
 }

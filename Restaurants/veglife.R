@@ -5,7 +5,9 @@ veglife <- function(sme = TRUE){
     raw <- read_html("scrapedpage.html")
     jedlo <- raw %>%
       html_nodes(".dnesne_menu .jedlo_polozka .left") %>% html_text()
-    jedlo <- jedlo[3:7] %>% str_trim() %>% str_remove_all("Polievka")
+    jedlo <- str_trim(jedlo)
+    jedlo <- jedlo[nchar(jedlo) != 0]
+    jedlo <- jedlo[2:6] %>% str_remove_all("Polievka")
     
   }else{
    url_veglife <- "http://www.veglife.sk/sk/menu-2/" 
