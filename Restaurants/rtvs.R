@@ -26,16 +26,24 @@ rtvs <- function(){
     return(y)
   }
   sheets <- map(sheets, rtvs_sheets)
-  int1 <- lubridate::interval( ymd(paste0(sheets[[1]][4:6], collapse = "-")), ymd(paste0(sheets[[1]][1:3], collapse = "-")))
-  int2 <- NULL
-  if(length(sheets) > 1){
-    int2 <- lubridate::interval( ymd(paste0(sheets[[2]][4:6], collapse = "-")), ymd(paste0(sheets[[2]][1:3], collapse = "-")))
-    which_sheet <- which(today_full %within% c(int1, int2))
-  }else{
-    which_sheet<- which(today_full %within% int1)
-  }
   
+  time_ints <- sheets %>% 
+    map(function(x) lubridate::interval(ymd(paste0(x[4:6], collapse = "-")), ymd(paste0(x[1:3], collapse = "-"))))
   
+  which_sheet <- time_ints %>%
+    map(function(x) today_full %within% x) %>% 
+    unlist()
+  
+  which_sheet <- which(which_sheet)
+  
+  # int1 <- lubridate::interval( ymd(paste0(sheets[[1]][4:6], collapse = "-")), ymd(paste0(sheets[[1]][1:3], collapse = "-")))
+  # int2 <- NULL
+  # if(length(sheets) > 1){
+  #   int2 <- lubridate::interval( ymd(paste0(sheets[[2]][4:6], collapse = "-")), ymd(paste0(sheets[[2]][1:3], collapse = "-")))
+  #   which_sheet <- which(today_full %within% c(int1, int2))
+  # }else{
+  #   which_sheet<- which(today_full %within% int1)
+  # }
   
   raw <- readxl::read_excel("rtvs.xls", col_names = FALSE, sheet = which_sheet)
   raw <- raw[-(1:4), seq(2,10,by =2)]

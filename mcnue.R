@@ -31,7 +31,7 @@ menu <- tibble(podnik = character(), polievka = character(), jedlo_1 = character
 (menu[11,] <- suvlaki())
 (menu[12,] <- galileo())
 #(menu[12,] <- lenka())
-(menu[13,] <- svadbykari(sme = T))
+(menu[13,] <- svadbykari(sme = T)) # pondelok = F
 (menu[14,] <- redcafe())
 (menu[15,] <- hasic())
 (menu[16,] <- alzbetka(sme = T))

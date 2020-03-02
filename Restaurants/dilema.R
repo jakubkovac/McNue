@@ -10,9 +10,16 @@ dilema <- function(){
   jedlo <- str_replace_all(jedlo, "([\n\t])", "")
   jedlo <- str_replace_all(jedlo, "-", "")
   jedlo <- str_replace_all(jedlo, "\u00bd", "0.5")
-  jedlo[2:5] <- str_sub(jedlo[2:5], start = 7)
+  
+  # remove 'menu' & 'ponuka' 
+  jedlo <- str_trim(str_replace_all(jedlo, "Menu [0-9]", ""))
+  jedlo <- jedlo[!str_detect(jedlo, "(Menu)|(PONUKA NA TENTO)")]
+  
+  # not sure if this is now relevant
+  # jedlo[2:5] <- str_sub(jedlo[2:5], start = 7)
+  
   jedlo <- str_trim(jedlo)
-  if(length(jedlo) == 6) jedlo <- jedlo[-5]
+  if(length(jedlo) == 6) jedlo <- jedlo[-6]
   if(length(jedlo) == 7) jedlo <- jedlo[-c(6,7)]
   return(c("Dilema",jedlo))
 }
