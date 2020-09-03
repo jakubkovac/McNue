@@ -16,8 +16,13 @@ bioland <- function(){
                             today == "Thursday" ~ "Štvrtok",
                             today == "Friday" ~ "Piatok",
                             TRUE ~ NA_character_)
-  day_index <- which(str_detect(jedlo,today))  
-  #jedlo <- jedlo[day_index +1] %>% str_split("\\)") %>% unlist()
+  day_index <- which(str_detect(jedlo,today))
+  # if(today == "Pondelok"){
+  #   jedlo <- jedlo[day_index +1] %>% str_split("\\)") %>% unlist() %>% str_remove_all("Hl. jedlo")
+  # }else{
+  #   
+  # }
+  
   #jedlo <- jedlo[str_length(jedlo) >0] %>% str_remove_all("Hl. jedlo ")
   jedlo <- jedlo[(day_index+1):(day_index + 4)]
   return(c("Bioland",jedlo,""))

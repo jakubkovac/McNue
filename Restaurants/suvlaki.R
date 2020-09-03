@@ -10,7 +10,10 @@ suvlaki <- function(sme = TRUE){
   if(length(jedlo) > 0 && str_detect(jedlo[[1]], "pripravili")) {
     jedlo <- jedlo[-1]
   }
-  jedlo <- jedlo[c(2,4:7)]
+  
+  jedlo <- jedlo[!(str_detect(tolower(jedlo), "denne menu"))]
+  
+  #jedlo <- jedlo[c(2,4:7)]
   jedlo <- 
     jedlo %>% str_trim()
   }else{
@@ -28,6 +31,6 @@ suvlaki <- function(sme = TRUE){
     # jedlo <- unlist(jedlo)[2:5]
     # jedlo <- c(paste(polievka, "polievka"), jedlo)
   }
-  return(c("Suvlaki",jedlo))
+  return(c("Suvlaki",jedlo[1:3],"", ""))
 }
 

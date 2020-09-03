@@ -6,7 +6,7 @@ hasic <- function(){
   raw <- read_html("hasic.html")
   jedlo <- 
     raw %>% 
-    html_nodes(".tmi-groups") %>% 
+    html_nodes(".sc-giPFmd") %>% 
     html_children() %>%
     html_children() %>%
     html_text() %>%

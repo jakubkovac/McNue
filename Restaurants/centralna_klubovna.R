@@ -39,8 +39,11 @@ centralna_klubovna <- function(sme = T){
       str_remove_all("Menu [a-zA-Z] s polievkou \\|") %>%
       str_remove_all("Polievka \\|") %>%
       str_remove_all("obsahuje") %>%
+      str_remove_all("\t") %>% 
+      str_remove_all("\n") %>% 
+      str_remove_all("\r") %>% 
       str_trim() 
   }
   
-  return(c("Centr. klub.",jedlo,"",""))
+  return(c("Centr. klub.",jedlo,""))
 }

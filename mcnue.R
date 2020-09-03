@@ -17,32 +17,33 @@ str_remove_1gl <- function(x) {
   x
 }
 
-menu <- tibble(podnik = character(), polievka = character(), jedlo_1 = character(), jedlo_2 = character(), jedlo_3 = character(), jedlo_4 = character())
+menu <- data.frame(podnik = character(), polievka = character(), jedlo_1 = character(), jedlo_2 = character(), jedlo_3 = character(), jedlo_4 = character())
 (menu[1,] <- bioland())
 (menu[2,] <- bluebear())
 (menu[3,] <- ceska())
 (menu[4,] <- dilema())
 (menu[5,] <- kasa(sme = T))
 (menu[6,] <- mestiansky())
-(menu[7,] <- mnamka())
-(menu[8,] <- veda())
+#(menu[7,] <- mnamka())
+#(menu[8,] <- veda())
 (menu[9,] <- veglife(sme = T))
 (menu[10,] <- realstar())
 (menu[11,] <- suvlaki())
-(menu[12,] <- galileo())
+#(menu[12,] <- galileo()) #check zomato
 #(menu[12,] <- lenka())
 (menu[13,] <- svadbykari(sme = T)) # pondelok = F
 (menu[14,] <- redcafe())
-(menu[15,] <- hasic())
-(menu[16,] <- alzbetka(sme = T))
-(menu[17,] <- centralna_klubovna())
+#(menu[15,] <- hasic()) #fix zomato
+(menu[16,] <- alzbetka(sme = F))
+(menu[17,] <- centralna_klubovna(sme = F))
 (menu[18,] <- prazsky_pub())
 (menu[19,] <- rtvs())
 (menu[20,] <- milton())
 
 
+menu <- as_tibble(menu) %>% filter(!is.na(podnik))
 failed <- filter(menu,!complete.cases(menu)) %>% pull(podnik)
-if(length(failed) > 0 | nrow(menu) < 21){
+if(length(failed) > 0 | nrow(menu) < 20){
   message(paste("These restaurants failed:", paste(failed, collapse = ", ")))
 } else message("All good.")
 # 
@@ -52,16 +53,16 @@ if(length(failed) > 0 | nrow(menu) < 21){
 #                   "Zapečená Tortila plnená kuracím mäsom, červenou paprikou, jogurtom a syrom",
 #                   "Vinný list plnený ryžou na grécky spôsob, #tzatziki dip")
 # 
-# menu[8,2:6] <- c("",
-#                  "",
-#                  "",
-#                  "",
-#                  ""
+# menu[which(menu$podnik == "Veda"),2:6] <- list("Indicka spenatova",
+#                  "Sampiony v indickkej jogurtovej omacke",
+#                  "Zemiaky a hrasok v indickej omacke",
+#                  "Zeleninove fasirky v indickej omacke",
+#                  "Miesana zelenina v indickej omacke na sposob madrasi"
 #               )
 
-# menu[13,2:4] <- c("Japonská Miso polievka",
-#                  "Thajské zelené VEGAN kari s cícerom, cuketou, mrkvou a zelenými fazuľkami, uhorkovo-hruškový šalát",
-#                  "Mandľové voňavé kari s hovädzím mäsom, cviklou, brusnicami a zemiakmi, raita")
+# menu[13,2:4] <- c("Krémová mrkvová polievka s limetkou",
+#                  "Indické baklažánové kuracie kari Pav Bhaji s maslom GHEE, karfiolom a paradajkami, hrozienkové chutney s tamarindom",
+#                  "Thajské kokosovo - mangové VEGAN kari s batátmi, mrkvou a cícerom, hrozienkové chutney s tamarindom")
 
 original_menu <- menu
 menu <- menu %>% transmute_all(~replace_na(.,"")) # same as transmute_all(function(x) replace_na(x,""))
@@ -147,3 +148,5 @@ tabulecka[13,3] <- F
 tabulecka <- arrange(tabulecka, Podnik)
 tabulecka <- pandoc.table.return(tabulecka, style = "grid", split.tables = Inf, split.cells = 30) %>% str_sub(3)
 write.table(tabulecka,file = "menu.txt",append = T, col.names = F, row.names = F, quote = F)
+
+print(menu)

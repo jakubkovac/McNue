@@ -20,15 +20,19 @@ rtvs <- function(){
   sheets <- map(sheets, ~.x[nchar(.x)>0])
   
   rtvs_sheets <- function(x){
-    y <- case_when(length(x) == 4 ~ rev(x[c(1,3,4,2,3,4)]),
+    y <- case_when(length(x) == 4 ~ rev(c(x[c(1,3)],year(today_full), x[c(2,3)],year(today_full))),
+                  #length(x) == 4 ~ rev(c(x[c(1,2)],year(today_full), x[c(3,4)],year(today_full))),
                    length(x) == 5 ~ rev(x[c(1,2,5,3,4,5)]),
                    length(x) == 3 ~ rev(c(x[c(1,3)],year(today_full), x[c(2,3)],year(today_full))))
     return(y)
   }
+  
+  
   sheets <- map(sheets, rtvs_sheets)
   
   time_ints <- sheets %>% 
-    map(function(x) lubridate::interval(ymd(paste0(x[4:6], collapse = "-")), ymd(paste0(x[1:3], collapse = "-"))))
+    map(function(x) lubridate::interval(ymd(paste0(x[4:6], collapse = "-")),
+                                        ymd(paste0(x[1:3], collapse = "-"))))
   
   which_sheet <- time_ints %>%
     map(function(x) today_full %within% x) %>% 

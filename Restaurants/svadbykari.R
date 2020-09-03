@@ -6,10 +6,10 @@ svadbykari <- function(sme = FALSE){
     jedlo <- raw %>%
       html_nodes(".dnesne_menu .jedlo_polozka .left") %>% html_text()
     # if(length(jedlo) > 5) jedlo <- jedlo[-1]
-    if(length(jedlo) > 5) jedlo <- jedlo[1:4]
-    if(length(jedlo) == 5) jedlo <- jedlo[-1]
+    #if(length(jedlo) > 5) jedlo <- jedlo[1:4]
+    #if(length(jedlo) == 5) jedlo <- jedlo[-1]
     jedlo <- str_trim(jedlo)
-    jedlo <- str_remove_all(jedlo,"[A][0-9]")
+    jedlo <- str_remove_all(jedlo,"[A][0-9]") %>% str_remove_all("Víťaz kari duelu na Instagrame")
     jedlo <- jedlo[c(3:1)]  
   }else{
     url <- "http://www.svadbykari.sk/denne-menu/"
@@ -31,8 +31,8 @@ svadbykari <- function(sme = FALSE){
     today <- paste0(today, "|", str_to_lower(today))
     day_index <- which(str_detect(jedlo,today))  
     jedlo <- str_trim(jedlo)
-    jedlo <- jedlo[!str_detect(jedlo, "^$")]
-    jedlo <- jedlo[!str_detect(str_to_lower(jedlo), "isic")]
+    # jedlo <- jedlo[!str_detect(jedlo, "^$")]
+    # jedlo <- jedlo[!str_detect(str_to_lower(jedlo), "isic")]
     jedlo <- jedlo[(day_index + 1):(day_index + 3)] %>% str_trim()
     jedlo <- str_remove_all(jedlo,"[A][0-9]")
     jedlo <- jedlo[c(3:1)] 
