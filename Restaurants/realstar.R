@@ -18,5 +18,5 @@ realstar <- function(){
   jedlo[2:4] <- jedlo[2:4] %>% str_sub(15)
   jedlo <- jedlo %>% str_replace_all("príloha","")
   jedlo[1] <- jedlo[1] %>% str_sub(11)
-  return(c("U Majky",jedlo,""))
+  return(c("U Majky",jedlo))
 }

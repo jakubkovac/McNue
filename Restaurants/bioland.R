@@ -25,5 +25,5 @@ bioland <- function(){
   
   #jedlo <- jedlo[str_length(jedlo) >0] %>% str_remove_all("Hl. jedlo ")
   jedlo <- jedlo[(day_index+1):(day_index + 4)]
-  return(c("Bioland",jedlo,""))
+  return(c("Bioland",jedlo))
 }

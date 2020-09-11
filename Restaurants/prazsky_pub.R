@@ -21,5 +21,5 @@ prazsky_pub <- function(){
   today_i <- day_index[which(days_of_the_week %in% today)]
   jedlo <- jedlo[c(today_i+2,
                    (today_i + 4):(today_i + 6))]
-  return(c("Prazsky pub",jedlo, ""))
+  return(c("Prazsky pub",jedlo))
 }

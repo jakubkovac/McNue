@@ -45,5 +45,5 @@ centralna_klubovna <- function(sme = T){
       str_trim() 
   }
   
-  return(c("Centr. klub.",jedlo,""))
+  return(c("Centr. klub.",jedlo))
 }

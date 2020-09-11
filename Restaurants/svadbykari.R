@@ -38,5 +38,5 @@ svadbykari <- function(sme = FALSE){
     jedlo <- jedlo[c(3:1)] 
     jedlo <- str_remove_all(jedlo,"See MoreSee Less")
   }
-  return(c("Svadby a Kari",jedlo,"",""))
+  return(c("Svadby a Kari",jedlo))
 }

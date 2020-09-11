@@ -22,5 +22,5 @@ mestiansky <- function(){
   jedlo <- str_replace_all(jedlo, "([\n\t])", "")
   if(length(jedlo) >= 4) jedlo <- jedlo[-which(str_length(jedlo) == min(str_length(jedlo)))]
   jedlo <- str_replace_all(jedlo,"polievka","")
-  return(c("Mestiansky piv.",jedlo,"","", ""))
+  return(c("Mestiansky piv.",jedlo))
 }

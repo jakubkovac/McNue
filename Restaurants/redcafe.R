@@ -6,5 +6,5 @@ redcafe <- function(){
     html_nodes(".dnesne_menu .jedlo_polozka .left") %>% html_text()
   jedlo <- 
     jedlo %>% str_trim()
-  return(c("Red Cafe",jedlo,""))
+  return(c("Red Cafe",jedlo))
 }

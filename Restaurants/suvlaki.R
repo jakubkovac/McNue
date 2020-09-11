@@ -31,6 +31,6 @@ suvlaki <- function(sme = TRUE){
     # jedlo <- unlist(jedlo)[2:5]
     # jedlo <- c(paste(polievka, "polievka"), jedlo)
   }
-  return(c("Suvlaki",jedlo[1:3],"", ""))
+  return(c("Suvlaki",jedlo[1:3]))
 }
 

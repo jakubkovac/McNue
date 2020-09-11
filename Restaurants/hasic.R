@@ -24,5 +24,5 @@ hasic <- function(){
   jedlo <- jedlo[(dnes+1):(dnes+4)]
   jedlo <- benson_string_destroyer(jedlo)
   jedlo <- c(str_sub(jedlo[1],3),str_sub(jedlo[2:4],5))
-  c("U Hasica",jedlo,"")
+  c("U Hasica",jedlo)
 }

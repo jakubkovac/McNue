@@ -30,5 +30,5 @@ kasa <- function(sme = TRUE){
       str_trim()
   }
   
-  return(c("Kasa 3",jedlo[1:3],"",""))
+  return(c("Kasa 3",jedlo[1:3]))
 }

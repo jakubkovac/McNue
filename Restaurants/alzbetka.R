@@ -40,5 +40,5 @@ alzbetka <- function(sme = FALSE){
       str_remove_all("M2") %>%
       str_trim()
   }
-  return(c("Alzbetka", jedlo, "", ""))
+  return(c("Alzbetka", jedlo))
 }

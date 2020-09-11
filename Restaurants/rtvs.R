@@ -1,10 +1,3 @@
-fix_rtvs_rows <- function(x){
-  x <- x[!is.na(x)]
-  x <- paste0(x, collapse = " ")
-  x <- x %>% str_split("[1-9]") %>% unlist()
-  return(x[str_detect(x,"[a-zA-Z]{4,}")])
-}
-
 rtvs <- function(){
   reference_day <- lubridate::ymd("2019-09-23")
   #im not going to bother with doing the correct file name loading right now
@@ -55,6 +48,5 @@ rtvs <- function(){
   
   
   jedlo <- str_trim(tyzdenne_jedlo[[which(today == days_of_the_week)]])
-  if(length(jedlo) == 4) jedlo <- c(jedlo, "")
   return(c("RTVS",jedlo))
 }
