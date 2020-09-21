@@ -29,8 +29,9 @@ svadbykari <- function(sme = FALSE){
                               today == "Friday" ~ "Piatok",
                               TRUE ~ NA_character_)
     today <- paste0(today, "|", str_to_lower(today))
-    day_index <- which(str_detect(jedlo,today))  
     jedlo <- str_trim(jedlo)
+    jedlo <- jedlo[nchar(jedlo) != 0]
+    day_index <- which(str_detect(jedlo,today))  
     # jedlo <- jedlo[!str_detect(jedlo, "^$")]
     # jedlo <- jedlo[!str_detect(str_to_lower(jedlo), "isic")]
     jedlo <- jedlo[(day_index + 1):(day_index + 3)] %>% str_trim()

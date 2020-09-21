@@ -26,8 +26,7 @@ centralna_klubovna <- function(sme = T){
     days_of_the_week <- c("Monday", "Tuesday", "Wednesday", "Thursday","Friday", "Saturday","Sunday")
     dni <- c("Pondelok", "Utorok", "Streda", "Stvrtok", "Piatok", "Sobota", "Nedela")
     today <- format(Sys.Date(), "%A")
-    source("slovak_language_destroyer.R",encoding="utf-8")
-    source("benson_string_destroyer.R")
+
     jedlo <- slovak_language_destroyer(jedlo)
     match_day <- paste0(dni[which(today == days_of_the_week)])#,
     # " ",

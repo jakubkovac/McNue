@@ -4,7 +4,7 @@ library(lubridate)
 library(pander)
 
 #run web scraper
-R.utils::sourceDirectory("utility_function",encoding = "UTF-8")
+R.utils::sourceDirectory("utility_functions",encoding = "UTF-8")
 restaurant_fun_list <- map(list.files("Restaurants", full.names = TRUE), ~source(.x, encoding = "UTF-8"))
 restaurant_fun_list <- map(restaurant_fun_list, ~.x[[1]])
 
@@ -15,11 +15,6 @@ menu <- Reduce(rbind, menu) %>% as.data.frame() %>% as_tibble()
 colnames(menu) <- c("podnik", "polievka", "jedlo_1", "jedlo_2", "jedlo_3", "jedlo_4")
 
 menu <- menu[-which(rowSums(is.na(menu)) == 5), ]
-
-failed <- filter(menu,!complete.cases(menu)) %>% pull(podnik)
-if(length(failed) > 0 | nrow(menu) < 20){
-  message(paste("These restaurants failed:", paste(failed, collapse = ", ")))
-} else message("All good.")
 
 original_menu <- menu
 menu <- menu %>% transmute_all(~replace_na(.,"")) # same as transmute_all(function(x) replace_na(x,""))
@@ -63,15 +58,22 @@ write.table("\n",file = "menu.txt", append = T, col.names = F, row.names = F, qu
 
 
 
-tabulecka <- tibble(Podnik = c("Bioland", "Ceska pivnica", "Dilema", "Kasa", "Mestiansky pivovar",
-                               "Bistro Mnamka", "Veda", "Suvlaki", "Jedla lenka", "Svadby a kari", "Red Cafe", "U Hasica",
-                               "Alzbetka", "Centr. klub.","Prazsky pub", "RTVS", "Milton"),
-                    Ulica = c("Mytna 23", "Radlinskeho 39","Sancova 70","Radlinskeho 11",
-                              "Drevena 8","Vazovova 9", "Zilinska 2","Krizna 8","Cajkovskeho 14", "Americka 2",
-                              "Racianske myto 1/A","Wilsonova 1","Mickiewiczova 1","Krizna 64", "Kominarska 1552/3A", "Mytna 1", "Soltesovej 14"), TR_karta = T, karta = T)
-tabulecka[12,3] <- F
-tabulecka[13,3] <- F
-tabulecka <- arrange(tabulecka, Podnik)
+
+tabulecka <- structure(list(Podnik = c("Alzbetka", "Bioland", "Centr. klub.", 
+                                       "Ceska pivnica", "Dilema", "Kasa", "Mestiansky pivovar", "Milton", 
+                                       "Prazsky pub", "Red Cafe", "RTVS", "Suvlaki", "Svadby a kari", 
+                                       "U Hasica", "Veda"),
+                            Ulica = c("Mickiewiczova 1", "Mytna 23", 
+                                      "Krizna 64", "Radlinskeho 39", "Sancova 70", "Radlinskeho 11", 
+                                      "Drevena 8", "Soltesovej 14", "Kominarska 1552/3A", "Racianske myto 1/A", 
+                                      "Mytna 1", "Krizna 8", "Americka 2", "Wilsonova 1", "Zilinska 2"),
+                            TR_karta = c(FALSE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, 
+                                         TRUE, TRUE, TRUE, TRUE, TRUE, FALSE, TRUE),
+                            karta = c(TRUE, TRUE, 
+                                      TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, 
+                                      TRUE, TRUE)),
+                       row.names = c(NA, -15L), class = "data.frame")
+
 tabulecka <- pandoc.table.return(tabulecka, style = "grid", split.tables = Inf, split.cells = 30) %>% str_sub(3)
 write.table(tabulecka,file = "menu.txt",append = T, col.names = F, row.names = F, quote = F)
 

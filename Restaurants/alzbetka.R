@@ -25,7 +25,6 @@ alzbetka <- function(sme = FALSE){
     days_of_the_week <- c("Monday", "Tuesday", "Wednesday", "Thursday","Friday", "Saturday","Sunday")
     dni <- str_to_upper(c("pondelok", "utorok", "streda", "stvrtok", "piatok", "sobota", "nedela"))
     today <- format(Sys.Date(), "%A")
-    source("slovak_language_destroyer.R",encoding="utf-8")
 
     jedlo <- slovak_language_destroyer(jedlo)
     
