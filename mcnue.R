@@ -56,9 +56,6 @@ beep <- readChar("beep_boop.txt",file.info("beep_boop.txt")$size)
 write.table(beep,file = "menu.txt",append = T, col.names = F, row.names = F, quote = F)
 write.table("\n",file = "menu.txt", append = T, col.names = F, row.names = F, quote = F)
 
-
-
-
 tabulecka <- structure(list(Podnik = c("Alzbetka", "Bioland", "Centr. klub.", 
                                        "Ceska pivnica", "Dilema", "Kasa", "Mestiansky pivovar", "Milton", 
                                        "Prazsky pub", "Red Cafe", "RTVS", "Suvlaki", "Svadby a kari", 

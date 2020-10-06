@@ -42,10 +42,13 @@ rtvs <- function(){
   #   which_sheet<- which(today_full %within% int1)
   # }
   
-  raw <- readxl::read_excel("rtvs.xls", col_names = FALSE, sheet = which_sheet)
+  raw <- suppressMessages(readxl::read_excel("rtvs.xls", col_names = FALSE, sheet = which_sheet))
   raw <- raw[-(1:4), seq(2,10,by =2)]
-  tyzdenne_jedlo <- map(raw, fix_rtvs_rows)
+  remove_menu <- function(x){
+    x[!str_detect(x, "Menu")]
+  }
   
+  tyzdenne_jedlo <- map(raw, fix_rtvs_rows) %>% map(str_trim) %>% map(remove_menu)
   
   jedlo <- str_trim(tyzdenne_jedlo[[which(today == days_of_the_week)]])
   return(c("RTVS",jedlo))

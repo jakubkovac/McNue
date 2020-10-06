@@ -17,5 +17,6 @@ milton <- function(){
   jedlo <- jedlo[!str_detect(jedlo, "^[0-9]{1,}g$")]
   # jedlo <- jedlo[1:(which(str_detect(jedlo, "Týždenné"))-1)]
   jedlo <- jedlo[1:(which(str_detect(jedlo, "Týždenné"))[[1]]-1)]
+  jedlo <- str_replace_all(jedlo, "û","u") %>% str_replace_all("è","e")
   return(c("Milton", jedlo[1:5]))
 }

@@ -6,13 +6,14 @@ dilema <- function(){
     html_nodes(".dnesne_menu .jedlo_polozka .left") %>%
     html_text() %>%
     str_trim()
+  if(str_detect(jedlo,"cena menu")[2]) jedlo <- jedlo[-2]
   if(length(jedlo)==4) jedlo <- c(str_trim(unlist(str_split(jedlo[1], "Menu"))),jedlo[-1])
   jedlo <- str_replace_all(jedlo, "([\n\t])", "")
   jedlo <- str_replace_all(jedlo, "-", "")
   jedlo <- str_replace_all(jedlo, "\u00bd", "0.5")
   
   # remove 'menu' & 'ponuka' 
-  jedlo <- str_trim(str_replace_all(jedlo, "Menu [0-9]", ""))
+  jedlo <- str_trim(str_replace_all(jedlo, "Menu [0-9]", "")) %>% str_remove_all("cena menu")
   jedlo <- jedlo[!str_detect(jedlo, "(Menu)|(PONUKA NA TENTO)")]
   
   # not sure if this is now relevant
