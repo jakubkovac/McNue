@@ -1,12 +1,13 @@
 library(tidyverse)
 library(scales)
 
-df <- read_csv("data/lunch_data.csv", col_types = "ccc__c_____________Dc")
+df <- read_csv("data/lunch_data.csv", col_types = "ccc__c__Dc")
 colnames(df) <- c("subject", "body", "from", "to", "date", "size")
 df <- mutate(df, n_users = map_dbl(str_split(df$to, ";"), length)) %>%
   filter(n_users > 1)
 #lunch emails sent
 nrow(df)
+length(unique(df$date))
 
 #sent to unique people
 str_split(df$to, ";") %>% unlist %>% unique() %>% length()
@@ -20,9 +21,11 @@ min(df$date)
 #subscribers
 ggplot(df, aes(x = date, y = n_users)) +
   geom_line() +
-  geom_point(aes(col = from)) +
+  geom_point(aes(col = from), size = 2) +
   labs(x = "", y = "Number of receivers") + 
-  scale_x_date(breaks = date_breaks("1 months"))
+  scale_x_date(breaks = date_breaks("3 months")) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45))
 
 extract_list <- 
   df$body %>%
@@ -31,9 +34,13 @@ extract_list <-
   map(~.x[nchar(.x) > 1])
 
 map(extract_list, ~sum(str_detect(.x, "I'm LunchBOT"))) %>% unlist()
+map(extract_list, ~sum(str_detect(.x, "^\\|[ ]*Jedla_lenka"))) %>% unlist() %>% as.logical() %>%  which()
 
-extract_list <- map(extract_list, ~.x[1:(which(str_detect(.x, "I'm LunchBOT")) -1)]) %>%
-  map(~.x[str_detect(.x, "\\|")])
+extract_list <- map(extract_list, ~.x[1:(which(str_detect(.x, "I'm LunchBOT")) - 1)]) %>%
+  map(~.x[str_detect(.x, "\\|")]) %>% 
+  map(~.x[1:(ifelse(any(str_detect(.x, "^\\|[ ]*Jedla_lenka")),
+                     as.integer(which(str_detect(.x, "^\\|[ ]*Jedla_lenka")) - 1),
+                     length(.x)))])
 
 
 map(extract_list[[1]], ~str_trim(unlist(str_split(.x, "\\|")))[-1])
@@ -61,3 +68,13 @@ outer_out <- map(outer_out, ~as_tibble(do.call(rbind, .x[-1]), .name_repair = "m
   map(~setNames(.x, c("podnik", "polievka","jedlo_1","jedlo_2","jedlo_3","jedlo_4")))
 
 df$df <- outer_out
+
+food <- unnest(df) %>%
+  select(-body) %>%
+  mutate(podnik = str_replace(podnik, "Mestiansky pivovar", "Mestiansky piv."),
+         polievka = str_remove_all(polievka, "^Ml "))
+  
+
+mutate(food, podnik = as_factor(podnik)) %>% 
+  ggplot(aes(x = podnik)) +
+  geom_bar()
