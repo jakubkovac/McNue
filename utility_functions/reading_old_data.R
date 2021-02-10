@@ -74,7 +74,7 @@ food <- unnest(df) %>%
   mutate(podnik = str_replace(podnik, "Mestiansky pivovar", "Mestiansky piv."),
          polievka = str_remove_all(polievka, "^Ml "))
   
-
+# select(food, date, podnik, polievka, starts_with("jedlo_")) %>% arrange(date, podnik) %>% readr::write_csv("data/lunch_menu.csv")
 mutate(food, podnik = as_factor(podnik)) %>% 
   ggplot(aes(x = podnik)) +
   geom_bar()

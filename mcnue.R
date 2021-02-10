@@ -2,6 +2,7 @@ library(tidyverse)
 library(rvest)
 library(lubridate)
 library(pander)
+library(Zbot)
 
 #run web scraper
 R.utils::sourceDirectory("utility_functions",encoding = "UTF-8")
@@ -44,35 +45,22 @@ menu <-
   mutate_all(.fun =  str_to_1up)
 
 menu <- menu %>% arrange(podnik)
-# menu2
-#save the menu in a text file as an ascii table
+#save the menu in a text file as an ascii table and in csv
 menu_ascii <- pandoc.table.return(menu, style = "grid", split.tables = Inf, split.cells = 30) %>% str_sub(3) # the last thing removes the first 2 /n
 menu_ascii
 write.table(menu_ascii,file = "menu.txt", row.names = F, col.names = F, quote = F)
-
 # menu2_ascii <- pandoc.table.return(menu2, style = "grid", split.tables = Inf, split.cells = 30)
 # write.table(menu2_ascii,file = "menu.txt",append = T, col.names = F, row.names = F, quote = F)
 beep <- readChar("beep_boop.txt",file.info("beep_boop.txt")$size)
 write.table(beep,file = "menu.txt",append = T, col.names = F, row.names = F, quote = F)
-write.table("\n",file = "menu.txt", append = T, col.names = F, row.names = F, quote = F)
-
-tabulecka <- structure(list(Podnik = c("Alzbetka", "Bioland", "Centr. klub.", 
-                                       "Ceska pivnica", "Dilema", "Kasa", "Mestiansky pivovar", "Milton", 
-                                       "Prazsky pub", "Red Cafe", "RTVS", "Suvlaki", "Svadby a kari", 
-                                       "U Hasica", "Veda"),
-                            Ulica = c("Mickiewiczova 1", "Mytna 23", 
-                                      "Krizna 64", "Radlinskeho 39", "Sancova 70", "Radlinskeho 11", 
-                                      "Drevena 8", "Soltesovej 14", "Kominarska 1552/3A", "Racianske myto 1/A", 
-                                      "Mytna 1", "Krizna 8", "Americka 2", "Wilsonova 1", "Zilinska 2"),
-                            TR_karta = c(FALSE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, 
-                                         TRUE, TRUE, TRUE, TRUE, TRUE, FALSE, TRUE),
-                            karta = c(TRUE, TRUE, 
-                                      TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, 
-                                      TRUE, TRUE)),
-                       row.names = c(NA, -15L), class = "data.frame")
-
-tabulecka <- pandoc.table.return(tabulecka, style = "grid", split.tables = Inf, split.cells = 30) %>% str_sub(3)
-write.table(tabulecka,file = "menu.txt",append = T, col.names = F, row.names = F, quote = F)
-
 print(menu)
+###############################
+Zbot::send_teams_card(Zbot::teams_card_generator(title = "LunchBOT",
+                                                 subtitle = lubridate::today(),
+                                                 text = beep,
+                                                 df = menu),
+                      readLines("data/myhook.txt"))
+menu$date <- lubridate::today()
+menu <- select(menu, date, everything())
+readr::write_csv(menu, "data/lunch_menu.csv", append = TRUE)
 
