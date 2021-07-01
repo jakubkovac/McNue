@@ -5,6 +5,9 @@ redcafe <- function(){
   jedlo <- raw %>%
     html_nodes(".dnesne_menu .jedlo_polozka .left") %>% html_text()
   jedlo <- 
-    jedlo %>% str_trim()
+    jedlo %>% str_trim() %>% str_replace_all("\t", " ") %>% 
+    str_remove_all("Polievka") %>% 
+    str_remove_all("Hlavné jedlá")
+  jedlo <- jedlo[nchar(jedlo)>0]
   return(c("Red Cafe",jedlo))
 }

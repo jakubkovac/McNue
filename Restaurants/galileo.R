@@ -6,7 +6,10 @@ galileo <- function(){
     html_nodes(".dnesne_menu .jedlo_polozka .left") %>%
     html_text() %>%
     str_trim()
-  jedlo <- c(jedlo[1], str_subset(jedlo, "[0-9]\\."))[-5]
-  # jedlo <- c(jedlo[2],str_subset(jedlo, "[0-9]\\."))[-5]
+  jedlo <- jedlo[c(2,4)]
+  jedlo <- c(jedlo[1], 
+            str_trim(unlist(str_split(jedlo[2], "[1-4]\\."))))
+  jedlo <- jedlo[nchar(jedlo)>0]
+
   return(c("Galileo",jedlo))
 }
