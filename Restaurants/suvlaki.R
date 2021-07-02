@@ -17,19 +17,19 @@ suvlaki <- function(sme = TRUE){
   jedlo <- 
     jedlo %>% str_trim()
   }else{
-    # download.file("https://www.facebook.com/BistroSuvlaki/posts/?ref=page_internal", destfile = "scrapedpage.htm", quiet=TRUE)
-    # raw <- read_html("scrapedpage.html")
-    # raw <- raw %>% html_nodes("#id_5da42a939c5772247089010") %>% html_text()
-    # polievka <- 
-    #   raw %>%
-    #   str_split("sme si pre Vás pripravili") %>%
-    #   unlist() %>%
-    #   str_split("\\.\\.\\.") %>%
-    #   .[[2]] %>%
-    #   .[1]
-    # polievka <- unlist(str_split(polievka, "polievka"))[1] %>% str_remove("\\:") %>% str_trim() 
-    # jedlo <- unlist(jedlo)[2:5]
-    # jedlo <- c(paste(polievka, "polievka"), jedlo)
+    download.file("https://www.facebook.com/BistroSuvlaki", destfile = "scrapedpage.htm", quiet=TRUE)
+    raw <- read_html("scrapedpage.html")
+    raw <- raw %>% html_nodes("#id_5da42a939c5772247089010") %>% html_text()
+    polievka <-
+      raw %>%
+      str_split("sme si pre Vás pripravili") %>%
+      unlist() %>%
+      str_split("\\.\\.\\.") %>%
+      .[[2]] %>%
+      .[1]
+    polievka <- unlist(str_split(polievka, "polievka"))[1] %>% str_remove("\\:") %>% str_trim()
+    jedlo <- unlist(jedlo)[2:5]
+    jedlo <- c(paste(polievka, "polievka"), jedlo)
   }
   return(c("Suvlaki",jedlo[1:3]))
 }

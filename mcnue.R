@@ -46,11 +46,10 @@ menu <-
 
 menu <- menu %>% arrange(podnik)
 #save the menu in a text file as an ascii table and in csv
-menu_ascii <- pandoc.table.return(menu, style = "grid", split.tables = Inf, split.cells = 30) %>% str_sub(3) # the last thing removes the first 2 /n
-menu_ascii
-write.table(menu_ascii,file = "menu.txt", row.names = F, col.names = F, quote = F)
-# menu2_ascii <- pandoc.table.return(menu2, style = "grid", split.tables = Inf, split.cells = 30)
-# write.table(menu2_ascii,file = "menu.txt",append = T, col.names = F, row.names = F, quote = F)
+# menu_ascii <- pandoc.table.return(menu, style = "grid", split.tables = Inf, split.cells = 30) %>% str_sub(3) # the last thing removes the first 2 /n
+# menu_ascii
+# write.table(menu_ascii,file = "menu.txt", row.names = F, col.names = F, quote = F)
+
 beep <- readChar("beep_boop.txt",file.info("beep_boop.txt")$size)
 write.table(beep,file = "menu.txt",append = T, col.names = F, row.names = F, quote = F)
 print(menu)

@@ -24,6 +24,7 @@ svadbykari <- function(sme = FALSE){
     today <- unlist(str_split(format(Sys.Date(), "%d.%m.%Y", trim = T), "\\.")) %>% 
       as.numeric() %>% 
       paste0(collapse = ".")
+    #today <- "1.7.2021" #they have wrong dates
     jedlo <- str_trim(jedlo)
     jedlo <- jedlo[nchar(jedlo) != 0]
     day_index <- which(str_detect(jedlo,today))  
