@@ -18,8 +18,12 @@ prazsky_pub <- function(){
   day_index <- which(str_detect(jedlo,"Pondelok|Utorok|Streda|Štvrtok|Piatok"))
   days_of_the_week <- c("Monday", "Tuesday", "Wednesday", "Thursday","Friday", "Saturday","Sunday")
   today <- format(Sys.Date(), "%A")
+  tomorrow <- format(Sys.Date()+1, "%A")
   today_i <- day_index[which(days_of_the_week %in% today)]
-  jedlo <- jedlo[c(today_i+2,
-                   (today_i + 4):(today_i + 6))]
+  tomorrow_i <- day_index[which(days_of_the_week %in% tomorrow)]
+  if(is.na(tomorrow_i)) tomorrow_i <- length(jedlo) + 1
+  jedlo <- jedlo[(today_i+2):(tomorrow_i -1)]
+  jedlo <- str_remove_all(jedlo, "Hlavné jedlo")
+  jedlo <- jedlo[nchar(jedlo)>0]
   return(c("Prazsky pub",jedlo))
 }

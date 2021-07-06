@@ -56,7 +56,7 @@ print(menu)
 ###############################
 Zbot::send_teams_card(Zbot::teams_card_generator(title = "LunchBOT",
                                                  subtitle = lubridate::today(),
-                                                 text = beep,
+                                                 text = "",
                                                  df = menu),
                       readLines("data/myhook.txt"))
 menu$date <- lubridate::today()

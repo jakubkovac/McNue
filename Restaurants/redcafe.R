@@ -7,7 +7,8 @@ redcafe <- function(){
   jedlo <- 
     jedlo %>% str_trim() %>% str_replace_all("\t", " ") %>% 
     str_remove_all("Polievka") %>% 
-    str_remove_all("Hlavné jedlá")
+    str_remove_all("Hlavné jedlá") %>% 
+    str_remove_all("Hlavné jedlo")
   jedlo <- jedlo[nchar(jedlo)>0]
   return(c("Red Cafe",jedlo))
 }
