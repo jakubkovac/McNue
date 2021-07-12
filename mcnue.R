@@ -54,12 +54,13 @@ beep <- readChar("beep_boop.txt",file.info("beep_boop.txt")$size)
 write.table(beep,file = "menu.txt",append = T, col.names = F, row.names = F, quote = F)
 print(menu)
 ###############################
+tt <- lubridate::today()
 Zbot::send_teams_card(Zbot::teams_card_generator(title = "LunchBOT",
-                                                 subtitle = lubridate::today(),
+                                                 subtitle = paste(tt, format(tt, "%A")),
                                                  text = "",
                                                  df = menu),
                       readLines("data/myhook.txt"))
-menu$date <- lubridate::today()
+menu$date <- tt
 menu <- select(menu, date, everything())
 readr::write_csv(menu, "data/lunch_menu.csv", append = TRUE)
 
