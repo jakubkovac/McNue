@@ -1,55 +1,30 @@
 rtvs <- function(){
-  reference_day <- lubridate::ymd("2019-09-23")
-  #im not going to bother with doing the correct file name loading right now
-  #lets assume it's alway
+  unlink("tmp", recursive = FALSE)
+  extract_Textbox_From_Excel <- function(excel_File_Name)
+  {
+    library(stringr)
+    library(xml2)
+    zip_file <- str_replace(excel_File_Name, ".xlsx", ".zip")
+    dir.create("tmp")
+    file.copy(excel_File_Name, paste0("tmp/", zip_file))
+    
+    unzip(zipfile = paste0("tmp/", zip_file), exdir = "tmp")
+    
+    drawing_files <- list.files("tmp/xl/drawings", pattern = "\\.xml", full.names = T)
+    
+    xml_Text <- read_xml(drawing_files)
+    text <- xml_text(xml_Text, trim = TRUE)
+    text <- str_split(text, "[0-9]") %>% unlist()
+    text <- text[nchar(text)>1]
+    text <- text[!str_detect(text, "obilniny|zeler|vajcia|mlieko")]
+    return(text)
+  }
+  menu <- extract_Textbox_From_Excel("rtvs.xlsx")
+  #unlink("tmp", recursive = FALSE)
+  t <- format(lubridate::today(), "%A")
   days_of_the_week <- c("Monday", "Tuesday", "Wednesday", "Thursday","Friday", "Saturday","Sunday")
-  
-  today_full <- Sys.Date()
-  today <- format(today_full, "%A")
-  
-  sheets <- readxl::excel_sheets("rtvs.xls")
-  sheets <- sheets %>% str_split("\\.") 
-  sheets <- map(sheets, ~str_remove_all(.x,"-")) 
-  sheets <- map(sheets, ~.x[nchar(.x)>0])
-  
-  rtvs_sheets <- function(x){
-    y <- case_when(length(x) == 4 ~ rev(c(x[c(1,3)],year(today_full), x[c(2,3)],year(today_full))),
-                  #length(x) == 4 ~ rev(c(x[c(1,2)],year(today_full), x[c(3,4)],year(today_full))),
-                   length(x) == 5 ~ rev(x[c(1,2,5,3,4,5)]),
-                   length(x) == 3 ~ rev(c(x[c(1,3)],year(today_full), x[c(2,3)],year(today_full))))
-    return(y)
-  }
-  
-  
-  sheets <- map(sheets, rtvs_sheets)
-  
-  time_ints <- sheets %>% 
-    map(function(x) lubridate::interval(ymd(paste0(x[4:6], collapse = "-")),
-                                        ymd(paste0(x[1:3], collapse = "-"))))
-  
-  which_sheet <- time_ints %>%
-    map(function(x) today_full %within% x) %>% 
-    unlist()
-  
-  which_sheet <- which(which_sheet)
-  
-  # int1 <- lubridate::interval( ymd(paste0(sheets[[1]][4:6], collapse = "-")), ymd(paste0(sheets[[1]][1:3], collapse = "-")))
-  # int2 <- NULL
-  # if(length(sheets) > 1){
-  #   int2 <- lubridate::interval( ymd(paste0(sheets[[2]][4:6], collapse = "-")), ymd(paste0(sheets[[2]][1:3], collapse = "-")))
-  #   which_sheet <- which(today_full %within% c(int1, int2))
-  # }else{
-  #   which_sheet<- which(today_full %within% int1)
-  # }
-  
-  raw <- suppressMessages(readxl::read_excel("rtvs.xls", col_names = FALSE, sheet = which_sheet))
-  raw <- raw[-(1:4), seq(2,10,by =2)]
-  remove_menu <- function(x){
-    x[!str_detect(x, "Menu")]
-  }
-  
-  tyzdenne_jedlo <- map(raw, fix_rtvs_rows) %>% map(str_trim) %>% map(remove_menu)
-  
-  jedlo <- str_trim(tyzdenne_jedlo[[which(today == days_of_the_week)]])
-  return(c("RTVS",jedlo))
+  t <- which(t == days_of_the_week)
+  menu <- menu[seq(t, length(menu), 5)]
+  menu <- rev(menu)
+  return(c("RTVS",menu))
 }
