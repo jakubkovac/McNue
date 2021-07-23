@@ -23,9 +23,6 @@ menu <- menu[-which(rowSums(is.na(menu)) == 5), ]
 original_menu <- menu
 menu <- menu %>% transmute_all(~replace_na(.,"")) # same as transmute_all(function(x) replace_na(x,""))
 
-
-menu
-
 menu <- 
   menu %>% mutate_all(.fun = remove_g_l)
 
@@ -56,14 +53,23 @@ menu <- menu %>% arrange(podnik)
 beep <- readChar("beep_boop.txt",file.info("beep_boop.txt")$size)
 write.table(beep,file = "menu.txt",append = T, col.names = F, row.names = F, quote = F)
 print(menu)
+
+{
+  p <- readline(prompt="Send lunch menu to Teams?[y/n]: " )
+  if(tolower(p) == "y"){
+    tt <- lubridate::today()
+    hook <- readLines("data/myhook.txt")
+    #hook <- readLines("data/testhook.txt")
+    Zbot::send_teams_card(Zbot::teams_card_generator(title = "LunchBOT",
+                                                     subtitle = paste(tt, format(tt, "%A")),
+                                                     text = "",
+                                                     df = menu),
+                          hook)
+    menu$date <- tt
+    menu <- select(menu, date, everything())
+    readr::write_csv(menu, "data/lunch_menu.csv", append = TRUE)
+  }
+}
 ###############################
-tt <- lubridate::today()
-Zbot::send_teams_card(Zbot::teams_card_generator(title = "LunchBOT",
-                                                 subtitle = paste(tt, format(tt, "%A")),
-                                                 text = "",
-                                                 df = menu),
-                      readLines("data/myhook.txt"))
-menu$date <- tt
-menu <- select(menu, date, everything())
-readr::write_csv(menu, "data/lunch_menu.csv", append = TRUE)
+
 
