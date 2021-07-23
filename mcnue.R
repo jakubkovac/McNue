@@ -3,6 +3,9 @@ library(rvest)
 library(lubridate)
 library(pander)
 library(Zbot)
+#require(magick)
+#require(pdftools)
+#require(tesseract)
 
 #run web scraper
 R.utils::sourceDirectory("utility_functions",encoding = "UTF-8")
