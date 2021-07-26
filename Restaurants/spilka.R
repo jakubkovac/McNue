@@ -3,6 +3,7 @@ spilka <- function(){
   download.file(url, destfile = "scrapedpage.html", quiet=TRUE)
   raw <- read_html("scrapedpage.html")
   pdf_link <- html_nodes(raw, ".et_pb_button_4") %>% html_attr("href")
+  pdf_link <- str_replace(pdf_link,"https:", "http:")
   
   if(file.exists("spilka_menu.pdf")){
     f <- file.info("spilka_menu.pdf")
@@ -12,6 +13,8 @@ spilka <- function(){
       message("PDF menu is not from this week. Downloading spilka menu.")
       download.file(pdf_link, destfile = "spilka_menu.pdf", quiet=TRUE, mode = "wb")
     }
+  }else{
+    download.file(pdf_link, destfile = "spilka_menu.pdf", quiet=TRUE, mode = "wb")
   }
   
   bitmap <- pdftools::pdf_render_page("spilka_menu.pdf", page = 1)
