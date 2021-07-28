@@ -52,7 +52,7 @@ menu <- menu %>% arrange(podnik)
 
 beep <- readChar("beep_boop.txt",file.info("beep_boop.txt")$size)
 write.table(beep,file = "menu.txt",append = T, col.names = F, row.names = F, quote = F)
-print(menu)
+purrr::walk(menu, ~{cat("---------------------------\n");print(.x)})
 
 {
   p <- readline(prompt="Send lunch menu to Teams?[y/n]: " )
