@@ -1,3 +1,4 @@
+datum,podnik,jedlo_1,jedlo_2,jedlo_3,jedlo_4
 2021-07-02,Alzbetka,Slepaci vyvar s pecenovymi haluskami,Pecene Bravcove rebra s chlebom a horcicou,Fish and Chips tatarskou omackou      Grecky salat s cerstvym oreganom,,
 2021-07-02,Bioland,Brokolicova kremova alergeny neobsahuje,Spagety arrabbiata s olivami bazalkou a veganskym parmezanom alergeny lepok,Zeleninove placky s hraskovym prelivom jarnou cibulkou a salat alergeny neobsahuje,Tapiokovy puding s mangom a malinami alergeny neobsahuje,
 2021-07-02,BlueBear,Kapustova polievka s klobasou,Granadiersky pochod so struhanym syrom a uhorkovym salatom,Grilovana bravcova panenka s nivovou omackou a zemiakovymi hranolkami,,TYZDENNE Hovadzi burger s domacou Blue Bear majonezou cerstvym salatom paradajkou uhorkou a cibulkou domace hranolky
@@ -134,20 +135,6 @@
 2021-07-21,Suvlaki,Sosovicova polievka,Pecene KACACIE STEHNO s cervenou cibulou tymianom vinova omacka,KURACIE SOTE so zelenymi fazulovymi strukmi,,
 2021-07-21,Svadby a Kari,Azijsky vyvar so sampinonmi a zeleninou VEGAN,Indicka VEGAN mandlova Korma s cuketami a batatmi  salat s korenim za atar,Indicke pistaciovo jogurtove kari s kuracim masom paradajkami zemiakmi a opekanym baklazanom  salat s korenim za atar,,
 2021-07-21,Veglife,Zeleninovy vyvar s miso pastou,Plnena paprika so sojovou plnkou v paradajkovej omacke pazitkove zemiaky,Spenatovo syrovy quiche zemiakove pyre s restovanou cibulkou,Nasi goreng B P,Salat Kalerabovo mrkvovy s mungo klickami
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
 2021-07-22,Alzbetka,Hraskovy krem s matou a bylinkove krutony,Hovadzie dusene na lesnych hubach s tarhonou,Kuraci wrap s pecenymi zemiakmi majoneza z peceneho cesnaku,Mix listovych salatov s kozim syrom jablkami a pecenou cviklou,
 2021-07-22,Bioland,Cuketova kremova s cerstvym oreganom alergeny neobsahuje,Baklazanovy steak so zelerovo zemiakovou kasou a salatom alergeny zeler,Spenatove halusky s nivovou omackou alergeny mlieko lepok,Raw ovocna torta alergeny orechy,
 2021-07-22,BlueBear,Kapustova kremova s udeninou,Jemne pikantny madarsky gulas s parenou knedlou,G Vyprazany zeleninovy rezen s batatovym pyre a rukolou,,TYZDENNE Grilovany losos na pecenom zemiaku s wakame riasou a limetkovou redukciou
@@ -221,3 +208,85 @@
 2021-07-28,Suvlaki,Sosovicova polievka,Zapecena Tortila s mletym bravcovym masom baklazanom a syrom,Dusene kuracie maso so sampinonmi a susenymi paradajkami,,
 2021-07-28,Svadby a Kari,Paradajkovo pomarancova polievka s kokosovym kremom VEGAN,Indicke spenatove kari VEGAN s rastlinnym jogurtom tofu paneerom a paradajkami salat z cervenej cibule s limetkou,Indicke kuracie Vindaloo s batatmi karfiolom a hrozienkami  salat z cervenej cibule s limetkou,,
 2021-07-28,Veglife,Sosovicova polievka na kyslo,Kremove rizoto s cherry paradajkami a baby spenatom,Cviklove gulky so slnecnicou stuchane zemiaky s olivovym olejom,Spagetova torta,Salat Letny salat s orechami balkanskym syrom a figami
+2021-07-29,Alzbetka,Minestrone s parmezanom,Hovadzi Cheese Burger so zemiakovymi hranolkami,Pecene kuracie stehno so zemiakovou kasou a chrumkavou cibulou,Cestovinovy salat so zeleninou a syrom feta,
+2021-07-29,Bioland,Jarna zeleninova s petrzlenovou vnatou alergeny zeler,Miesany salat s klickami cherry rajcinami sedanom jablckom mandlami a citronovo medovou zalievkou alergeny zeler,Pohankova sekana so zemiakovou kasou a restovanou cibulkou alergeny neobsahuje,Bananove tiramisu alergeny mlieko vajcia lepok,
+2021-07-29,BlueBear,Fazulova polievka s klobasou,Morcacie na zelenine s jazminovou ryzou a rukolou,G Lososove cestoviny s parmezanom a pazitkou,,TYZDENNE Jalapenos Burger s trhanym bravcovym masom a domacimi hranolkami
+2021-07-29,Centr klub,Fazulova na kyslo,Gnocchi s tekvicovym pyre feta rukola,Wrap s kuracim masom hranolky cili majoneza,,
+2021-07-29,Galileo,Hrstkova polievka,Holandsky mlety rezen so syrom zemiakovou kasou a kyslou uhorkou,,,
+2021-07-29,Kasa,Cviklovo paradajkova polievka,Blansirovana zelenina v kokosovom mlieku quinoa,Morcacie gulky v omacke,,
+2021-07-29,Milton,Karotkovy krem s kokosovym mliekom a s cervenou kari pastou,Grilovany steak z kuracich prs  zelerova slama,Grilovana morska ryba,Grilovane kacacie prsia omacka kacaci Demi Glace,Ml LaPanna talianska smotanova zmrzlina s prichutou biscotti e limone
+2021-07-29,Prazsky pub,Sosovicova na kyslo,Svieckova na smotane s parenou knedlou,Farfalle s kuracim masom syrovou omackou a porom,,
+2021-07-29,Red Cafe,Luskova polievka,Pecene kare na horcicnej omacke dusena ryza,Salat s pecenou hokkaido feta syrom a balsamicom,Vyprazany syr hranolky tatarska omacka,Pizza sunkova salamova sampinonova
+2021-07-29,RTVS,Hrachova polievka,Cestoviny penne s arabiata omackou syr,Pecene maso cervena kapusta knedla,Francuzske zemiaky,
+2021-07-29,Spilka,Zadeninova polievka,Kelovy privarok s pecenym hovadzim krkom azemiakmi,Hucvos rancheros s pecenym avokadom a tortillou      f,,
+2021-07-29,Suvlaki,Cuketova polievka,Pecene hovadzie gulicky s rozmarinom,Pecene KURA s horcicovou omackou a tymianom,,
+2021-07-29,Svadby a Kari,Poctiva ostrokysla polievka s kuracim masom a udenym tofu,Indicke VEGAN Aloo Gobi s karfiolom zemiakmi a hraskom  bananove catni,Thajske zlte hovadzie kari s mrkvou a brokolicou   bananove catni,,
+2021-07-29,Veglife,Hraskovo matova polievka,Porovo syrovy quiche zemiakove pyre s maslom,Tofu kung pao ryza jasminova B V P,Robi rezen s balkanskym syrom zemiakove pyre s maslom,Salat Uhorkovo paradajkovy s olivami
+2021-07-30,Alzbetka,Hovadzi vyvar s rezancami,Bravcovy steak s bazalkovym pestom a grilovanou zeleninou,Penne s lososom a smotanovou omackou baby spenat       Cestovinovy salat so zeleninou a syrom feta,,
+2021-07-30,Bioland,Arasidova jemna so zeleninou alergeny arasidy zeler,Cevapcici z robi masa varene zemiaky a salat alergeny lepok soja horcicne semienko,Indicky sosovicovy dhal so zeleninou kokosovym mliekom a koriandrom alergeny horcicne semienko,Slivkovy osuch alergeny mlieko vajcia lepok,
+2021-07-30,BlueBear,Cesnakova kremova polievka,Hovadzie rezanceky na hrasku s dusenou tarhonou,Vyprazane cuketove tycinky s varenymi zemiakmi a tatarskou omackou,,TYZDENNE Jalapenos Burger s trhanym bravcovym masom a domacimi hranolkami
+2021-07-30,Centr klub,Masovy vyvar so zeleninou a rezancami,Hubove rizoto so susenymi paradajkami a baby spenatom,Bravcovy cernohor americke zemiaky cesnakovy dresing,,
+2021-07-30,Galileo,Sosovicova polievka,Madarsky gulas s knedlou,,,
+2021-07-30,Kasa,Hraskovo cuketova polievka,Zeleninova placka,Pecene kuracie stehno,,
+2021-07-30,Milton,Zeleninova polievka zo sezonnej zeleniny s maslovo krupicovymi haluskami,Konfitovane bravcove kare plnene fauche z udenej klobasy,Kremova omacka z bravcovej stavy pecenej sladkej cibule a smotany,Zemiakove sulance s makom a prepustanym maslom,Cviklovo karotkove krupoto grilovany Chevrette De Poiton
+2021-07-30,Prazsky pub,Mrkvova polievka s hraskom a krupicovymi haluskami,Vyprazana morska stuka so zemiakovym salatom,Gnocchi s restovanou kuracou pecienkou salviou paradajkami a parmezanom,,
+2021-07-30,Red Cafe,Hrachova s udenym polievka,Kuraci gyros v tortille tzaziky,Francuzske zemiaky kysla uhorka,Vyprazany syr hranolky tatarska omacka,Pizza sunkova salamova sampinonova
+2021-07-30,RTVS,Slepacia polievka,Pecene buchty s dzemom,Vyprazany syr mastene zemiaky tat omacka,Kotlikovy gulas chlieb,
+2021-07-30,Spilka,Gaurry polievka s cicerom       obr,Marinovane kuracie prsa z gilu so salatom z mladych listov sostro kyslim dresingom,,Vyprazany karfiol s vabgnymi zemiakmi a catarkou,
+2021-07-30,Suvlaki,Hraskova polievka,Peceny ZUBAC s olivami cerstvymi paradajkami a cesnakom,Kuracie sote s cuketou cervenou paprikou,,
+2021-07-30,Svadby a Kari,Thajska studena polievka so zltym melonom kokosovym mliekom a thajskou bazalkou VEGAN,Thajske VEGAN cervene kari s farebnymi paprikami tekvicou cuketou a cicerom redkovkovy salat,Malajske kuracie kari s maslom GHEE zelenymi fazulkami paradajkami a kokosovym mliekom  redkovkovy salat,,
+2021-07-30,Veglife,Zeleninova kari polievka s quinoou,Cuketova moussaka,Cicerovy falafel indicke zemiaky,Aloo gobi subji ryza natural B V P,Salat Mexicky s fazulkou B V P
+2021-08-02,Alzbetka,Sampinonovy krem s bylinkami,Vyprazany bravcovy rezen s varenymi zemiakmi majoneza z peceneho cesnaku,Cviklove rizoto so syrom feta piniove orechy cviklove vyhonky,Cestovinovy salat so zeleninou a syrom feta,
+2021-08-02,Bioland,Hlivovo zemiakova alergeny neobsahuje,Marocky tekvicovy kotlik s kuskusom alergeny lepok,Fazulovo mrkvovy gulas s ryzou alergeny neobsahuje,Raw makovo kakaova torta alergeny orechy,
+2021-08-02,BlueBear,Sosovicova polievka na kyslo,Vyprazane kuracie pecienky s varenymi zemiakmi a tatarskou omackou,Spenatove rizoto s medvedim cesnakom a parmezanom,,TYZDENNE Jalapenos Burger s trhanym bravcovym masom a domacimi hranolkami
+2021-08-02,Centr klub,Zeleninova kremova s opecenym chlebom,Grilovany encian pecene zemiaky brusnice listovy salat,Bravcova panenka na rozmarine slanine a slivkach ryza,,
+2021-08-02,Ceska piv,Slepaci vyvar s masom a rezancami,Luskova polievka na kyslo,Kuracie kusky s grilovanou zeleninou ryza,Vyprazany encian varene zemiaky tatarska omacka,Salat s kuracimi rezancami bylinkovy dresing
+2021-08-02,Kasa,Zeleninova polievka so sojou a zazvorom,Hubove risotto,Kare na masti cibuli a rasci,,
+2021-08-02,Milton,Cesnakovo zemiakova kremova polievka,Grilovany steak z kuracich prs omacka zo zeleneho korenia,Grilovane bravcove rebra Sous Vide s whisky chilli marinadou,Malinovo smotanova torta,
+2021-08-02,Prazsky pub,Zemiakovy krem so sampinonmi,Kuracie rizoto so zeleninou struhanym syrom a kyslou uhorkou,Penne s masovym ragu na smotane s rukolou,,
+2021-08-02,Red Cafe,Sampinonova so zemiakmi polievka,Br Cernohor americke zemiaky uhorkovy salat,Hribove rizoto s parmezanom,Vyprazany syr hranolky tatarska omacka,Pizza sunkova salamova sampinonova
+2021-08-02,RTVS,Hovadzi vyvar s cestovinou,Palacinky s tvarohom,Vyprazany bravcovy rezen dusena ryza,Hydinovy perkelt halusky,
+2021-08-02,Spilka,S  druhy Ste pre,Paradajkova polievka,Grilovane kuracie stehna so satay omackoti a restovanou ryzou,Vyprazany syr s coleslav salatom a pecenymi zemiakmi,
+2021-08-02,Suvlaki,Mili priatelia fanusikovia z dovodu dovolenky Bistro Suvlaki bude ZATVORENE od,Opat sa nas tesime v PONDELOK,,,
+2021-08-02,Veglife,Sosovicova polievka na indicky sposob,Farfalle s bazalkovym pestom a goody foody,Grilovane robi platky s cuketovo koprovou omackou stuchane zemiaky s olivovym olejom,Shepherd s pie Pastiersky kolac,Salat Frisse s cherry paradajkami a tofu
+2021-08-03,Alzbetka,Sosovicova s udenim masom,Kuraci gyros s domacim pita chlebom tzatziki cerstvy kopor,Gnochi s lesnymi hubami a slaninou parmezan,Rucolovy salat s baby mozzarellou cherry paradajky cierne olivy a balsamico dresing,
+2021-08-03,Bioland,Kelova s mrkvou alergeny neobsahuje,Vegansky tempehovy stroganov s pecenymi zemiakmi alergeny soja horcicne semienko,Ratatouille s rastlinnym syrom a bazalkou alergeny neobsahuje,Cucoriedkova bublanina alergeny vajcia lepok,
+2021-08-03,BlueBear,Frankfurtska polievka s parkom,Zapekana kolozvarska kapusta s klobasou a kyslou uhorkou,Pecene rybie file so zemiakovou kasou a coleslaw salatom,,TYZDENNE Jalapenos Burger s trhanym bravcovym masom a domacimi hranolkami
+2021-08-03,Centr klub,Hubova s mrvenicou,Salat s kuracim masom kuskus vajicko jogurtovy dresing krutony,Hovadzi paprikas halusky spenat,,
+2021-08-03,Ceska piv,Slepaci vyvar s masom a rezancami,Sosovicova s parkom,Kuracie na cinsky sposob s ryzou,Vyprazany bravcovy rezen zemiakova kasa,Salat s grilovanym ostiepkom brusnicovy dip
+2021-08-03,Galileo,Slepacia polievka s cestovinou,Br panenka na prirodno s dubakmi a zem krokrtami,,,
+2021-08-03,Kasa,Spenatova polievka,Zeleninove curry,Viedenska hovadzia rostenka,,
+2021-08-03,Milton,Hrachova kremova polievka s restovanou cibulkou a slaninkou,Tradicne talianske masove gulky pecene v paradajkovej omacke,U nas mlete hovadzie a bravcove maso,Vyprazany Falafel cicerove gulky,Rump steak pripravovany technologiou Sous Vide
+2021-08-03,Prazsky pub,Hovadzi vyvar,Bravcovy rezen s ryzou a kapustovym salatom,,,
+2021-08-03,Red Cafe,Fazulova s klobaskou polievka,Kuracie medailonky na BBQ omacke dusena ryza,Cuketove placky so struhanou nivou sviezi zelenin salat,Vyprazany syr hranolky tatarska omacka,Pizza sunkova salamova sampinonova
+2021-08-03,RTVS,Sosovicova kysla,Kapustove fliacky,Hovadzie CHILLI CON CARNE dusena ryza,Bravcove kare znojemske tarhona,
+2021-08-03,Spilka,Hovadzia polievka s pecenovymi haluskami,Bravcova panenka na vine s estovanymi gnocchi,Spenatovy salat s pecenou repou kozim syrom a orechri,,
+2021-08-03,Suvlaki,Mili priatelia fanusikovia z dovodu dovolenky Bistro Suvlaki bude ZATVORENE od,Opat sa nas tesime v PONDELOK,,,
+2021-08-03,Veglife,Brokolicova kremova polievka,Baklazanova mousaka,Aloo matar kofty v paradajkovo kokosovej omacke indicke zemiaky,Seitan na sposob Stroganoff ryza jasminova,Salat Celozrnny kuskusovy salat
+2021-08-04,Alzbetka,Paradajkova s parmezanom,Zemiakovy privarok s dusenymi hovadzim masom a bylinkami chliieb,Pecena btravcova krkovicka so zemiakovou kasou a viedenskou cibulou demi glace,Rucolovy salat s baby mozzarellou cherry paradajky cierne olivy a balsamico dresing,
+2021-08-04,Bioland,Eintopf zeleninovo strukovinova polievka alergeny zeler,Zeleninove placky s chia semienkami bylinkovym dipom a salatom alergeny vajce mlieko,Pohankove cestoviny s paradajkovo bazalkovym pestom olivami a baby spenatom alergeny neobsahuje,Raw karobovo bananova torta alergeny orechy,
+2021-08-04,BlueBear,Kulajda,Kuraci cernohorsky rezen s pecenymi zemiakmi a tatarskou omackou,Parene buchty plnene dzemom s maslom a kakaom,,TYZDENNE Jalapenos Burger s trhanym bravcovym masom a domacimi hranolkami
+2021-08-04,Centr klub,Hrachova so zeleninou,Francuzske zemiaky kysla uhorka,Morcacie stehno marinovane v bylinkach slovenska ryza uhorkovy salat,,
+2021-08-04,Ceska piv,Slepaci vyvar s masom a rezancami,Kapustova polievka s klobasou,Spagety Carbonara,Kuracie prsia zapekane s encianom a olivami ryza,Salat s grilovanou bravcovou panenkou
+2021-08-04,Galileo,Cukinovy krem,Svieckova na smotane s knedlou,,,
+2021-08-04,Kasa,Polievka z cervenej nelupanej sosovice,Hlivovy paprikas,SPECIAL Konfitovane kacacie stehno cervena kapusta,,
+2021-08-04,Milton,Kari kuracia polievka so zeleninou ryzovymi rezancami koriandrom a zelenou kari pastou,Grilovane kuracie prsia plnene olivami sus paradajkami a mozzarellou,Pappardelle all Arabiata,Olivovy olej cibula cesnak cerstve chilli papricky paradajky a drvene paradajky,Konfitovane kacacie stehno omacka Grand Veneur
+2021-08-04,Prazsky pub,Kuraci vyvar s rezancami a zeleninou,Plneny bravcovy rezen na prirodno so sunkou syrom a spenatom s hranolkami,Salat s tuniakom krutonmi vajickom a bazalkovym dressingom,,
+2021-08-04,Red Cafe,Brokolicova kremova polievka,Pffefer steak z bravcovej panenky rozmarinove zemiaky,Spenatove halusky na syrovej omacke s kuracimi kuskami,Vyprazany syr hranolky tatarska omacka,Pizza sunkova salamova sampinonova
+2021-08-04,RTVS,Zeleninova jarna,Bryndzove halusky so slaninkou,Bravcovy steak s volskym okom dusena ryza,Mlety rezen so syrom zemiaky s vnatkou,
+2021-08-04,Spilka,Sampinonovy krem,Sosovicovy privarok s trhanym hovadzim masom      a,Bulgur s wakame salatom agrilovanym tofu a mangom,,
+2021-08-04,Suvlaki,Mili priatelia fanusikovia z dovodu dovolenky Bistro Suvlaki bude ZATVORENE od,Opat sa nas tesime v PONDELOK,,,
+2021-08-04,Veglife,Paradajkova polievka s bielou fazulou,Krupkovo syrove karbonatky zemiakove pyre s maslom,Segedinsky gulas s udenym BIO tempehom parena knedla,Cicerovo quinoove kari ryza jasminova B V P,Salat Mexicky kukuricovy salat
+2021-08-05,Alzbetka,Spenatova so syrom,Quesadila s bravcovym trhanym masom a zemiakovymi hranolkami kysla smotana,Plnena paprika s parenou knedlou,Rucolovy salat s baby mozzarellou cherry paradajky cierne olivy a balsamico dresing,
+2021-08-05,Bioland,Borsc s korenovou zeleninou alergeny zeler,Sosovicovy salat s horcicnymi semienkami a susenymi paradajkami alergeny horcicne semienko,Pecene tofu s dusenou kapustou a zemiakmi alergeny soja,Jahodovy cheescake alergeny lepok mlieko vajcia,
+2021-08-05,BlueBear,Fazulova polievka s klobasou,Morcacie na zelenine s jazminovou ryzou a rukolou,G Lososove cestoviny s parmezanom a pazitkou,,TYZDENNE Jalapenos Burger s trhanym bravcovym masom a domacimi hranolkami
+2021-08-05,Centr klub,Gulasova s majoranom,Jablkovo tvarohova zemlovka,Pecene kuracie stehno ryza broskynovy kompot,,
+2021-08-05,Galileo,Karfiolova polievka,Bravcovy rezen na hrasku s tarhonou,,,
+2021-08-05,Kasa,Zemiakova polievka na kyslo,Dahl z ciernej fazule,Fasirka,,
+2021-08-05,Milton,Divinove consome silny vyvar z jelenich kosti zelenina a pecenove halusky,Vyprazane kuracie stehno s kostou v bezlepkovej uprave,Grilovana morska ryba,Kremove jahnacie ragu s dubakmi a Chardonay,Zmrzlinovy pohar ovocie vyber zmrzliny a sorbetu cokolada a slahacka
+2021-08-05,Prazsky pub,Sosovicova na kyslo,Svieckova na smotane s parenou knedlou,Farfalle s kuracim masom syrovou omackou a porom,,
+2021-08-05,Red Cafe,Francuzska cibulacka so syrovym krutonom,Vypr vykostene kuracie stehno zemiak kasa mix salat,Grilovany encian na listovom salate sipkovy dip,Vyprazany syr hranolky tatarska omacka,Pizza sunkova salamova sampinonova
+2021-08-05,RTVS,Hrachova polievka,Cestoviny penne s arabiata omackou syr,Pecene maso cervena kapusta knedla,Francuzske zemiaky,
+2021-08-05,Spilka,Faztkova polievka na kyslo,Kuraci perkel s domacimi haluskami,Spenatove canelloni s ricottou a spenatom,,
+2021-08-05,Suvlaki,Mili priatelia fanusikovia z dovodu dovolenky Bistro Suvlaki bude ZATVORENE od,Opat sa nas tesime v PONDELOK,,,
+2021-08-05,Veglife,Kari polievka s kokosovym mliekom,Robi karbonatky zemiakove pyre s restovanou cibulkou,Gnocchi so syrovo brokolicovou omackou a pazitkou,Sosovicova sekana s tempehom a sampinonmi zemiakove pyre s restovanou cibulkou,Salat Uhorkovy s matou
