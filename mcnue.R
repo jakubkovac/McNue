@@ -32,9 +32,9 @@ menu <-
   mutate_all(.fun = str_remove_1gl)
 
 #remove special slovak characters
-menu <-
-  menu %>%
-  mutate_all(.fun = slovak_language_destroyer)
+# menu <-
+#   menu %>%
+#   mutate_all(.fun = slovak_language_destroyer)
 
 #destroy the nuances in data
 menu <-
@@ -51,8 +51,8 @@ menu <- menu %>% arrange(podnik)
 # menu_ascii
 # write.table(menu_ascii,file = "menu.txt", row.names = F, col.names = F, quote = F)
 
-beep <- readChar("beep_boop.txt",file.info("beep_boop.txt")$size)
-write.table(beep,file = "menu.txt",append = T, col.names = F, row.names = F, quote = F)
+#beep <- readChar("beep_boop.txt",file.info("beep_boop.txt")$size)
+#write.table(beep,file = "menu.txt",append = T, col.names = F, row.names = F, quote = F)
 purrr::walk(menu, ~{cat("---------------------------\n");print(.x)})
 
 # {
@@ -61,8 +61,8 @@ purrr::walk(menu, ~{cat("---------------------------\n");print(.x)})
 tt <- lubridate::today()
 
 if(!(tt %in% unique(readr::read_csv("data/lunch_menu.csv", col_select = 1, show_col_types = FALSE)[[1]]))){
-  #hook <- readLines("data/myhook.txt")
-  hook <- readLines("data/testhook.txt")
+  hook <- readLines("data/myhook.txt")
+  #hook <- readLines("data/testhook.txt")
   Zbot::send_teams_card(Zbot::teams_card_generator(title = "LunchBOT",
                                                    subtitle = paste(tt, format(tt, "%A")),
                                                    text = "",
