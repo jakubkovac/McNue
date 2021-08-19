@@ -27,7 +27,7 @@ svadbykari <- function(sme = FALSE){
     #today <- "1.7.2021" #they have wrong dates
     jedlo <- str_trim(jedlo)
     jedlo <- jedlo[nchar(jedlo) != 0]
-    day_index <- which(str_detect(jedlo,today))  
+    day_index <- which(str_detect(str_remove_all(jedlo, " "),today))  
     jedlo <- jedlo[(day_index + 1):(day_index + 3)] %>% str_trim()
     jedlo <- str_remove_all(jedlo,"[A][0-9]")
     jedlo <- str_remove_all(jedlo,"See MoreSee Less") %>% str_remove_all("\\<\\/span\\>")
