@@ -21,7 +21,7 @@ dilema <- function(){
   polievka <- pluck(jedlo, 1, 1) %>% str_replace_all("\n", " ") %>% str_squish()
   
   jedlo <- pluck(jedlo, 1, 2)
-  jedlo <- str_split(jedlo, "[1-3]:")[[1]]
+  jedlo <- str_split(jedlo, "[1-3] *:")[[1]]
   jedlo <- jedlo[-1] %>% str_replace_all("\n", " ") %>% str_squish() %>% str_remove_all("Menu")
   
   unlink("dilema.png")
