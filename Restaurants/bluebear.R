@@ -1,7 +1,5 @@
 bluebear <- function(){
   url_bluebear <- "http://blue-bear.sk/denne-menu-blue-bear/"
-  Sys.Date()
-  strftime(Sys.Date(), '%A')
   download.file(url_bluebear, destfile = "scrapedpage.html", quiet=TRUE)
   raw <- read_html("scrapedpage.html")
   jedlo <- raw %>%
@@ -18,7 +16,7 @@ bluebear <- function(){
   days_of_the_week <- c("Monday", "Tuesday", "Wednesday", "Thursday","Friday", "Saturday","Sunday")
   today <- format(Sys.Date(), "%A")
   today_i <- day_index[which(days_of_the_week %in% today)]
-  message(today_i)
+  
   jedlo <- jedlo[(today_i+1):(today_i + 5)]
   # jedlo <- jedlo[[today_i + 1]]
   # jedlo <- str_split(jedlo, pattern = "obsahuje [0-9,]{1,}")[[1]]

@@ -13,8 +13,13 @@ R.utils::sourceDirectory("utility_functions",encoding = "UTF-8")
 restaurant_fun_list <- map(list.files("Restaurants", full.names = TRUE), ~source(.x, encoding = "UTF-8"))
 restaurant_fun_list <- map(restaurant_fun_list, ~.x[[1]])
 
-menu <- map(restaurant_fun_list, ~tryCatch(.x(), error = function(e){NULL})) %>% compact()
-menu <- map(menu, same_length)
+menu <- map(restaurant_fun_list, ~tryCatch(.x(), error = function(e){NULL}))
+
+warning("Restaurants that failed: ","\n\n",
+        paste0(str_sub(list.files("Restaurants"), end =-3)[map_lgl(menu, is.null)], collapse = "\n"))
+
+
+menu <- map(compact(menu), same_length)
 
 menu <- Reduce(rbind, menu) %>% as.data.frame() %>% as_tibble()
 colnames(menu) <- c("podnik", "polievka", "jedlo_1", "jedlo_2", "jedlo_3", "jedlo_4")

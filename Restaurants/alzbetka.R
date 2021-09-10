@@ -26,9 +26,9 @@ alzbetka <- function(sme = FALSE){
     dni <- str_to_upper(c("pondelok", "utorok", "streda", "stvrtok", "piatok", "sobota", "nedela"))
     today <- format(Sys.Date(), "%A")
 
-    jedlo <- slovak_language_destroyer(jedlo)
+    jedlo2 <- slovak_language_destroyer(jedlo)
     
-    jedlo <- jedlo[which(str_detect(jedlo,dni[which(today == days_of_the_week)])) +1]
+    jedlo <- jedlo[which(str_detect(jedlo2,dni[which(today == days_of_the_week)])) +1]
     jedlo <- unlist(str_split(jedlo,"\\\n"))
     jedlo <- jedlo[2:length(jedlo)] %>% 
       str_trim() %>%

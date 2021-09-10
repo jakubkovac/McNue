@@ -12,6 +12,8 @@ suvlaki <- function(sme = TRUE){
   }
   
   jedlo <- jedlo[!(str_detect(tolower(jedlo), "denne menu"))]
+  jedlo <- jedlo[!(str_detect(slovak_language_destroyer(tolower(jedlo)), "hlavne jedlo"))]
+  jedlo <- jedlo[!(str_detect(slovak_language_destroyer(tolower(jedlo)), "^polievka$"))]
   
   #jedlo <- jedlo[c(2,4:7)]
   jedlo <- 
@@ -31,6 +33,7 @@ suvlaki <- function(sme = TRUE){
     jedlo <- unlist(jedlo)[2:5]
     jedlo <- c(paste(polievka, "polievka"), jedlo)
   }
-  return(c("Suvlaki",jedlo[1:3]))
+  
+  return(c("Suvlaki",jedlo))
 }
 
