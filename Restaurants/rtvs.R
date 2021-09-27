@@ -1,4 +1,10 @@
 rtvs <- function(){
+  f <- file.info("rtvs.xlsx")
+  f <- as.Date(f$mtime)
+  t <- Sys.Date()
+  if(lubridate::isoweek(t) != lubridate::isoweek(f) + 1){
+    stop("RTVS menu is probably old.")
+  }
   unlink("tmp", recursive = TRUE)
   extract_Textbox_From_Excel <- function(excel_File_Name)
   {

@@ -20,7 +20,7 @@ warning("Restaurants that failed: ","\n\n",
 
 
 menu <- map(compact(menu), same_length)
-
+Sys.setlocale("LC_CTYPE", locale="Slovak")
 menu <- Reduce(rbind, menu) %>% as.data.frame() %>% as_tibble()
 colnames(menu) <- c("podnik", "polievka", "jedlo_1", "jedlo_2", "jedlo_3", "jedlo_4")
 
