@@ -2,35 +2,20 @@ rtvs <- function(){
   f <- file.info("rtvs.xlsx")
   f <- as.Date(f$mtime)
   t <- Sys.Date()
-  if(lubridate::isoweek(t) != lubridate::isoweek(f) + 1){
+  if(lubridate::isoweek(t) %in% c(lubridate::isoweek(f), lubridate::isoweek(f) +1)){
     stop("RTVS menu is probably old.")
   }
-  unlink("tmp", recursive = TRUE)
-  extract_Textbox_From_Excel <- function(excel_File_Name)
-  {
-    library(stringr)
-    library(xml2)
-    zip_file <- str_replace(excel_File_Name, ".xlsx", ".zip")
-    dir.create("tmp")
-    file.copy(excel_File_Name, paste0("tmp/", zip_file))
-    
-    unzip(zipfile = paste0("tmp/", zip_file), exdir = "tmp")
-    
-    drawing_files <- list.files("tmp/xl/drawings", pattern = "\\.xml", full.names = T)
-    
-    xml_Text <- read_xml(drawing_files)
-    text <- xml_text(xml_Text, trim = TRUE)
-    text <- str_split(text, "[0-9]") %>% unlist()
-    text <- text[nchar(text)>1]
-    text <- text[!str_detect(text, "obilniny|zeler|vajcia|mlieko")]
-    return(text)
-  }
-  menu <- extract_Textbox_From_Excel("rtvs.xlsx")
-  #unlink("tmp", recursive = FALSE)
+  menu <- readxl::read_excel("rtvs.xlsx")
+  colnames(menu) <- paste0("col_", 1:ncol(menu))
+  menu <- bind_rows(menu[1,], filter(menu, !is.na(col_1))) %>%
+    distinct() %>% 
+    select(all_of(paste0("col_", seq(1,ncol(menu),by=2))))
+  
   t <- format(lubridate::today(), "%A")
   days_of_the_week <- c("Monday", "Tuesday", "Wednesday", "Thursday","Friday", "Saturday","Sunday")
   t <- which(t == days_of_the_week)
-  menu <- menu[seq(t, length(menu), 5)]
-  menu <- rev(menu)
+  
+  menu <- menu[2:nrow(menu),] %>% pull(t+1) %>% na.omit()
+
   return(c("RTVS",menu))
 }

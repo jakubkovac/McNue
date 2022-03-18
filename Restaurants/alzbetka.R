@@ -30,8 +30,9 @@ alzbetka <- function(sme = FALSE){
     
     jedlo <- jedlo[which(str_detect(jedlo2,dni[which(today == days_of_the_week)])) +1]
     jedlo <- unlist(str_split(jedlo,"\\\n"))
-    jedlo <- jedlo[2:length(jedlo)] %>% 
-      str_trim() %>%
+    jedlo <- c(unlist(str_split(jedlo[2], "[0-9]\\)[0-9]")),
+               jedlo[3:length(jedlo)])
+    jedlo <- str_trim(jedlo) %>%
       str_remove_all("FIT") %>%
       str_remove_all("P1") %>%
       str_remove_all("P2") %>%

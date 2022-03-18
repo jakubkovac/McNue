@@ -9,24 +9,33 @@ insert_new_lines <- function(x, max_chars = 14){
   if(nchar(x)<= max_chars) return(x)
   whitespaces <- stringr::str_locate_all(x, " ")[[1]][,1]
   n <- max(whitespaces[which(whitespaces <= max_chars)])
-  out <- str_sub(x, 1, n-1)
+  out <- stringr::str_sub(x, 1, n-1)
   out <- c(out, insert_new_lines(str_sub(x, n+1)))
   return(out)
 }
-
+n_lines <- length(insert_new_lines(random_jedlo, 18))
+n_lines
 jedlo_lines <- paste0(insert_new_lines(random_jedlo, 18), collapse="\n")
-
-
-img <- image_read("C:/Users/jakub.kovac/OneDrive - Zurich Insurance/LunchBOT/jedlo_dna_default.png")
+jedlo_size <- case_when(n_lines %in% c(6,7) ~ 40,
+                        n_lines <=5 ~ 55,
+                        TRUE~30)
+lunch_folder <- "C:/Users/jakub.kovac/OneDrive - Zurich Insurance/Lunchbot/"
+img <- image_read(paste0("C:/Users/jakub.kovac/OneDrive - Zurich Insurance/", "jedlo_dna_default.png"))
 img <- image_annotate(img, jedlo_dna$podnik, size = 45, color = "black",
-              location = "+200+510", font = "consolas")
+                      location = "+200+510", font = "consolas")
 # img <- image_annotate(img, "NIE", size = 45, color = "black",
 #               location = "+200+510", font = "consolas")
 img <- image_annotate(img, jedlo_lines,
-                      size = 55, color = "black", font = "consolas",
+                      size = jedlo_size, color = "black", font = "consolas",
                       location = "+0+220", gravity = "North")
 img <- image_annotate(img, lubridate::today(),
                       size = 45, color = "black", font = "consolas",
                       location = "+200+590")
 img
-image_write(img, "C:/Users/jakub.kovac/OneDrive - Zurich Insurance/LunchBOT/jedlo_dna.png")
+f <- list.files(lunch_folder, full.names = TRUE)
+f <- f[str_detect(f, "[0-9]\\.png$")]
+file.remove(f)
+image_write(img, paste0(lunch_folder,
+                        "jedlo_dna",
+                        stringr::str_remove_all(lubridate::today(),"-"),
+                        ".png"))

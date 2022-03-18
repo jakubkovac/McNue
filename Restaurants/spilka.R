@@ -36,6 +36,6 @@ spilka <- function(){
   jedlo <- jedlo[[den]]
   jedlo <- jedlo[nchar(jedlo) > 6]
   jedlo <- jedlo[!str_detect(jedlo,"Dobrú")]
-  
+  jedlo <- jedlo[1:3]
   return(c("Spilka", jedlo))
 }

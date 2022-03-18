@@ -1148,3 +1148,604 @@ datum,podnik,jedlo_1,jedlo_2,jedlo_3,jedlo_4
 2021-11-19,Suvlaki,Špenátová polievka,MUSAKA,Vyprážané RYBACIE FILETY,Grilovaný SYR CHALUM,
 2021-11-19,Veda,Šampiónová,Gobi beans karfiól a zelená fazuľka v indickej omáčke,Vegetariánsky stroganov na indický spôsob,,
 2021-11-19,Veglife,Boršč polievka,Pečené špenátovo mozzarellové fašírky zemiakové pyré s maslom,Goody foody zeleninový wok ryža jasmínová,Chilli con tofu ryža jasmínová B V P,Šalát Kapustovo paradajkový s paprikou
+2021-11-22,Alzbetka,Karfiolová so syrom,Pečené kuracie stehno so zemiakovou kašou a demi glace,Hlivový paprikáš s maslovými haluškami a kyslou smotanou,Ceasar šalát s grilovanými krevetami,
+2021-11-22,Bioland,Polievka krémová z pečenej žltej papriky s kokosovým mliekom alergény neobsahuje,MEXICO fazuľa v paradajkovej chilli omáčke indiánska a basmati ryža s avokádovým dresingom alergény neobsahuje,Jemne pikantný hlivový perkelt so sójovou smotanou a bezlepkovými cestovinami alergény sója,Raw karobovo banánová torta alergény orechy,
+2021-11-22,BlueBear,Jarná zeleninová s mrveničkou,Tekvicový prívarok s vajíčkom a chlebom,Bravčové ragú na hrášku s baraními rohmi,,TYZDENNE Hovädzie líčka na pučených zemiakoch s omáčkou
+2021-11-22,Centr klub,Hrášková krémová s opečeným chlebom,Grilovaný encián pečené zemiaky brusnice listový šalát,Kurací steak pečená zelenina zemiaková kaša,,
+2021-11-22,Ceska piv,Slepačí vývar s mäsom a rezancami,Dubákové rizoto s kuracím mäsom a parmezánom,Vepřo knedlo zelo,XXL Vyprážaný bravčový rezeň s hranolkami a tatárskou omáčkou,
+2021-11-22,Dilema,Slepačí vývar s rezancami a zeleninou N,Kuracie medailonky na čiernom pive ryža listový šalát,Čevapčiči pečené zemiaky cibuľa horčica,PENNE Guattro Formaggi špenátové listy orechy,
+2021-11-22,Kasa,Hrachová polievka s údenou paprikou,Hliva na spôsob držkového gulášu,Pečené kura v anízovej marináde s mandarinkami,,
+2021-11-22,Milton,Hŕstková polievka s klobáskou a koreňovou zeleninou,Pečené kuracie stehno plnka z kuracích pečienok,Kuracie prsia Supreme plnené penou z Foie Gras,Jahody podávané s duo čokoládovou penou,
+2021-11-22,Red Cafe,Zeleninová s haluškami polievka,Kurací steak na cheddarovej omáčke pečené zemiaky,Špenátové lasagne,Vyprážaný syr hranolky tatárska omáčka,Pizza šunková salámová šampiňónová
+2021-11-22,Spilka,Pre vás X Každý d,Minim EŇ pec,Karfiolová polievka     málne FA jeme,Kurací špíz s erivaká omáčkou a restovanou ryžou       ee,Vyprážaný syr s varenými zemiakmi a domácou tatarkou
+2021-11-22,Suvlaki,Mrkvová polievka,Cestoviny s plodmi mora olivami kaparami a syrom,Pečené kuracie stehienka s horčicovo jogurtovou omáčkou,Pečený baklažan s medom syrom feta a mandľami,
+2021-11-22,Svadby a Kari,Japonská polievka Miso s údeným tofu šampiňónmi a sezamom VEGAN,Indické VEGAN jogurtové kari s šošovicou beluga paradajkami a čerstvým špenátom,Malajské kari s kuracím mäsom od farmára s maslom GHEE zelenými fazuľkami paradajkami a kokosovým mliekom,,
+2021-11-22,Veda,Paradajková s ryžou,Rajma Masala,Vegetariánsky stroganov na indický spôsob,,
+2021-11-22,Veglife,Mrkvový krém s kokosovým mliekom,Segedínsky guláš s údeným BIO tempehom parená knedľa,Cuketová moussaka,Natural rizoto s tekvicou špenátom a gaštanmi,Šalát Čakankový šalát s brusnicami
+2021-11-23,Alzbetka,Frankfurtská s párkom,Hovädzie s kôprovou omáčkou a parenou knedľou,Gnocchi s lesnými hubami slanina parmezán a rukola,Ceasar šalát s grilovanými krevetami,
+2021-11-23,Bioland,Eintopf zeleninovo strukovinová polievka alergény zeler,Pečená zelenina na kokosovom oleji s citrónovým tymianom alergény neobsahuje,Kamut s cícerom tofu a fazuľovými strukmi alergény sója lepok,Tiramisu s kakaovým mascarpone alergény mlieko lepok vajcia,
+2021-11-23,BlueBear,Mrkvový krém so smotanou,Furmanské halušky s údeným syrom a slaninou,Špikované bravčové karé so zemiakovou,Liackou omáčkou,TYZDENNE Hovädzie líčka na pučených zemiakoch s omáčkou
+2021-11-23,Centr klub,Zemiaková na kyslo s čerstvým kôprom,Penne arabiata mozzarella caprese bazalka,Bravčová panenka horčicová omáčka ryža,,
+2021-11-23,Ceska piv,Slepačí vývar s mäsom a rezancami,Brokolicová krémová,Bryndzové halušky so slaninkou,Vykostené stehno s bylinkovým maslom pečeným zemiakom v šupke a kyslou smotanou,XXL Vyprážaný bravčový rezeň s hranolkami a tatárskou omáčkou
+2021-11-23,Dilema,Šošovicová na kyslo,Kurací PERKELT zemiakové halušky kyslá smotana,Bravčová pochúťka v zemiakovej placke strúhaný syr šalátik,Zeleninové fašírky zemiaková kaša cviklový šalát s chrenom,
+2021-11-23,Galileo,Fazuľová polievka,Vyprážaný bravčový rezeň so slovenským zemiakovým šalátom,,,
+2021-11-23,Kasa,Zeleninový krém,Pšenicové paradajkové risotto  marinovaný feta syr,Bravčová shawarma,,
+2021-11-23,Milton,Kuracie ragú s cuketou karotkou a limetkovými listami,Grécka musaka bez bešamelu gluten free zapekaná s mozzarellou,Gnocchi z fialových zemiakov s omáčkou z kozieho syra,Medajlónky zo srnčieho stehna Sous Vide šípková Rue omáčka,Poctivá čokoládová torta gluten free
+2021-11-23,Red Cafe,Hovädzí vývar s pečeovými knedličkami polievka,Pečená krkovička dusená kapusta domáca knedľa,Šalát s kuracím mäsom a francúzskym dresingom,Vyprážaný syr hranolky tatárska omáčka,Pizza šunková salámová šampiňónová
+2021-11-23,Spilka,Minestrone polievka,Tihaný hovädzí krk so šošovicovým prívarkom a zemiakmi,Canelloni plnené špenátom a ricottou,,
+2021-11-23,Suvlaki,Paradajková polievka,Pečené KAČACIE STEHNO s červenou paprikou mrkvou vínová omáčka,Vyprážaný GRÉCKY SYR KEFALOTIRI,Gratinované ŠAMPIŇONY plnené paprikou jogurotom a syrom,
+2021-11-23,Svadby a Kari,Ázijský vývar so šampiňónmi a zeleninou a sójovými klíčkami VEGAN,Srílanské cviklové VEGAN kari s bielymi fazuľami a zelenými fazuľkami,Thajské Massaman kari s hovädzím mäsom z ekofarmy batátmi cuketou a paradajkami,,
+2021-11-23,Veda,Thajská karfiólová,Mushroom Curry Hubové kari,Vegetariánsky stroganov na indický spôsob,,
+2021-11-23,Veglife,Tom Kha Thajská polievka B V P,Gnocchi s balkánskym syrom a hokaido omáčkou,Cícerovo banánové karí so špenátom kurkumová basmati ryža s kešu B V P,Brokolicové lasagne s mozzarellou,Šalát Indický mrkvový
+2021-11-24,Alzbetka,Paradajková so syrom,Kuracie na spôsob Gyros so zemiakovými hranolkami tzatziky,Pappardelle s hovädzím ragú rukola,Ceasar šalát s grilovanými krevetami,
+2021-11-24,Bioland,Hlivová krémová s pečeným zemiakom alergény neobsahuje,PORTUGAL feijoada čierna fazuľa so šampiňónmi pečené bataty a zeleninový šalát s pomarančom alergény neobsahuje,Sladké halušky s čoko karobovým krémom lesným ovocím a mätou alergény lepok,Čokoládová quinoa s ovocím alergény neobsahuje,
+2021-11-24,BlueBear,Šošovicová na kyslo,Slivkové gule s maslom mak strúhanka,Kurací vysmážaný rezen plnený nivou a,Zemiakovými medailónkami,TYZDENNE Hovädzie líčka na pučených zemiakoch s omáčkou
+2021-11-24,Centr klub,Šošovicová so zeleninou a majoránom,Granatiersky pochod uhorkový šalát,Hovädzie znojemské tarhoňa,,
+2021-11-24,Ceska piv,Špenátová s vajíčkom,Brokolicové lasagne so syrom,Kurací černohorský rezeň varené zemiaky paradajkový šalát s cibuľkou,Sviečková na smotane s parenou knedľou,XXL Vyprážaný bravčový rezeň s hranolkami a tatárskou omáčkou
+2021-11-24,Dilema,Slepačí vývar s rezancami a zeleninou N,Kuracie STRIPSY americké zemiaky sweet chilli majonéza,SZEGEDÍNSKY guľáš parená knedľa N,CVIKLOVÉ krémové rizoto s feta syrom,
+2021-11-24,Galileo,Zeleninová polievka s haluškami,Hovädzie varené mäso s kôprovou omáčkou a knedľou,,,
+2021-11-24,Kasa,Kelová detox polievka,Bezlepková pasta s paprikou sedanom a červenou cibuľou,Hovädzia kofte so škoricou mätou a koriandrom,,
+2021-11-24,Milton,Zemiaková polievka na kyslo kôprový olivový olej,Konfitovaný steak z bravčovej krkovičky,Zapekaný karfiol a brokolica s Veloutté omáčkou a cheedarom,Grilované kačacie prsia Sous Vide podávané krájané na plátky,Cheesecake s brusnicovou omáčkou a čokoládou polevou
+2021-11-24,Red Cafe,Lusková na kyslo polievka,Kuracie medajlónky na BBQ omáčke americké zemiaky,Zemiakový prívarok br fašírka,Vyprážaný syr hranolky tatárska omáčka,Pizza šunková salámová šampiňónová
+2021-11-24,Spilka,Fazuľková na kyslo,Perkelt z kuracieho stehna s maslovými haluškami,Tekvicový prívarok so zeleninovou koftou a vajíčkom,,
+2021-11-24,Suvlaki,Šošovicová polievka,Pečená BRAVČOVÁ KRKOVIČKA plnená cuketou a syrom,Dusené morčacie mäso so slaninkou zázvorom pomarančová omáčka,Grilovaný GRÉCKY SYR MANURI,
+2021-11-24,Svadby a Kari,Svieža šošovicová polievka s citrónovou šťavou,Horčicové VEGAN kari s cícerom šampiňónmi a paradajkami,Indické maslové Butter Chicken s kuracím mäsom od farmára batátmi paradajkami a hráškom,,
+2021-11-24,Veda,Brokolicová,Chickpeas masala Cícerová masala,Vegetariánsky stroganov na indický spôsob,,
+2021-11-24,Veglife,Minestrone polievka,Cviklové guľky so slnečnicou zemiakové pyré,Celozrnné špagety s červeným pestom orechami rukolou a tempehom,Grilované robi s červenou cibuľkou na hrachovej kaši pečené zemiaky,Šalát Kukuricovo mrkvový so špenátom
+2021-11-25,Alzbetka,Šošovicová s údeným mäsom,Pečené kačacie stehno s červenou kapustou a parenou buchtou nakladané brusnice,Vyprážaný hermelín s varenými zemiakmi a domácou tatárskou omáčkou,Ceasar šalát s grilovanými krevetami,
+2021-11-25,Bioland,Baklažánová polievka s paradajkou a zázvorovou príchuťou alergény neobsahuje,Rizoto s červenou repou alergény zeler sedano,Vegánsky šošovicový prívarok s pohánkovými fašírkami alergény neobsahuje,Raw ananásová torta alergény orechy,
+2021-11-25,BlueBear,Cícerový krém s cesnakovým krutónom,Maďarský jemne pikantný guláš s,Dľou,Špenátové rizoto s parmezánom,TYZDENNE Hovädzie líčka na pučených zemiakoch s omáčkou
+2021-11-25,Centr klub,Kapustová s klobásou,Dukátové buchtičky s vanilkovým krémom a lesným ovocím,Wrap s kuracím mäsom hranolky čili majonéza,,
+2021-11-25,Dilema,Hrachová s klobáskou,Kuracie zapekané CAPRESE paradajka mozzarella domáce pesto ryža,LASAGNE BOLOGNESE paradajkové sugo rukola,Vyprážané SAMPINÓNY varené zemiaky s vňatkou domáca tatárska omáčka N,
+2021-11-25,Galileo,Čínska ostrokyslá polievka,Černohorský bravčový rezeň s hranolkami šalát z červenej kapusty,,,
+2021-11-25,Kasa,Polievka z červenej šošovice,Petržlenovo zemiakový hummus s pečenou mrkvou a chrumkavým cícerom,Kurací cesnakovo paprikový špíz,,
+2021-11-25,Milton,Pórový krém so smotanou restovaná oravská slaninka,Vyprážaný bravčový rezeň bravčové karé v bezlepkovej úprave,Filetovaný pstruh grilovaný v paprikovom obale,Grilované kačacie prsia Sous Vide omáčka kačací Demi glacé,U nás pripravovaná torta podľa Rudka
+2021-11-25,Red Cafe,Hrachová s údeným polievka,Kuracie soté hrášková ryža,Tuniakový šalát s vareným vajíčkom,Vyprážaný syr hranolky tatárska omáčka,Pizza šunková salámová šampiňónová
+2021-11-25,Spilka,Kurací ramen,Vepšo knedlo zclo konfitované bravčové pliceko s domácou parenou knedľou a,Karamelizovanou kapustou,Paprika plňená baklažánom ryžou a cícerom s paradajkovou omáčkou a parenou knedľou z,M
+2021-11-25,Suvlaki,Zeleninová polievka,Grilované KURACIE SUVLAKI špízy ks domáce hranolky alebo ryža pita chlieb tzatziki dip paradajky cibuľka,Pečené hovädzie guličky plnené syrom paradajková omáčka,Zapečený BAKLAŽAN so  druhmi syra,
+2021-11-25,Svadby a Kari,Cviklový krém s kokosovým mliekom VEGAN,Vegan kokosovo hlivové kari s tekvicou kukuričkou a žltou paprikou,Vietnamské kari s hovädzím mäsom z ekofarmy ananásom cuketou a mrkvou,,
+2021-11-25,Veda,Thajská zemiaková s mini kukuricou,Green Thai Curry Zelené thajské kari,Mattar Panner Hrach paneer,,
+2021-11-25,Veglife,Sedliacka fazuľová polievka,Batátovo karfiolový nákyp,Goody foody fašírky s tekvicovým prívarkom petržlenové zemiaky,Šošovicový guláš s pečenou hlivou ryža natural,Šalát Zeleninový šalát s mozzarellou
+2021-11-26,Alzbetka,Hovädzí vývar s pečeňovými haluškami,Vyprážaná morská šťuka s majonézovým šalátom,Kuracie curry s jazmínovou ryžou čerstvý koriander    Ceasar šalát s grilovanými krevetami,,
+2021-11-26,Bioland,Hŕstková bylinková s citrónovou trávou alergény neobsahuje,THAI Karí so zeleninou v kokosovom mlieku ryža basmati s granátovým jablkom alergény neobsahuje,Zelerovo batátové placky s chilli kurkumová omáčka a šalát alergény zeler,Vanilkový raw krém s ovocím alergény orechy,
+2021-11-26,BlueBear,Boršč,Francúzke zemiaky s klobásou vajíčkom,Syrom,Zapečený kurací plátok s mozzarellou a,TYZDENNE Hovädzie líčka na pučených zemiakoch s omáčkou
+2021-11-26,Centr klub,Mäsový vývar so zeleninou a rezancami,Vyprážaný karfiól varené zemiaky tatarská omáčka,Morčacie stehno na slanine a bylinkách slovenská ryža kapustový šalát,,
+2021-11-26,Dilema,Slepačí vývar s rezancami a zeleninou N,Kurací WOK so zeleninou ryža koriander,Bravčový KOTLÍKOVÝ guláš kváskový chlieb,Vyprážaný SYR hranolky naša domáca tatárska omáčka    Mani NnAdávramaA  ŠACA A,
+2021-11-26,Galileo,Brokolicový krém,Znojemské hovädzie mäso s tarhoňou,,,
+2021-11-26,Kasa,Cviklová krémová polievka,Zeleninová placka,Morka na konfitovaných citrónoch,,
+2021-11-26,Milton,Karfiolový krém so zázvorom limetkovou šťavou a kokosovým mliekom,Pečená roláda z morčacieho stehna Sous vide,Omáčka krémová bazalková Fritované steakové hranolky  Malý listový šalátik olivový olej a citrónová šťava,Parené kysnuté buchty plnené jahodovým džemom a jahodami,V jarnom ceste grilovaný kozí syr Chevrette di Poiton
+2021-11-26,Red Cafe,Minestrone polievka,Pfeffer steak z panenky šťuchané zemiaky,Spaghetti aglio e olio,Vyprážaný syr hranolky tatárska omáčka,Pizza šunková salámová šampiňónová
+2021-11-26,Spilka,Tekvicový krém,Kurací rezeň s domácim majonézovým šalátom,Arancini s omáčkou z pojbných paradajok syrom a šalátom,,
+2021-11-26,Suvlaki,Fazuľová polievka,Grilované Bravčové SUVLAKI špízy ks domáce hranolky alebo ryža pita chlieb tzatziki dip paradajky cibuľka,Pečené RYBACIE FILETY s čerstvými paradajkami cesnakom a rozmarínom,Vegetariánska MUSAKA,
+2021-11-26,Veda,Šampiónová,Cuketa chanadul cuketa kukurica a karfiól v indickej omáčke,Vegetariánsky stroganov na indický spôsob,,
+2021-11-26,Veglife,Harira marocká cícerová polievka,Hubový perkelt tarhoňa,Kapustové placky s údeným tofu zemiakové pyré,Zapekané celozrnné penne s brokolicou a nivou,Šalát Chrenový s čínskou kapustou
+2021-11-29,Alzbetka,Karfiolová so syrom,Pečené kuracie stehno so zemiakovou kašou a demi glace,Hlivový paprikáš s maslovými haluškami a kyslou smotanou,Ceasar šalát s grilovanými krevetami,
+2021-11-29,Bioland,Paradajková s bazalkou alergény neobsahuje,Pohánková sekaná so zemiakovou kašou a restovanou cibuľkou alergény neobsahuje,Cisárov trhanec s vanilkovým pudingom s karamelizovaným jablkom hruškou a mätou alergény lepok,Raw čokoládovo sezamové guličky alergény sezam orechy sója,
+2021-11-29,BlueBear,Jarná zeleninová s mrveničkou,Tekvicový prívarok s vajíčkom a chlebom,Bravčové ragú na hrášku s baraními rohmi,,TYZDENNE Hovädzie líčka na pučených zemiakoch s omáčkou
+2021-11-29,Centr klub,Karfiólová krémová s mrvenicou,Furmanské halušky s vypečenou klobásou,Kurací steak tekvicové pyré baby zemiaky feta,,
+2021-11-29,Dilema,Slepačí vývar s rezancami a zeleninou N,Marinovaný kurací STEAK  s gorgonzolovou omáčkou ryža hranolky,Domáca sekaná so zemiakovou kašou karamelizovaná cibuľka kyslá uhorka N  l,Vyprážaný SYR hranolky naša domáca tatárska omáčka,
+2021-11-29,Galileo,Krémová zeleninová polievka so zemiakmi,Lassagne Bolonese,,,
+2021-11-29,Kasa,Paradajková talianska polievka s bazalkou,Gnocchi pomodoro s baklažánom a cuketou  syr voliteľný,Pečené vykostené kuracie stehno so slaninou,,
+2021-11-29,Milton,Krémová polievka z bielej fazule s jablčným octom a bazalkou,Sous Vide kuracia roláda vykostené stehná prsia a kuracie fauche v úprave Sous Vide,Králičí chrbát Sous vide s tekvicovým olejom,Krémová omáčka s judášovým uchom,Jahodovo smotanové Zucotto torta v tvare polgule
+2021-11-29,Red Cafe,Kulajda polievka,Kur prsia v medovo horčic marináde rozmarín zemiaky,Zemiak guľky plnnené údeným dus kysl kapusta cibula,Vyprážaný syr hranolky tatárska omáčka,Pizza šunková salámová šampiňónová
+2021-11-29,Spilka,Minim Pečien,Čerstvý né se,Zaleninová krémová polievka        Svého Chifen ďľuhy,Kurací stroganov s dusenou ryžou       BA,Vyprážaný syr s varenými zemiakmi a ratarskou omáčkou
+2021-11-29,Suvlaki,Špenátová krémová polievka,Grilované JAHŇACIE SUVLAKI špízy ks domáce hranolky pita chlieb tzatziki dip paradajky cibuľka,Miešaný ŠALÁT s vyprážanými KALAMÁRMI horčicovo jogurtový dresing,Zapečené LASAGNE s mletým mäsom bešamel omáčka,BRIAM zapečený baklažan cuketa zemiaky paradajková omáčka
+2021-11-29,Svadby a Kari,Brokolicová polievka s kokosovým krémom,Thajské žlté VEGAN kari s baklažánom cuketou a tofu,Indická Tikka Masala s kuracím mäsom od farmára s mrkvou a hráškom,,
+2021-11-29,Veda,Paradajková s ryžou,Madrasi curry mango a mini kukurica v indickej omáčke,Malai kofta domáce syrové fašírky v indickej krémovej maslovej omáčke,,
+2021-11-29,Veglife,Vegan kulajda,Seitan na spôsob Stroganoff ryža jasmínová,Plnená paprika so sójovou plnkou v paradajkovej omáčke petržlenové zemiaky,Šalát Rosso cviklový so semiačkami,Dezert Banánovo avokádová torta
+2021-11-30,Alzbetka,,Milí naši zákazníci,,,
+2021-11-30,Bioland,CHI ostrokyslá polievka so sójovou omáčkou voľná voľba alergény neobsahuje,Zeleninové lasagne s cuketou a vegánskym cheddarom alergény lepok,Cviklové placky s chia semienkami na hráškovej omáčke listový mix šalát alergény neobsahuje,Jablková šarlotka alergény vajcia lepok,
+2021-11-30,BlueBear,Mrkvový krém so smotanou,Furmanské halušky s údeným syrom a slaninou,Špikované bravčové karé so zemiakovou,Liackou omáčkou,TYZDENNE Hovädzie líčka na pučených zemiakoch s omáčkou
+2021-11-30,Centr klub,Hubová na kyslo so zemiakmi,Hrachová kaša s údeným mäsom cesnaková hrianka,Segedínsky guláš parená knedľa,,
+2021-11-30,Dilema,Paradajková s bazalkou a krutónmi N I,Kuracie RED CURRY s kokosovým mliekom a zeleninou jasmínová ryža,Pomaly pečená KRKOVIČKA hubová omáčka štuchané zemiaky listový šalát s cviklou,Vyprážaný SYR hranolky naša domáca tatárska omáčka,
+2021-11-30,Galileo,Talianska minestrone,Zapekané filé z tresky s oštiepkom a pórom varené zemiaky,,,
+2021-11-30,Kasa,Fazuľová polievka na kyslo,Zemiakovo batátová haruľa,Moravský vrabec na kyslej kapuste,,
+2021-11-30,Milton,Morčací vývar mäso koreňová zelenina a niťovky,Španielsky vtáčik plnené plátky z hovädzieho zadného stehna,Fritované mozzarellové guľky obaľované v kukuričných lupienkoch,Viedenský vyprážaný teľací rezeň teľacie karé bezlepková úprava,Domáca torta podľa Rudka
+2021-11-30,Red Cafe,Paradajková so syrom polievka,Bravčové znojemské tarhoňa,Hráškové rizoto s kuracími kúskami,Vyprážaný syr hranolky tatárska omáčka,Pizza šunková salámová šampiňónová
+2021-11-30,Spilka,Šošovicová na kyslo,Bravčový Černohor so zemiakovým šalátom,Šalát s pečenou tekvicou guinoou a kozím syrom,,
+2021-11-30,Suvlaki,Šošovicová polievka,Grilované SUVLAKI zo SYRA CHALUMI špízy ks domáce hranolky pita chlieb tzatziki dip paradajky cibuľka,Pečené REBRÁ s medovou omáčkou,ŠALÁT s kuracím GYROS mäskom jogurtovo horčicový dressing,PANCAKE so šampiňonmi feta syrom volským okom
+2021-11-30,Svadby a Kari,Číra šampiňónová polievka na bielom víne s čerstvým tymiánom VEGAN,Indické VEGAN kari v paradajkovo kardamonovej omáčke s bielou fazuľou a baklažánom,Kokosové kari s hovädzím mäsom z ekofarmy mandľami batátmi cuketou a jablkami,,
+2021-11-30,Veda,Thajská karfiólová,Gobi beans karfiól a zelená fazuľka v indickej omáčke,Aloo makhanwala zemiaky v indickej maslovej omáčke,,
+2021-11-30,Veglife,Cícerová polievka s pórom a zemiakmi,Robi bourguignon ryža natural,Aloo matar kofty v paradajkovo kokosovej omáčke pečené zemiaky,Šalát Šalát s granátovým jablkom,Dezert Jogurtová panna cotta s ovocím
+2021-12-01,Alzbetka,,Milí naši zákazníci,,,
+2021-12-01,Bioland,Vegánska gulášová s tempehom alergény sója,Pečené kokosové tofu africké tekvicové pyré šalát alergény sója,Špagety bolognese s červenou šošovicou olivami a vegán parmezánom alergény neobsahuje,Raw makovo kakaová torta alergény Orechy,
+2021-12-01,BlueBear,Šošovicová na kyslo,Slivkové gule s maslom mak strúhanka,Kurací vysmážaný rezen plnený nivou a,Zemiakovými medailónkami,TYZDENNE Hovädzie líčka na pučených zemiakoch s omáčkou
+2021-12-01,Centr klub,Fazuľová so zeleninou a majoránom,Tvarohovo jablková žemľovka,Kuracie ragú zemiaková placka syr,,
+2021-12-01,Dilema,Slepačí vývar s rezancami a zeleninou N,Vyprážaná TRESKA zemiakový majonézové šalát cibuľka,Hovädzie varené CHRENOVÁ omáčka parená knedľa,Vyprážaný SYR hranolky naša domáca tatárska omáčka,
+2021-12-01,Galileo,Jahňací vývar s haluškami,Bravčový perkelt s kolienkami,,,
+2021-12-01,Kasa,Hokkaido polievka,Mrkvová placka s quinoou,Hovädzie guľky v paradajkovej omáčke,,
+2021-12-01,Milton,Tekvicová krémová polievka tymianový olivový olej,Hovädzie zadné z mladého býčka podávané krájané na plátky,Steak z hovädzej sviečkovice s volským okom,Mangové Tiramisu parfumované bielym rumom,
+2021-12-01,Red Cafe,Cesnaková krémová polievka,Pečené kuracie stehno dusená ryža kompót,Penne quatro formaggi,Vyprážaný syr hranolky tatárska omáčka,Pizza šunková salámová šampiňónová
+2021-12-01,Spilka,Kukuričná polievka s klobásou,Burger s tchaným bravčovým mäsom šalátom coleslav a batatovými hranolkami,Burrito s restovanou ryžou avokádom a paradajkovou salsou,,
+2021-12-01,Suvlaki,Cesnaková polievka,Vyprážané RYBKY GAVROS,Pečené KURA s rozmarínom horčicová omáčka,GRÉCKY ŠALÁT PITA,Zapečený BAKLAŽAN s bazalkou paradajkovou omáčkou a Syrom FETA
+2021-12-01,Svadby a Kari,VEGAN kapustnica s lesnými hubami a opekaným tempeh,Indické zelené VEGAN kari s rastlinným jogurtom šampiňónmi batátmi a brusnicami,Indické Vindaloo s kuracím mäsom od farmára s batátmi karfiólom a hrozienkami,,
+2021-12-01,Veda,Brokolicová,Gobi Corn karfiól a kukurica v indickej omáčke,Kadhai mutter paneer farebná paprika hrášok a domáci syr v indickej maslovej omáčke,,
+2021-12-01,Veglife,Tekvicový krém s kurkumou,Cícerovo quinoové karí ryža jasmínová B V P,Carbonara špagety s tempehom,Šalát Mozzarellový šalát s olivami,Dezert Jogurtová panna cotta s ovocím
+2021-12-02,Alzbetka,,Milí naši zákazníci,,,
+2021-12-02,Bioland,Kukuričná polievka so špenátom a chilli papričkami alergény neobsahuje,INDIA Chana Dal cícerové karí ryža basmati alergény neobsahuje,Koložvárska kapusta s restovanými šampiňónmi a tempehom alergény sója,Hruškový koláč s orechmi alergény lepok mlieko vajcia orechy,
+2021-12-02,BlueBear,Cícerový krém s cesnakovým krutónom,Maďarský jemne pikantný guláš s,Dľou,Špenátové rizoto s parmezánom,TYZDENNE Hovädzie líčka na pučených zemiakoch s omáčkou
+2021-12-02,Centr klub,Zeleninová s krupicovými haluškami,Vyprážaný syr pečené zemiaky tatarská omáčka,Hovädzí stroganov dusená ryža,,
+2021-12-02,Dilema,Gulášová polievka so zemiakmi,Kuracia TORTILLA s cheddarom a zeleninou pečené zemiaky bylinkový dressing,Bravčový CORDON BLEU ryža coleslaw šalát,Vyprážaný SYR hranolky naša domáca tatárska omáčka,
+2021-12-02,Galileo,Karfiolová polievka,Bravčová panenka s nivovou omáčkou a dusenou ryžou,,,
+2021-12-02,Kasa,Polievka z kyslej kapusty s cviklou,Šošovicové ragú zapečené s cviklou,Bravčová krkovička s červenou kapustou,,
+2021-12-02,Milton,Hríbová krémová polievka zmes lesných hub a šampiňónov,Domáca sekaná s mozzarellou a panchettou,Ragú z neúdeného tofu a pošírovanej cvikly s kokosovým mliekom,Rump steak pripravovaný technológiou Sous Vide,Čokoládová lávová tortička a malinový couilis
+2021-12-02,Red Cafe,Kapustnica polievka,Kurací perkelt s haluškami,Špenátové palacinky so syrom niva,Vyprážaný syr hranolky tatárska omáčka,Pizza šunková salámová šampiňónová
+2021-12-02,Spilka,Cibuľová polievka s krutónom,Španielsky vráčik s tarhoňou,Domáce zemiakové šúľance s makom a brusnicami,,
+2021-12-02,Suvlaki,Paradajková polievka,Grilované KURACIE SUVLAKI špízy ks domáce hranolky pita chlieb tzatziki dip paradajky cibuľka,Pečené JAHŇACIE KARBONÁTKY,Dusené morčacie mäso s hráškovými strukmi,Grilovaný GRÉCKY SYR MANURI
+2021-12-02,Svadby a Kari,Poctivá ostrokyslá polievka s kuracím mäsom a údeným tofu,Indický VEGAN Dhal z červenej šošovice s cviklou,Thajské zelené kari s hovädzím mäsom z ekofarmy cuketou a zelenými fazuľkami,,
+2021-12-02,Veda,Thajská zemiaková s mini kukuricou,Palak brocolli tamatar brokolica a paradajky v indickej špenátovej omáčke,Gwarati curry knedlíčky z cícerovej múky v indickej jogurtovej omáčke,,
+2021-12-02,Veglife,Nájdete nás na Mickiewiczovej Mýtnej Prievozskej Dúbravskej ceste a vo Freshmarkete Donášku si objednajte na objednavky veglife sk Teraz AKCIA,Zeleninový vývar s miso pastou,Tofu kung pao ryža jasmínová B V P,Hokaido cícerové fašírky šťuchané zemiaky s olivovým olejom,Šalát Miešaný zeleninový šalát
+2021-12-03,Alzbetka,,Milí naši zákazníci,,,
+2021-12-03,Bioland,TURKEY Šošovicová polievka tureckej nevesty s bulgurom alergény neobsahuje,Zeleninové muffiny brokolicové pyré s pažítkou listový šalát alergény lepok,Grilovaná cuketa s batátovými hranolkami a limetkovým dipom alergény neobsahuje,Strúhaný tvarohový koláč alergény lepok mlieko vajcia,
+2021-12-03,BlueBear,Boršč,Francúzke zemiaky s klobásou vajíčkom,Syrom,Zapečený kurací plátok s mozzarellou a,TYZDENNE Hovädzie líčka na pučených zemiakoch s omáčkou
+2021-12-03,Centr klub,Mrkvový krém so zázvorom a opečeným chlebom,Zeleninové lasagne s paradajkovou omáčkou,Vyprážaná treska majonézový šalát,,
+2021-12-03,Dilema,Slepačí vývar s rezancami a zeleninou N,Zemiakové GNOCCHI s kuracou pečienkou pórikom a šalviou parmezán,Bravčová ŽIVÁNSKA z plechu so zemiakmi kapustový šalát,Vyprážaný SYR hranolky naša domáca tatárska omáčka    Mani HdÁramaA  ŠACA Ax,
+2021-12-03,Galileo,Slepačí vývar z drobkov s rezancami,Koložvárska kapusta,,,
+2021-12-03,Kasa,Mrkvovo karfiolová polievka s hráškom,Ryžový nákyp s jablkami,Kurací paprikáš,,
+2021-12-03,Milton,Neapolská paradajková polievka s bazalkou a strúhaným parmezánom,Grilovaný kurací steak grilovaný s maslom a bazalkou,Ricottové lievance so sušenými brusnicami,Grilovaný filetovaná ryba Mahi Mahi,Grilované kuracie prsia Supreme Sous Vide
+2021-12-03,Red Cafe,Hŕstková polievka,Vypr bravčový rezeň majonézový šalát,Grilovaný oštiepok na listovom šaláte bylinkový dip,Vyprážaný syr hranolky tatárska omáčka,Pizza šunková salámová šampiňónová
+2021-12-03,Spilka,Paradajková polievka so syrom       TT,Fish and chips Treska v pivnom cestíčku s hranolkami a tatarkou        bý,Zapekané avokádo so syrom cheddar holandská omáčka a varené zemiaky     Ť,,
+2021-12-03,Suvlaki,Zeleninová polievka,Pečené RYBACIE FILETY s rozmarínom cesnakom čerstvými paradajkam,ŠALÁT s bravčovým gyros mäskom horčicovo majonézový dresing,Zapečená TORTILA plnená kuracím mäsom paprikou kukuricou šalátom sladkopikantná omáčka,Zapečené MAKARÓNY s baklažanom olivami syrom
+2021-12-03,Svadby a Kari,Hubová polievka nakyslo s kôprom VEGAN,Etiópske berberské VEGAN kari s tekvicou brokolicou a hráškom VEGAN,Kuku Paka Keňské kokosové kari s kuracím mäsom od farmára s topinamburom paradajkami a zelenými fazuľkami,,
+2021-12-03,Veda,Šampiónová,Pakora subzi zeleninové fašírky v indickej omáčke,Vegetable kadhi miešaná zelenina v indickej jogurtovej omáčke,,
+2021-12-03,Veglife,Indická hrachová polievka B V P,Brokolicové natural rizoto s mrkvou a tempehom,Zemiakovo syrové pampúchy so šošovicoým prívarkom,Šalát Kelový šalát s jablkom a orechami,Dezert Brownies s ribeľovým džemom
+2021-12-06,Alzbetka,,Milí naši zákazníci,,,
+2021-12-06,Bioland,Vianočná kapustnica so sušenými hubami slivkami a tempehom voľná voľba alergény neobsahuje,Pečené tekvicové koliesko plnené quinoou a hrozienkami na kurkumovej omáčke alergény neobsahuje,Stroganov s robi rezancami a zemiakovou harmonikou s ryžou ovocný šalát alergény lepok horčičné semienko,Chia puding z kokosového mlieka a ovocím alergény neobsahuje,
+2021-12-06,Centr klub,Zeleninová krémová s opečeným chlebom,Bryndzové pirohy so smotanou a chrumkavou cibuľou,Kuracie prsia na kari s wok zeleninou jazmínová ryža s čilli,,
+2021-12-06,Dilema,Slepačí vývar s rezancami a zeleninou,Kurací STROGANOV kôpor ryža,Pivovarský bravčový REZEŇ v pivnom cestíčku zemiaková kaša kyslá uhorka,Vyprážaný SYR hranolky naša domáca tatárska omáčka,
+2021-12-06,Galileo,Ml Brokolicová krémová polievka,Bravčové karé na horčicovej omáčke so zelenými lúskami a údeným oštiepkom dusená ryža,,,
+2021-12-06,Kasa,Zemiakovo pórová polievka,Grilovaný Camembert  dulový rozvar,Pomaly pečené bravčové plece,,
+2021-12-06,Milton,Tekvicová polievka na kyslo s kôprom z bielej strúhanej tekvice s jablkovým octom,Grilované medajlónky z bravčovej panenky šampiňónová omáčka,Kukuričné cestoviny bezlepkové vegetariánska bolonská omáčka,Vyprážané medajlónky z bravčovej panenky,Schwarzwaldská torta čokoláda šľahačka a višne
+2021-12-06,Red Cafe,Zeleninová s haluškami polievka,Kurací steak na hríbikovej omáčke dusená ryža,Penne so schwarzwaldskou šunkou a rukolou,Vyprážaný syr hranolky tatárska omáčka,Pizza šunková salámová šampiňónová
+2021-12-06,Spilka,Vás Minim SÚ Pečieme,Brokolicová krémová polievka s krutónmi       ého Chifen druhy,Bravčové medailónky na šampiňónoch s ryžou       EBA,Vyprážaný encián s varenými zemiakmi a brusnicami,
+2021-12-06,Suvlaki,Mrkvová polievka,Grilované BRAVČOVÉ SUVLAKI ks špízy domáce hranolky paradajky cibuľka tzatziki dip pita chlieb,Dusené morčacie mäso s fazuľou gigantes a paprikou,Grilovaný SYR CHALUMI,Vyprážané cuketové guličky
+2021-12-06,Svadby a Kari,Polievka z pečených tekvíc s kokosovým mliekom VEGAN,Thajské biele VEGAN kari s hlivou cuketou a zelenými fazuľkami,Indické maslové Butter Chicken s kuracím mäsom batátmi paradajkami a hráškom,,
+2021-12-06,Veda,Paradajková s ryžou,Madrasi curry mango a mini kukurica v indickej omáčke,Malai kofta domáce syrové fašírky v indickej krémovej maslovej omáčke,,
+2021-12-06,Veglife,Zeleninová polievka so pšenom,Šošovicový dhál s kokosovým mliekom a pečenými batatmi ryža jasmínová,Tekvicový quiche s balkánskym syrom zemiakové pyré s maslom,Šalát Thajský šalát s hráškom,Dezert Raw malinový krém
+2021-12-07,Alzbetka,,Milí naši zákazníci,,,
+2021-12-07,Bioland,Tekvicová krémová polievka s hurmikaki pyré alergény neobsahuje,Domáce halušky z červenej repy s kešu omáčkou a redchard šalátom alergény lepok orechy,Cesnakové bezlepkové špagety so sušenými paradajkami a triomix paradajkami alergény neobsahuje,Cviklové brownies alergény lepok mlieko vajcia,
+2021-12-07,Centr klub,Hlivová s údenou paprikou a zemiakmi,Šošovicový prívarok pečená klobása vajíčko chlieb,Pečené morčacie stehno dusená kyslá kapusta parená knedľa,,
+2021-12-07,Dilema,Cesnakový krém s krutónmi N I,Kurací GYROS ryža uhorkové tzatziky,FRANCÚZSKE ZEMIAKY domáca čalamáda,Vyprážaný SYR hranolky naša domáca tatárska omáčka,
+2021-12-07,Galileo,Kurací vývar s cestovinou,Kuracie prsia plnené šunkou a mozarellou dusená ryža,,,
+2021-12-07,Kasa,Špenátová polievka,Pečený plnený batát,Pečené kuracie stehno na červenej cibuli,,
+2021-12-07,Milton,Babičkina bryndzová polievka s mrveničkou,Fašírky z u nás mletého bravčového a hovädzieho mäsa a syrom Eidam,Brokolicové karfiolové lasagne zapekané údeným oštiepkom,Viedenská roštenka Sous Vide s fritovanou cibuľkou,U nás pripravovaná torta podľa Rudka
+2021-12-07,Red Cafe,Fazuľová na kyslo polievka,Pečené kačacie stehno dusená kapusta domáca knedľa,Cuketové rizoto s grilovaným lososom,Vyprážaný syr hranolky tatárska omáčka,Pizza šunková salámová šampiňónová
+2021-12-07,Spilka,Boršč,Kurací Gordon bleu petržlenovou omáčkou a zemiakmi,Ouesadlla paradajkami cheddarom a avokádom s chipotle dipom,,
+2021-12-07,Suvlaki,Šošovicová polievka,Pečený LOSOS so stonkovým zelerom koriandrom pomarančová omáčka,ŠALÁT s bravčovým GYROS mäskom horčicovo majonézový dresing,Pečené KURA s rozmarínom a medom,Zapečený BAKLAŽAN so zeleninou paradajkovou omáčkou bazalkou a syrom
+2021-12-07,Svadby a Kari,Ukrajinský cviklový boršč VEGAN,Indické VEGAN Aloo Gobi s karfiolom batátmi a hráškom,Thajské žlté hovädzie kari s mrkvou a balažánom,,
+2021-12-07,Veda,Thajská karfiólová,Gobi beans karfiól a zelená fazuľka v indickej omáčke,Mushroom makhanwala huba v indickej maslovej omáčke,,
+2021-12-07,Veglife,Paradajková polievka s bielou fazuľou,Gratinované zemiaky so špenátom a mozzarelou,Tofu v zeleninovo arašidovej omáčke ryža natural B V P,Šalát Rukolový šalát s olivami,Dezert Gaštanový koláč s čokoládou
+2021-12-08,Alzbetka,,Milí naši zákazníci,,,
+2021-12-08,Bioland,Krémová z červenej kapusty alergény neobsahuje,MOROCCO Tekvicový kotlík so zeleninou ryža jasmín alergény neobsahuje,Sladké rezance s kokosovým jogurtom lesnými plodmi a praženými mandľami alergény orech lepok,Banánové tiramisu alergény mlieko vajcia lepok,
+2021-12-08,Centr klub,Zeleninový boršč kyslou smotanou,Slivkové knedle s makom a maslom,Mletý rezeň so syrom zemiaková kaša kapustový šalát,,
+2021-12-08,Dilema,Slepačí vývar s rezancami a zeleninou N,Penne POMODORO s kuracím mäsom olivy baby mozarella rukola,VEPRO KNEDLO ZELO,Vyprážaný SYR hranolky naša domáca tatárska omáčka,
+2021-12-08,Galileo,Talianska Minestrone,Bravčová panenka so slaninkou na dubákovej omáčke dusená ryža,,,
+2021-12-08,Kasa,Šošovicová polievka na kyslo,Karfiolovo hlivové curry,Hovädzí guláš,,
+2021-12-08,Milton,Hovädzí vývar koreňová zelenina a niťovky,Pečené kuracie stehno sk na spôsob Barbecue,Zeleninové taštičky Samosa plnka jemne pikantná zeleninová,Flank steak pripravovaný technológiou Sous Vide,U nás pripravovaný francúzsky krémeš
+2021-12-08,Red Cafe,Francúzska s mušličkami polievka,Vyprážané kuracie prsia v syrovom cestíčku pečené zemiaky mrkvový šalát,Zapekaná brokolica so syrom varené zemiaky,Vyprážaný syr hranolky tatárska omáčka,Pizza šunková salámová šampiňónová
+2021-12-08,Spilka,Hrachová polievka,Bravčové íčka so zemiakovým pyré brusnicami,Bryndzové pirohy cibuľkou možnosť podávať aj so slaninkou,,
+2021-12-08,Suvlaki,Cesnaková polievka,Dusené TEĽACIE mäso s paprikou a šampiňónmi,Vyprážané RYBKY GAVROS,Dusené kuracie mäso s cuketou slaninkou horčicová omáčka,Zapečená OKRA so zemiakmi paradajková omáčka na grécky spôsob
+2021-12-08,Svadby a Kari,Laksa malajská kokosová polievka VEGAN,Indické VEGAN jogurtové kari s čiernou fazuľou paradajkami a čerstvým špenátom,Jamajské kuracie kari s mrkvou zelenými fazuľkami a jarnou cibuľkou,,
+2021-12-08,Veda,Brokolicová,Cuketa chanadul cuketa kukurica a karfiól v indickej omáčke,Kadhai mutter paneer farebná paprika hrášok a domáci syr v indickej maslovej omáčke,,
+2021-12-08,Veglife,Zimný zeleninový vývar,Mrkvovo syrové karbonátky zemiakové pyré s maslom,Thajské žlté karí s mangom ryža jasmínová B V P,Šalát Kelový šalát s jablkom a orechami,Dezert Gaštanový koláč s čokoládou
+2021-12-09,Alzbetka,,Milí naši zákazníci,,,
+2021-12-09,Bioland,GREEK Kelová polievka alergény neobsahuje,Vyprážaný chrumkavý seitan a vianočný zemiakový šalát s tofunézou alergény sója lepok horčičné semienko,Batátový granadír trochu inak a šalát zo stonkového zeleru alergény zeler iba zo šalátu,Raw orieškové guličky alergény orechy,
+2021-12-09,Centr klub,Hrachová s údeným mäsom,Cuketové placky hubové ragú feta baby špenát,BBQ hovädzie trhané pečené zemiaky majonéza smažená cibuľa,,
+2021-12-09,Dilema,Maďarská fazuľová s údeným mäsom N,Kurací rezeň plnený SCHWARTZVALD šunkou a gorgonzollou pečené zemiaky kapustový šalát,Hovädzie RAGU na poľovnícky spôsob tarhoňa,Vyprážaný SYR hranolky naša domáca tatárska omáčka,
+2021-12-09,Galileo,Ml Slepačí vývar s cestovinou,Zbojnícka pochúťka v alobale br karé kuracie prsia klobása slanina zemiaky,,,
+2021-12-09,Kasa,Paradajkovo cviklová polievka,Hrachový prívarok so zemiakmi vajce na tvrdo,Bravčová panenka,,
+2021-12-09,Milton,Šošovicová polievka s parkom zemiakmi a koreňovou zeleninou  Chlieb,Konfitovaná hovädzia falošná sviečková,Grilovaná morská ryba,Grilované bravčové rebrá s whisky chili marinádou,Čokoládové Creme brulée domáci višňový kompót
+2021-12-09,Red Cafe,Hráškový krém so slaninkovým chipsom polievka,Pečené karé na omáčke z peč cesnaku šťuchané zemiaky,Cestovinový šalát s kuracím mäsom,Vyprážaný syr hranolky tatárska omáčka,Pizza šunková salámová šampiňónová
+2021-12-09,Spilka,Šampiňónová polievka so zemiakmi a vajcom,Plnené kuracie stehno so žemľovou plnkou ryžou a kyslými uhorkami,Domáce parené buchty domácou nutellou plnené čokoládou s beskovcami,,
+2021-12-09,Suvlaki,Hrášková polievka,MUSAKA,GRÉCKY ŠALÁT pita chlieb,Dusená kuracia pečienka s červenou cibuľkou paradajková omáčka,Zapečené CESTOVINY so špenátom jogurtom a syrom
+2021-12-09,Svadby a Kari,Kulajda krémová hubová polievka s kôprom VEGAN,Indická VEGAN Rajma Masala s paradajkami batátom a masľovou fazuľou,Perzské kari s hovädzím mäsom z ekofarmy mrkvou a pečeným baklažánom,,
+2021-12-09,Veda,Thajská zemiaková s mini kukuricou,Palak brocolli tamatar brokolica a paradajky v indickej špenátovej omáčke,Gwarati curry knedlíčky z cícerovej múky v indickej jogurtovej omáčke,,
+2021-12-09,Veglife,Mrkvový krém s kokosovým mliekom,Chedarovo ryžové krokety s cuketovou omáčkou pečené zemiaky,Marinované tofu na grile s červenou balsamico kapustou petržlenové zemiaky,Šalát Mexický kukuricový šalát,Dezert Karamelový cheesecake
+2021-12-10,Alzbetka,,Milí naši zákazníci,,,
+2021-12-10,Bioland,Strukovinová s nádychom Indie alergény neobsahuje,Kung Pao s robi rezancami a praženými orechmi kešu ryža basmati alergény sója lepok sezam orechy,Pečená zelenina s hummusom a grilovanými polentovými trojuholníkmi na hroznovom oleji alergény sezam,Ovocný koláč s chia a posýpkou alergény lepok vajcia mlieko,
+2021-12-10,Centr klub,Mäsový vývar s celestínskymi rezancami,Francúzske zemiaky kyslá uhorka,Kurací paprikáš zo stehna maslové halušky,,
+2021-12-10,Dilema,Slepačí vývar s rezancami a zeleninou N,Kuracia CIGÁNSKA pečené zemiaky horčica pečená cibuľa,Kapustové STRAPAČKY so slaninkou a kyslou smotanou,Vyprážaný SYR hranolky naša domáca tatárska omáčka    Mani HdÁramaA  ŠACA A,
+2021-12-10,Galileo,Ml Šampiňónový krém,Kurací steak s nivovou omáčkou zemiakové hranolčeky,,,
+2021-12-10,Kasa,Mrkvovo zázvorová polievka,Cviklová placka,Morčacia sviečková,,
+2021-12-10,Milton,Zeleninová polievka zo sezónnej zeleniny s maslovo krupicovými haluškami,Paprikáš z kuracích vykostených stehien,Zemiakové šúľance s makovým cukrom a prepúšťaným maslom,Grilovaný polotvrdý prírodný syr,Konfitované plátky z jelenieho stehna v bylinkovo jalovcovej remuláde
+2021-12-10,Red Cafe,Kelová s párkom polievka,Hovädzí Stroganoff tarhoňa,Grilovaný grécky syr Halloumi hranolky brusnicový dip,Vyprážaný syr hranolky tatárska omáčka,Pizza šunková salámová šampiňónová
+2021-12-10,Spilka,Fazuľová polievka,Chilli con carne zapečené s cheddarom a ryžou    a ST,Tofu s bulgurom zeleninou a pečenou tekvicou,,
+2021-12-10,Suvlaki,Šošovicová polievka,Grilované SUVLAKI zo SYRA CHALUMI špízy ks so šalátom pita chlieb tzatziki dip,Pečené RYBACIE FILETY s rozmarínom čerstvými paradajkami kaparami,TORTILA plnená kuracím mäsom paprikou mrkvou kukuricou a sladkou majonézovou omáčkou,Zapečené zelené fazuľové struky s cuketou zemiakmi paradajkovou omáčou
+2021-12-10,Svadby a Kari,Hráškovo kalerábová polievka s limetkou,Indická VEGAN mandľová Korma s domácim sójovým jogurtom šampiňónmi cuketou a mätou,Thajské Panang kari s kuracím mäsom od farmára s arašídmi paprikou a cuketou,,
+2021-12-10,Veda,Šampiónová,Pakora subzi zeleninové fašírky v indickej omáčke,Vegetariánsky stroganov Vegetariánsky stroganov na indický spôsob,,
+2021-12-10,Veglife,Šošovicová polievka na kyslo,Plnený kapustný list so zeleninou a tempehom v paradajkovej omáčke šťuchané zemiaky s olivovým olejom,Teriaki goody foody soté ryža jasmínová,Šalát Brokolicovo cviklový s polníčkom,Dezert Karamelový cheesecake
+2021-12-13,Alzbetka,,Milí naši zákazníci,,,
+2021-12-13,Bioland,Vianočná šošovicová polievka s hubami a slivkovým pyré s príchuťou škorice alergény neobsahuje,Indické Vindaloo s jazmínovou ryžou alergény horčičné semienko,Špenátový prívarok s vegán volským okom a grilovanou cviklou varené zemiaky alergény neobsahuje,Raw karobovo banánová torta alergény orechy,
+2021-12-13,Centr klub,Cesnaková so syrom a opečeným chlebom,Špagety carbonara,Kuracie prsia v jogurte šošovicový dáhl jazmínová ryža pečený sézam,,
+2021-12-13,Dilema,Slepačí vývar s rezancami a zeleninou,Kurací STROGANOV kôpor ryža,Pivovarský bravčový REZEŇ v pivnom cestíčku zemiaková kaša kyslá uhorka,Vyprážaný SYR hranolky naša domáca tatárska omáčka,
+2021-12-13,Galileo,Karfiolová polievka,Bravčový rezeň na srbský spôsob s dusenou ryžou,,,
+2021-12-13,Kasa,Zeleninová krémová polievka,Vegánske bezlepkové penne na štýl Mac n cheese,Pomaly pečené bravčové koleno dusená kapusta,,
+2021-12-13,Milton,Teľacie ragú s cuketou karotkou a šafranom,Grilovaný kurací steak SK farmárske kura premium,Grilovaná morská ryba,Prudko grilované plátky z teľacej sviečkovice,Domáca ťahaná štrúdľa so strúhanými jablkami a vlašskými orechmi
+2021-12-13,Red Cafe,Šošovicová polievka,Kuracie medajlónky na BBQ omáčke hranolky,Hríbové rizoto so syrom,Vyprážaný syr hranolky tatárska omáčka,Pizza šunková salámová šampiňónová
+2021-12-13,Spilka,Pre vás iná S da pa é,Čary nim ieme,Zeleninová krémová polievka       Stvého Chr Ž druhy,Kurací perkelr s maslovými halúškamni       EBA,Vyprážaný syr s varenými zemiakmi a tatárskou omáčkou
+2021-12-13,Suvlaki,Fazuľová polievka,Grilované JAHŇACIE KARBONÁTKY Tzatziki dip,ŠALÁT s bravčovým GYROS mäskom horčicovo majonézový dressing,Dusené kuracie mäso s OKROU paradajková omáčka,Grilovaný GRÉCKY SYR MANURI
+2021-12-13,Svadby a Kari,Fazuľová polievka so sušenými paradajkami a čerstvým oreganom VEGAN,Indické VEGAN kari v baklažánovo paradajkovej omáčke s paprikou šampiňónmi a fazuľou,Indické baklažánové kuracie kari Pav Bhaji s maslom GHEE karfiolom zemiakmi a paradajkami,,
+2021-12-13,Veda,Paradajková s ryžou,Mix Vegetable Zmiešajte zeleninu,Malai kofta domáce syrové fašírky v indickej krémovej maslovej omáčke,,
+2021-12-13,Veglife,Paradajkovo feniklová polievka,Zeleninové karí s tofu a kokosovým mliekom ryža jasmínová B V P,Brokolicové krokety s nivou zemiakové pyré s maslom,Šalát Kapustovo paradajkový s paprikou,Dezert Raw zdrawáčik
+2021-12-14,Alzbetka,,Milí naši zákazníci,,,
+2021-12-14,Bioland,Hrachová krémová s pečeným pórom a vegánskou slaninkou alergény neobsahuje,GERMANIA Vianočný šošovicový Wellington so šípkovou omáčkou a dusenou kapustou zemiaková kaša alergény neobsahuje,Penne cestoviny s cviklovým krémom pečeným tofu a vegán parmezánom listový šalát alergény lepok sója sezam,Tiramisu s kakaovým mascarpone alergény mlieko lepok vajcia,
+2021-12-14,Centr klub,Kulajda,Vyprážaný syr pečené zemiaky tatarská omáčka,Pečená krkovička na mede tarhoňa čalamáda,,
+2021-12-14,Dilema,Šampiňónová na kyslo so zemiakmi TI,CAESAR ŠALÁT s kuracím mäsom slaninkou dressing bagetka,Pečená KRKOVIČKA na čiernom pive viedenská cibuľka zemiaková kaša kyslá uhorka,Vyprážaný SYR hranolky naša domáca tatárska omáčka,
+2021-12-14,Galileo,Gulášová polievka,Fašírka so zemiakovým prívarkom chlieb,,,
+2021-12-14,Kasa,Cícerová polievka,Šampiňóny na marocký spôsob,Morčacie meatballs v exotickej omáčke,,
+2021-12-14,Milton,Slepačí vývar mäso zelenina a niťovky,Vyprážané bravčové karé plnené prosciuttom a mozzarellou,Plnené talianske cestoviny ricottou a baby špenátom,Grilované kukuričné kuriatko Suprême marinované v živom jogurte s koriandrom a limetkovou šťavou,U nás pripravovaná torta podľa Rudka
+2021-12-14,Red Cafe,Slepačia s rezancami polievka,Grilované vykosť kur stehno prírodná om batátové pyré,Strapačky s opečenou slaninkou,Vyprážaný syr hranolky tatárska omáčka,Pizza šunková salámová šampiňónová
+2021-12-14,Spilka,Paradajková polievka so syrom,Vepčo knedlo zelo pečené bravčové kapusta knedľa,Tekvicové gnocchi špenát pečená paprika feta syr,,
+2021-12-14,Suvlaki,Hrášková polievka,Pečený ZUBÁČ s feniklom cherry paradajkami a rozmarínom,GRÉCKY ŠALÁT pita chlieb,Zapečený BAKLAŽAN plnený kuracím mäsom slaninkou paradajková omáčka,Gratinované ŠAMPIŇÓNY plnené paprikou jogurtom a syrom feta
+2021-12-14,Svadby a Kari,Petržlenová polievka s kokosovým mliekom a limetkou VEGAN,Srílanské cviklové VEGAN kari s bielymi fazuľami a zelenými fazuľkami,Mandľové voňavé kari s hovädzím mäsom cviklou brusnicami a zemiakmi,,
+2021-12-14,Veda,Tekvica thajská,Gobi beans karfiól a zelená fazuľka v indickej omáčke,Vegetariánsky stroganov Vegetariánsky stroganov na indický spôsob,,
+2021-12-14,Veglife,Krém z červenej šošovice s kokosovým mliekom a zázvorom,Bolognské lasagne,Sedliacky paprikáš s BIO tempehom ryža natural,Šalát Rosso medový s orechami,Dezert Pomarančový truffle rez
+2021-12-16,Alzbetka,,Milí naši zákazníci,,,
+2021-12-16,Bioland,Rusínska mačanka z kyslej kapusty sušených húb a tempehom voľná voľba alergény sója iba z tempehu,Kotlík s feniklom brokolicou žltou fazuľou mungo cícerový kuskus alergény neobsahuje,Segedín s robi kockami varené zemiaky s pažítkou alergény lepok,Raw raffaello alergény orechy,
+2021-12-16,Centr klub,Šošovicová s párkom,Parené buchty so slivkovým lekvárom kakao maslo,Wrap s kuracím mäsom hranolky čili majonéza,,
+2021-12-16,Dilema,Hístková s párkom,Vyprážaný bravčový REZEŇ slovenský zemiakový šalát,BRYNDZOVÉ PIROHY s vypečenou slaninkou a kyslou smotanou jarná cibuľka N,Vyprážaný SYR hranolky naša domáca tatárska omáčka,
+2021-12-16,Galileo,Pórová polievka,Vyprážaný bravčový rezeň so zemiakovým majonézovým šalátom,,,
+2021-12-16,Kasa,Hubová polievka s kelom a zemiakmi,Lasagne tout tomate,Kuracie teriyaki,,
+2021-12-16,Milton,Hráškový krém so smotanou garnitúra z kyslej smotany,Dusená falošná hovädzia sviečková hovädzie zadné z mladého býčka,Prudko pečené ryžové rezance so sezónnou zeleninou,Sous vide roláda zo srnčieho stehna divinová omáčka so šípkovou remuládou,Mandľová Panna Cotta podávaná v studenej malinovej polievke
+2021-12-16,Red Cafe,Karfiolová krémová polievka,Bravčové soté v zemiakovej placke,Caesar šalát s kuracím mäsom,Vyprážaný syr hranolky tatárska omáčka,Pizza šunková salámová šampiňónová
+2021-12-16,Spilka,Šošovicová na kyslo       ja,Lasagne bolognese s listovým šalátom,Tekvicový prívarok s pošítovaným vajíčkom a zemiakmi,,
+2021-12-16,Suvlaki,Mrkvová polievka,Grilovaná BRAVČOVÁ PANENKA,GRÉCKY ŠALÁT pita chlieb,Zapečené ŠPAGETY s kuracím mäsom baklažanom a syrom,Zapečené lístkové cesto plnené špenátom pórom syrom Feta
+2021-12-16,Svadby a Kari,Tom Yum VEGAN so šampiňónmi paradajkami a cuketou,Thajské VEGAN žlté kari s tofu tekvicou a zelenými fazuľkami,Thajské Massaman kari s hovädzím mäsom batátmi cuketou a paradajkami,,
+2021-12-16,Veda,Thajská zemiaková s mini kukuricou,Palak brocolli tamatar brokolica a paradajky v indickej špenátovej omáčke,Gwarati curry knedlíčky z cícerovej múky v indickej jogurtovej omáčke,,
+2021-12-16,Veglife,Sedliacka fazuľová polievka,Hokaido perkelt ryža basmati,Pečené špenátovo mozzarellové fašírky zemiakové pyré s maslom,Šalát Miešaný kukuricový,Dezert Strúhaný tvarohový koláč s kakaom
+2021-12-17,Alzbetka,,Milí naši zákazníci,,,
+2021-12-17,Bioland,Cuketová ajurvédska polievka alergény neobsahuje,Krémové cesnakové šampiňóny pečená zemiaková harmonika s presladeným citrónom alergény neobsahuje,Zeleninové ratatouille s kukuričnou plackou alergény neobsahuje,Čokoládová quinoa s karamelizovaným ananásom a pomarančovou šťavou alergény neobsahuje,
+2021-12-17,Centr klub,Minestróne s čerstvou bazalkou,Gnocchi s tekvicovým pyré feta rukola,Morčacie stehno na víne zemiaková kaša,,
+2021-12-17,Dilema,Slepačí vývar s rezancami a zeleninou N,Kuracie THAJSKÉ RED CURRY s kokosovým mliekom jazmínová ryža,Zeleninová FAŠÍRKA zemiakovo batátové cviklový šalát,Vyprážaný SYR hranolky naša domáca tatárska omáčka    Mani dÁvramaA  ŠACA A,
+2021-12-17,Galileo,Slepačí vývar s cestovinou,Pečené kuracie stehno s dusenou ryžou a kompótom,,,
+2021-12-17,Kasa,Zimná polievka s čiernou ryžou,Gratinované zemiaky,Hovädzí shepherd s pie,,
+2021-12-17,Milton,Gulášová polievka hovädzie zadné,Soté z morčacieho stehna so sezónnou zeleninou a šampiňónmi,Tvarohovo jablková žemľovka,Vyprážaný falafel cícerové guľky,Sous vide jelenie medajlónky a omáčka Grand Veneur
+2021-12-17,Red Cafe,Minestrone polievka,Parížsky kurací rezeň dusená ryža mix šalát,Restovaná kuracia pečeň na cibuľke ryža kyslá uhorka,Vyprážaný syr hranolky tatárska omáčka,Pizza šunková salámová šampiňónová
+2021-12-17,Spilka,Hrúškový krém s krutónmi       AT,Bravčový rezeň s majonézovým šalátom      O y,Penne s paradajkovou omáčkou a olivami,,
+2021-12-17,Suvlaki,Paradajková polievka,Pečené RYBACIE FILETY s rozmarínom cesnakom čerstvými paradajkami,GRÉCKY ŠALÁT pita chlieb,Grilovaný kurací steak s cícerom a sušenými paradajkami,VINΝÝ LIST plnený ryžou na grécky spôsob tzatziki dip
+2021-12-17,Svadby a Kari,Indická šošovicová s opekaným kokosom VEGAN,Indický VEGAN Dhal z červenej šošovice s paradajkami,Indická GHEE Tikka Masala s kuracím mäsom mrkvou a hráškom,,
+2021-12-17,Veda,Šampiónová,Pakora subzi zeleninové fašírky v indickej omáčke,Vegetariánsky stroganov Vegetariánsky stroganov na indický spôsob,,
+2021-12-17,Veglife,Boršč polievka,Francúzske zemiaky s tofu,Cícer na marocký spôsob ryža jasmínová,Šalát Dijónsky zeleninový,Dezert Strúhaný tvarohový koláč s kakaom
+2021-12-20,Alzbetka,,Milí naši zákazníci,,,
+2021-12-20,Bioland,Krémová cesnačka s ryžovou smotanou a chrumkavými krutónmi alergény lepok len v krutónoch,Lasagne s omáčkou bolognese z tofu mozzarellou a baby špenátom alergény lepok sója mlieko,Šťavnaté cestoviny s kokosovo arašidovou pastou alergény arašidy lepok,Raw čokoládovo sezamové guličky alergény sezam orechy sója,
+2021-12-20,Centr klub,Brokolicová krémová s opečeným chlebom,Bryndzové halušky so slaninou,Kurací steak s nivovou omáčkou hrášková ryža,,
+2021-12-20,Dilema,Slepačí vývar s rezancami a zeleninou N,Jemne pikantné kuracie rezančeky dusená ryža,Bravčový ČIERNOHORSKÝ rezeň pečené zemiaky domáca čalamáda,Vyprážaný SYR hranolky naša domáca tatárska omáčka,
+2021-12-20,Galileo,Zeleninová polievka,Kuracie soté s dusenou ryžou,,,
+2021-12-20,Kasa,Polievka z červenej šošovice,Hummus s pečenou mrkvou a chrumkavým cícerom,Hovädzí orech s paradajkovou omáčkou,,
+2021-12-20,Milton,Zeleninová polievka so zelenou kari pastou ryžovými rezancami zázvorom a limetkovými listami,Grilované kuracie prsia plnené šunkou a syrom,Zapekaný lososový steak so špenátovou krustou,Grilované teľacie medajlónky Sous Vide,Omáčka z teľacieho demi glacé kapár parfumované VSOP Brandy
+2021-12-20,Red Cafe,Brokolicová krémová polievka,Kur prsia v medovo horčic marináde rozmarínové zem,Francúzske zemiaky kyslá uhorka,Vyprážaný syr hranolky tatárska omáčka,Pizza šunková salámová šampiňónová
+2021-12-20,Spilka,Čerstvé álne  A ne,Ého C ru,Zemiaková polievka s cesnakovým krutónom       CHlbBA,Marinované kuracie stehná s restovanou ryžou a zeleninou,Vyprážaný syr s počenými baby zemiakmi šalátom coleslav a domácou tatarkou
+2021-12-20,Suvlaki,ELENINOVÁ polievka,Grilované KURACIE SUVLAKI ks špízy domáce hranolky pita chlieb paradajky cibuľka tzatziki dip,Zapečené ŠPAGETY s tuniakom a syrom,Dusené bravčové mäso s červenou paprikou a horčicou,Vyprážaný GRÉCKY SYR Kefalotiri
+2021-12-20,Svadby a Kari,Polievka z pečených paprík a paradajok VEGAN,Mangovo baklažánové VEGAN kari s kešu tekvicou a cuketou,Indické maslové Butter Chicken s kuracím mäsom od farmára s batátmi paradajkami a hráškom,,
+2021-12-20,Veda,Paradajková s ryžou,Madrasi curry mango a mini kukurica v indickej omáčke,Malai kofta domáce syrové fašírky v indickej krémovej maslovej omáčke,,
+2021-12-20,Veglife,Tekvicový krém s kurkumou,Tekvicový gratin s údeným syrom,Kapustové placky s údeným tofu zemiakové pyré,Šalát Kukuricovo mrkvový so špenátom,Dezert Raw vanilkovo jahodový krém
+2022-01-18,Alzbetka,Viedenský teľací rezeň zemiakový šalát jarná cibuľa limetka,Pečená ryža s kuracím mäsom zelenina jarná cibuľa koriadner,Cícerový hummus domáci pita chlieb čerstvá zelenina,,
+2022-01-18,Bioland,Kalerábovo mrkvová s pečeným zemiakom alergény neobsahuje,BRAZIL Guláš s čiernou fazuľou s príchuťou kakaa hnedá ryža s koriandrom alergény neobsahuje,Mrkvovo zemiakové placky s francúzskym dresingom a praženou cibuľou alergény neobsahuje,Cviklové brownies alergény lepok mlieko vajcia,
+2022-01-18,Centr klub,Minestróne s cestovinou,Vyprážaný syr hranolky tatárska omáčka,Paprikáš s kuracieho stehna maslové halušky,,
+2022-01-18,Ceska piv,Slepačí vývar s mäsom a rezancami,Špenátová polievka s vajíčkom,Kuracie prsia s fazuľovými lúskami a volským okom ryža,Bryndzové pirohy so slaninkou,XXL Vyprážaný bravčový rezeň s hranolkami a tatárskou omáčkou
+2022-01-18,Dilema,Cesnakový krém s krutónmi,Kurací WRAP s kuracím mäsom a zeleninou pečené zemiaky bylinkový dressing,Bravčový PERKELT zemiakové halušky kyslá smotana,Parené BUCHTY s vanilkovým krémom lesné ovocie N,
+2022-01-18,Galileo,Fazuľová polievka,Černohorský bravčový rezeň s opekanými zemiakmi a tatárskou omáčkou,,,
+2022-01-18,Kasa,Fazuľová polievka na kyslo,Cuketovo špenátové risotto,Morčacia sviečková,,
+2022-01-18,Milton,Morčací vývar mäso koreňová zelenina a niťovky,Španielsky vtáčik plnené plátky z hovädzieho zadného stehna,Fritované mozzarellové guľky obaľované v kukuričných lupienkoch,Viedenský vyprážaný teľací rezeň teľacie karé bezlepková úprava,Domáca torta podľa Rudka
+2022-01-18,Red Cafe,Hrachová s párkom polievka,Údená krkovička dusená kyslá kapusta domáca knedľa,Vyprážaný karfiol varené zemiaky tatárska omáčka,Vyprážaný syr hranolky tatárska omáčka,Pizza šunková salámová šampiňónová
+2022-01-18,Spilka,Gulášová polievka podávaná s našim domácim chlebíkom,Bravčové pečené s kapustou a domácou knedľou,Ouesadilla savokádom cheddárom a paradajkovou salsou s chipsami,,
+2022-01-18,Suvlaki,Mrkvová,Pečený LOSOS s tymiánom feniklom pomarančová omáčka,ŠALÁT s tuniakom horčicovo medový dresing pita chlieb,Dusená kuracia pečienka s cibuľkou vínová omáčka,Zapečený BAKLAŽAN s cesnakom a  druhmi syra
+2022-01-18,Svadby a Kari,Ukrajinský cviklový boršč VEGAN,Indické VEGAN Aloo Gobi s karfiolom batátmi a hráškom,Thajské žlté hovädzie kari s mrkvou a balažánom,,
+2022-01-18,Veda,Paradajková s ryžou,Madrasi curry mango a mini kukurica v indickej omáčke,Malai kofta domáce syrové fašírky v indickej krémovej maslovej omáčke,,
+2022-01-18,Veglife,Indická hrachová polievka B V P,Bryndzový quiche s tymiánom zemiakové pyré,Cícerové ragú s tekvicou a špenátom ryža natural,Grilované robi s gravy omáčkou pečené zemiaky,Šalát Šošovicový šalát s rukolou a cherry paradajkami
+2022-01-19,Alzbetka,Kuracie BAO kórejská omáčka majonéza čerstvá uhorka jarná cibuľka,BRavčové líčka na červenom víne zemiaková kaša chrumkavá cibuľa,Cícerový hummus domáci pita chlieb čerstvá zelenina,,
+2022-01-19,Bioland,Batatovo mrkvová krémová s granátovým jablkom alergény neobsahuje,Zeleninové lasagne s cuketou a vegánskym cheddarom alergény lepok,Jemne pikantný hlivový perkelt so sójovou smotanou a bezlepkovými cestovinami alergény sója,Vanilkový cheesecake s lesným ovocím alergény vajcia lepok mlieko,
+2022-01-19,Centr klub,Kulajda,Restovaná kuracia pečeň ryža kyslá uhorka,Bravčový gyros pečené zemiaky tzatziky,,
+2022-01-19,Ceska piv,Slepačí vývar s mäsom a rezancami,Hrášková polievka s krutónmi,Pečené kuracie stehno s ryžou a broskyňovým kompótom,Prírodná bravčová kapsa s údeným oštiepkom a slaninkou varené zemiaky a paradajkový šalát s cibuľkou,XXL Vyprážaný bravčový rezeň s hranolkami a tatárskou omáčkou
+2022-01-19,Dilema,Slepačí vývar s rezancami a zeleninou,Vyprážaný CORDON BLEU zemiakové pyré kapustový šalát,SZEGEDÍNSKY GUĽÁŠ parená knedľa,TAGLIATELLE s hubovou omáčkou na tymiane s ricottou a hokkaido tekvicou,
+2022-01-19,Galileo,Hŕstková polievka,Pečené kuracie stehno s plnkou a kompótom,,,
+2022-01-19,Kasa,Krémová šošovicová s curry a pórom,Gratinované zemiaky s tymiánom,Hovädzí guláš so zemiakmi,,
+2022-01-19,Milton,Hŕstková polievka s krúpkami a debrecínskymi parkami,Frikassé z morčacieho stehna a sezónnej zeleniny podávané v špenátovej palacinke,Grilovaný steak z Butterfish cesnakové maslo,Medajlónky z bravčovej panenky v opasku zo slaninky,Bryndzová krémová omáčka
+2022-01-19,Red Cafe,Špenátová s krutónmi polievka,Stroganoff tarhoňa,Koložvárska kapusta,Vyprážaný syr hranolky tatárska omáčka,Pizza šunková salámová šampiňónová
+2022-01-19,Spilka,Kapustnica s klobásou,Hovädzí burger s cheddatom a hranolkami,Domáce šišky s jahodovým džemom a jahodovou espumou,,
+2022-01-19,Suvlaki,Šošovicová,Grilovaná BRAVČOVÁ KOTLETA s rozmarínom omáčka z čierneho korenia,ŠALÁT s tuniakom horčicovo medový dresing pita chlieb,Dusené kuracie mäso so zelenou fazuľkou paradajková omáčka,Zapečená TORTILA plnená cuketou mrkvou šalátom syrom červenou paprikou sladká pikantná omáčka
+2022-01-19,Svadby a Kari,Tom Yum VEGAN so šampiňónmi paradajkami a cuketou,Indické VEGAN jogurtové kari s čiernou fazuľou paradajkami a čerstvým špenátom,Jamajské kari s kuracím mäsom od farmára mrkvou a zelenými fazuľkami,,
+2022-01-19,Veda,Brokolicová,Cuketa chanadul cuketa kukurica a karfiól v indickej omáčke,Kadhai mutter paneer farebná paprika hrášok a domáci syr v indickej maslovej omáčke,,
+2022-01-19,Veglife,Vegan kulajda,Závin s brokolicou a syrom zemiakové pyré s maslom,Francúzske zemiaky s tofu,Natural rizoto z lesných hríbov s Bio tempehom,Šalát Quinoa grécky šalát
+2022-01-20,Alzbetka,Dusené hovädzie chrenová omáčka parená buchta čerstvý chren,Vyprážaná mozzarella varené baby zemiaky domáca tatárska omáčka orieškové maslo,Cícerový hummus domáci pita chlieb čerstvá zelenina,,
+2022-01-20,Bioland,Eintopf zeleninovo strukovinová polievka alergény zeler,MEXICO Chile Relleno pečená paprika plnená syrom na paradajkovej salse fazuľový šalát s avokádom alergény neobsahuje,Pečená zelenina s marinovaným tofu karí omáčkou a basmati ryžou alergény sója horčičné semienko,Čokoládová quinoa s karamelizovaným ananásom a pomarančovou šťavou alergény neobsahuje,
+2022-01-20,Centr klub,Šošovicová s párkom,Jablkovo tvarohová žemľovka,Kuracie ragú zemiaková placka syr,,
+2022-01-20,Ceska piv,Slepačí vývar s mäsom a rezancami,Francúzska cibuľačka,Spaghetti aglio olio,Cigánska pečienka z krkovičky pečené zemiaky,XXL Vyprážaný bravčový rezeň s hranolkami a tatárskou omáčkou
+2022-01-20,Dilema,Staročeská kulajda,Miešaný zeleninový šalát s kuracím mäsom sušenými paradajkami a citrónovým dressingom bagetka,Bravčový REZEŇ z karé slovenský zemiakový šalát,Špenátové LASAGNE s paradajkovým sugo,
+2022-01-20,Galileo,Kelová polievka,Sviečková na smotane s brusnicami a knedľou,,,
+2022-01-20,Kasa,Zeleninový krém,Vegánsky shepherd s pie,Bravčové plece v cesnakovo koriandrovej marináde,,
+2022-01-20,Milton,Držková polievka tak ako má byť Alternatívna polievka Ragú zo sezónnej zeleniny s kokosovým mliekom a zázvorom,Grilovaný plnený bravčový plátok so šampiňónmi a mozzarellou,Ragú z neúdeného tofu a pošírovanej cvikly z kokosovým mliekom,Rump steak pripravovaný technológiou Sous Vide,Čokoládová lávová tortička a malinový couilis
+2022-01-20,Red Cafe,Pórková so zemiakmi polievka,Kuracia roláda plnená mozzarellou a špenátom dusená ryža,Grilovaný oštiepok varené zemiaky brusnicový dip,Vyprážaný syr hranolky tatárska omáčka,Pizza šunková salámová šampiňónová
+2022-01-20,Spilka,Fazuľová ná kyslo,Bravčový černohor so zemiakovým šalátom,Cannelloni plnené ricottou a špenátom,,
+2022-01-20,Suvlaki,Zeleninová,Dusené TEĽACIE mäso s mrkvou a šampiňonmi,ŠALÁT s tuniakom horčicovo medový dresing pita chlieb,Grilovaný kurací steak s baklažanom a syrom feta,Gratinované BATATY so syrom a tzatziki
+2022-01-20,Svadby a Kari,Kulajda krémová hubová polievka s kôprom VEGAN,Indická VEGAN Rajma Masala s paradajkami batátmi a maslovou fazuľou,NOVINKA Mexické Chilli con Carne s hovädzím mäsom z ekofarmy paprikou fazuľou a kukuricou,,
+2022-01-20,Veda,Thajská zemiaková s mini kukuricou,Palak brocolli tamatar brokolica a paradajky v indickej špenátovej omáčke,Vegetariánsky stroganov Vegetariánsky stroganov na indický spôsob,,
+2022-01-20,Veglife,Lusková polievka na kyslo,Tekvicový gratin s údeným syrom,Shepherd s pie Pastiersky koláč,Tofu v zeleninovo arašidovej omáčke ryža natural B V P,Šalát Kelový šalát s jablkom a orechami
+2022-01-21,Alzbetka,BBQ pečené nízké rebrá nakladaná zelenina horčica čerstvý chren kváskový chlieb,Vyprážaná morská šťuka v panko strúhanke maslová kaša bylinkové krutóny,Cícerový hummus domáci pita chlieb čerstvá zelenina,,
+2022-01-21,Bioland,Hrášková krémová s pečeným pórom alergény neobsahuje,TIBET Budha misa plná zeleniny so strukovinou ryžou a dresingom mrkvová sladká chalva alergény neobsahuje,Baklažán so špenátom s omáčkou z miso pasty pečené zemiaky alergény sója sezam,Jablkový perník alergény lepok vajcia,
+2022-01-21,Centr klub,Mäsový vývar so zeleninou a rezancami,Lasagne Bolognese s paradajkovou omáčkou,Morčacie stehno na slanine slovenská ryža kapustový šalát,,
+2022-01-21,Ceska piv,Slepačí vývar s mäsom a rezancami,Kuracie soté so slaninkou hríbikmi a paprikou ryža,Grilovaný encián s brusnicami varené zemiaky,XXL Vyprážaný bravčový rezeň s hranolkami a tatárskou omáčkou,
+2022-01-21,Dilema,Slepačí vývar s rezancami a zeleninou N,Kuracia CIGÁNSKA pečené rozmarínové zemiaky coleslaw šalát,Pečená krkovička dusená červená kapusta parená knedľa,Vyprážaný SYR hranolky naša domáca tatárska omáčka    Mani NnAdávramaA  ŠACA A,
+2022-01-21,Galileo,Kulajda,Thajské kuracie soté na kokosovom mlieku jazmínová ryža,,,
+2022-01-21,Kasa,Mrkvový krém so zázvorom,Cviklová placka,Pečené kuracie stehno s citrónom a rozmarínom,,
+2022-01-21,Milton,Karotkový krém so šafranom a strúhaným parmezánom,Maďarský hovädzí guláš hovädzie zadné,Cisársky trhanec s hrozienkami,Grilovaný steak z tuniaka bazalkové maslo,Hovädzia sviečkovica pripravovaná v celku Sous Vide podávaná krájaná na tenké plátky
+2022-01-21,Red Cafe,Hovädzí vývar s pečeňovými haluškami polievka,Bravčové soté v zemiakovej placke,Zemiakový prívarok grilovaná klobáska chlieb,Vyprážaný syr hranolky tatárska omáčka,Pizza šunková salámová šampiňónová
+2022-01-21,Spilka,Hráškový krém s mätou      ZÁ,Giilóvané kúracie stehno sú žefaľovou plnkou á dusenou tyžou      Z,Listový šalát s orechmi guinoou a fet syrom,,
+2022-01-21,Svadby a Kari,Hráškovo kalerábová polievka s limetkou,Indická VEGAN mandľová Korma s domácim sójovým jogurtom šampiňónmi cuketou a mätou,Thajské Panang kari s kuracím mäsom od farmára s arašídmi paprikou a cuketou,,
+2022-01-21,Veda,Šampiónová,Pakora subzi zeleninové fašírky v indickej omáčke soup,Vegetariánsky stroganov Vegetariánsky stroganov na indický spôsob soup,,
+2022-01-21,Veglife,Zeleninová polievka so pšenom,Hlivovo šampiňónový guláš ryža natural,Plnená paprika so sójovou plnkou v paradajkovej omáčke šťuchané zemiaky s olivovým olejom,Cviklové guľky so slnečnicou šťuchané zemiaky s olivovým olejom,Šalát Feniklový s hráškom
+2022-01-24,Alzbetka,Kapustová s klobásou kvaskový chlieb  Hovädzie buritos trhaný hovädzí chuck roll ľadový šalát strúhaný chedar hranolky,Gnocchi s lesnými hubami slaninou parmezán rukola,Ceasar šalát s grilovanými krevetami strúhaný parmezán chlebové krutóny,,
+2022-01-24,Bioland,Kukuričná polievka so špenátom a chilli papričkami alergény neobsahuje,Hubovo hráškový kotlík s pažítkou a pšenom alergény neobsahuje,Cisárov trhanec s vanilkovým pudingom karamelizovaným jablkom hruškou a mätou alergény lepok,Raw kokosová torta alergény orechy,
+2022-01-24,Centr klub,Hrášková krémová s opečeným chlebom,Zeleninové kari jazmínová ryža koriander pečený sézam,Pečené karé na zelenine a bylinkách tarhoňa,,
+2022-01-24,Ceska piv,Slepačí vývar s mäsom a rezancami,Lúsková na kyslo,Tagliatelle s brokolicou kuracím mäsom a syrovou omáčkou,Sviečková na smotane parená knedľa,XXL Vyprážaný bravčový rezeň s hranolkami a tatárskou omáčkou
+2022-01-24,Dilema,Slepačí vývar s rezancami a zeleninou N,Kuracie rezančeky so zeleninou a šampiňónmi dusená ryža,ČEVAPČIČI pečené rozmarínové zemiaky horčica cibuľa,Bryndzové PIROHY s vypečenou slaninkou a jarnou cibuľkou,
+2022-01-24,Galileo,Zeleninová polievka    Vykostené kuracie stehno na cesnaku   ryža   hranolky     Bryndzové pirohy s kyslou smotanou slaninou a cibuľkou       Šaláty Grécky Kurací Prosciutto s mozzarellou Tuniakový    Pizza pečená na dreve Cardinalle Funghi Salami Hawai,,,,
+2022-01-24,Kasa,Polievka z kyslej kapusty,Hlivový guláš s mrkvou a mangoldom,Pečené morčacie stehno so slaninou,,
+2022-01-24,Milton,Paradajková neapolská polievka s bazalkou a strúhanou mozzarellou,Hovädzie ragout na červenom víne a tymiane,Zeleninové lasagne s paradajkami zapekané s mozzarellou,Medajlónky z teľacej sviečkovice Sous Vide,Omáčka z pečených teľacích kostí a konfitovaného cesnaku Zemiakové rosti  Anglická zelenina
+2022-01-24,Red Cafe,Paradajková so syrom polievka,Kurací steak na cheddarovej omáčke pečené zemiaky,Pennne s lososom a kapari,Vyprážaný syr hranolky tatárska omáčka,Pizza šunková salámová šampiňónová
+2022-01-24,Spilka,Aužyj druhy O Vás,Ž aj čensé lá,Zaleninová krémová polievka       Šrstvé Počívoj PA,Kuracie kung pao s dusenou ryžou,Vyprážaný syr s varenými zemiakmi a tatárskou omáčkou
+2022-01-24,Suvlaki,Fazuľová,Dusené bravčové mäso s baklažanom paradajková omáčka,MIX ŠALÁT s grilovaným GRÉCKYM SYROM MANURI balsamiko,Pečené kuracie stehno s rozmarínom horčicovo medová omáčka,Zapečená OMELETA so sladkými zemiakmi hokaido tekvicou a syrom feta
+2022-01-24,Svadby a Kari,Fazuľová polievka so sušenými paradajkami a čerstvým oreganom VEGAN,Indické VEGAN kari v baklažánovo paradajkovej omáčke s paprikou šampiňónmi a fazuľou,Indické kuracie kari Pav Bhaji s maslom GHEE karfiolom baklažáńom zemiakmi a paradajkami,,
+2022-01-24,Veda,Paradajková s ryžou,Madrasi curry mango a mini kukurica v indickej omáčke,Malai kofta domáce syrové fašírky v indickej krémovej maslovej omáčke,,
+2022-01-24,Veglife,Mrkvovo zázvorová polievka s kokos mliekom,Aloo gobi subji ryža jasmínová B V P,Brokolicové placky s čedarom v rajčinovej omáčke s bazalkou pečené zemiaky,Kapustné strapačky z jačmenných krúpkov s tempehom,Šalát Kapustový šalát s jablkami
+2022-01-25,Alzbetka,Zeleninová s domácimi haluškami   Bravčová panenka sous vide zemiaková kaša omáčka zo zeleného korenia,Kapustové strapačky s údenou krkovičkou viedenská cibuľa,Ceasar šalát s grilovanými krevetami strúhaný parmezán chlebové krutóny,,
+2022-01-25,Bioland,Cviklová krémová polievka s chrenom alergény neobsahuje,THAI Zelené karí so seitanom cuketou a hráškom v kokosovom mlieku ryžové guličky alergény sója lepok,Kelový prívarok s grilovaným párkom z červenej fazule a pohánkovým chlebíkom alergény neobsahuje,Tiramisu s kakaovým mascarpone alergény mlieko lepok vajcia,
+2022-01-25,Centr klub,Hubová na kyslo,Zemiakové knedle s údeným dusená kapusta smotana vypečená cibuľa,Wrap s kuracím mäsom hranolky čili majonéza,,
+2022-01-25,Ceska piv,Slepačí vývar s mäsom a rezancami,Fazuľová polievka so zeleninou a rezancami,Kurací perkelt zo stehna s haluškami,Bravčové pečené karé na štvorfarebnom korení so zemiakovo hráškovým pyré,XXL Vyprážaný bravčový rezeň s hranolkami a tatárskou omáčkou
+2022-01-25,Dilema,Brokolicový krém s krutónmi,Kuracie prsia plnené CHORIZOM a mozzarellou šafranová ryža coleslaw,FRANCÚZSKE ZEMIAKY domáca čalamáda,Hríbové krémové rizoto šalvia parmezán rukola,
+2022-01-25,Galileo,Hrachová polievka,Pečené údené koleno na pive s kyslou kapustou a varenými zemiakmi,,,
+2022-01-25,Kasa,Kukuricová ajurvédska polievka,Hummus s pečeným karfiolom a semiačkami,Bravčové na hubách,,
+2022-01-25,Milton,Fazuľová polievka s klobáskou a koreňovou zelenino,Domáca sekaná s mozzarellou a panchettou,Vyprážané cícerové guľky Falafel,Hovädzí Rump steak Picanha Sous Vide krájaný na tenké plátky,
+2022-01-25,Red Cafe,Mrkvový krém so zázvorom polievka,Peč krkovička dusená kapusta domáca knedľa,Penne s pikantným kur mäsom a sušenými paradajkami,Vyprážaný syr hranolky tatárska omáčka,Pizza šunková salámová šampiňónová
+2022-01-25,Spilka,Hfstková polievka s klobáskou,Koložvárska kapusta s kyslou smotanou,Spaghetú Aglio Olio peperoncino s parmezánom,,
+2022-01-25,Suvlaki,Mrkvová polievka,Pečené KAČACIE STEHNO s mrkvou červenou cibuľkou vínová omáčka,MIX ŠALÁT s grilovaným GRÉCKYM SYROM MANURI balsamiko,Kuracie soté so šampiňonmi a cuketou paradajková omáčka,Zapečený BAKLAŽAN s tahini čerstvými paradajkami bazalkou a syrom
+2022-01-25,Svadby a Kari,Petržlenová polievka s kokosovým mliekom a limetkou VEGAN,Thajské VEGAN červené kari s farebnými paprikami tofu a brokolicou,Mandľové voňavé kari s hovädzím mäsom z ekofarmy cviklou brusnicami a zemiakmi,,
+2022-01-25,Veda,Paradajková s ryžou,Madrasi curry mango a mini kukurica v indickej omáčke,Malai kofta domáce syrové fašírky v indickej krémovej maslovej omáčke,,
+2022-01-25,Veglife,Kapustnica s údeným tempehom a sušenými hríbami,Goody foody so zeleninou v sladko kyslej omáčke ryža basmati,Cícerový paprikáš s BIO tempehom ryža natural,Špenátovo syrové lasagne,Šalát Celozrnný kuskusový šalát
+2022-01-27,Alzbetka,Cesnaková s údeným mäsom čerstvý majorán chlebové krutóny   Dusené hovädzie kôprová omáčka parená buchta čerstvý kôpor,Zemiakový prívarok sous vide vajíčko hľuzovka čerstvé bylinky kvaskový chlieb,Ceasar šalát s grilovanými krevetami strúhaný parmezán chlebové krutóny,,
+2022-01-27,Bioland,Krémová mrkvovo zázvorová s pomarančom alergény neobsahuje,INDIA Kofta Cícerovo špenátová fašírka s basmati ryžou a mangovým dresingom alergény sezam iba na ozdobu,Marinovaný seitan na tekvicovej omáčke s polentou alergény lepok sója,Mangová raw torta alergény orechy,
+2022-01-27,Centr klub,Frankfurtská s párkom,Špenátové halušky nivová omáčka sušené paradajky vlašské orechy rukola,Bravčový rezeň zemiakovo cibuľový šalát,,
+2022-01-27,Ceska piv,Slepačí vývar s mäsom a rezancami,Karfiolová mliečna polievka,Kuracie kúsky so slaninkou a farebnou paprikou ryža a miešaný šalát,Medajlónky z bravčovej panenky so slivkovo vínovou omáčkou šťuchané zemiaky,XXL Vyprážaný bravčový rezeň s hranolkami a tatárskou omáčkou
+2022-01-27,Dilema,Šošovicová s párkom,Pečené kuracie stehno ALA KAČICA dusená červená kapusta na karameli parená knedľa,Paprikové RIZOTO s bravčovým  mäsom a zeleninou strúhaný syr kyslá uhorka,Vyprážaný KARFIOL varené zemiaky s vňatkou domáca tatárska omáčka NB II,
+2022-01-27,Galileo,Pórová polievka s vajíčkom,Vyprážaný bravčový rezeň so slovenským zemiakovým šalátom,,,
+2022-01-27,Kasa,Boršč vegán,Hrachový prívarok vajce na tvrdo,Hovädzie na spôsob brisketu,,
+2022-01-27,Milton,Frankfurtská polievka štajerské párky a zemiaky,Plátok z kuracích prs zapekané s mozzarellou a paradajkami,Kukuričné penne v krémovej omáčke z pravého feta syru,Vo vákuu pripravované jelenie stehno krájané na tenké plátky,Cheesecake s lesným ovocím
+2022-01-27,Red Cafe,Zeleninová s haluškami polievka,Bravčové stehno na hríbikovej om petržlenové halušky,Šalát so zapekaným camembertom a prosciuttom,Vyprážaný syr hranolky tatárska omáčka,Pizza šunková salámová šampiňónová
+2022-01-27,Spilka,Špenátová polievka s vajíčkom,Kurací Cordon Blue svarcnými zemiakmi a petržlenovou omáčkou,Domáce pečené buchty so slivkovým lekvárom,,
+2022-01-27,Suvlaki,Šošovicová polievka,MUSAKA,MIX ŠALÁT s grilovaným GRÉCKYM SYROM MANURI balsamiko,Kuracie SOTÉ so stonkovým zelerom olivami,Zapečená červená paprika plnená syrom feta na grécky spôsob
+2022-01-27,Svadby a Kari,Laksa malajská kokosová polievka VEGAN,Srílanské cviklové VEGAN kari s bielymi fazuľami a zelenými fazuľkami,Thajské Massaman kari s hovädzím mäsom z ekofarmy batátmi cuketou a paradajkami,,
+2022-01-27,Veda,Thajská zemiaková s mini kukuricou,Mushroom Curry Hubové kari,Gwarati curry knedlíčky z cícerovej múky v indickej jogurtovej omáčke,,
+2022-01-27,Veglife,Minestrone polievka,Zeleninové karí s tofu a kokosovým mliekom ryža jasmínová B V P,Špenátové goody foody gnocchi s parmezánom,Zemiakovo cibuľový gratin,Šalát Kukuricovo mrkvový so špenátom
+2022-01-31,Alzbetka,Hrášková s feta syrom   Kuracia roláda plnená ricottou a špenátom dusená ryža demi glace,Hlivový paprikáš maslové halušky kyslá smotana bylinky,Wrap s údeným lososom mix listových šalátov čerstvá zelenina avokádo kôprová majonéza,,
+2022-01-31,Bioland,Uhorkovo šalátová krémová alergény neobsahuje,JAPAN Shogayaki Tofu s baklažánom s príchuťou sladkého zázvoru ryžová omeleta tamagoyaki alergény sója sezam,Pohánková sekaná so zemiakovou kašou a restovanou cibuľkou alergény neobsahuje,Chia puding z kokosového mlieka a ovocím alergény neobsahuje,
+2022-01-31,Centr klub,Karfiolová krémová so syrom,Bryndzové halušky s vypečenou slaninou,Kurací steak grilovaná zelenina kuskus jogurtový dresing,,
+2022-01-31,Ceska piv,Pórková krémova polievka,Kuracie prsia zapekané s oštiepkom a slaninou ryža a miešaný šalát,Pečené bravčové rebierka s kyslou prílohou chlieb,Bryndzové pirohy so slaninkou a kyslou smotanou,XXL Vyprážaný bravčový rezeň s hranolkami a tatárskou omáčkou
+2022-01-31,Dilema,Slepačí vývar s rezancami a zeleninou N,Kuracie rezančeky so zeleninou a šampiňónmi dusená ryža,ČEVAPČIČI pečené rozmarínové zemiaky horčica cibuľa,Bryndzové PIROHY s vypečenou slaninkou a jarnou cibuľkou,
+2022-01-31,Galileo,Šošovicová polievka na kyslo,Bravčový prírodný rezeň so šunkou a vajcom dusená ryža,,,
+2022-01-31,Kasa,Paradajkovo cviklová polievka,Hubové bezlepkové penne,Pomaly pečené pliecko s konfitovanými citrónmi,,
+2022-01-31,Milton,Japonská miso polievka s ryžovými rezancami sezónnou zeleninou a tofu,Grilovaný kurací steak SK maslo so sušenými paradajkami,Semolinové ravioli plnené zeleninou ratatouille,Konfitované teľacie líčka v zeleninovej remuláde,Tvarohovo višňová štrúdľa francúzska čokoládová omáčka
+2022-01-31,Spilka,Aužyj druhy O Vás,Aj Čotspýc Já,Paradajková polievka so syrom      ass očí BA,Cézar šalát s kuracím mäsom slaninkou a krutónmi      ž,Vyprážaný syr s varenými zemiakmi a tatárskou omáčkou
+2022-01-31,Suvlaki,PONDELOK,Grilované JAHŇACIE KARBONÁTKY tzatziki dip,ŠALÁT s grilovaným SYROM CHALUMI,Morčacie SOTÉ so sušenými paradajkami horčicová omáčka,Zapečené lístkové cesto plnené baklažanom červenou paprikou a syrom feta
+2022-01-31,Veda,Paradajková s ryžou,Madrasi curry mango a mini kukurica v indickej omáčke,Zeleninové kuracie tikka masala,,
+2022-01-31,Veglife,Zemiaková polievka na kyslo,Šošovicový dhál s kokosovým mliekom a pečenými batatmi ryža jasmínová,Jačmenné krúpky s bryndzou pažítkou a tempehom,Šalát Brokolicovo paradajkový s olivami,Dezert Banánovo avokádová torta
+2022-02-01,Alzbetka,Kelová s klobásou kváskový chlieb  Hovädzie na Burgundský spôsob zemiaková kaša,Kurací Gyros domáci pita chlieb tzatziky nakladané uhorky,Wrap s údeným lososom mix listových šalátov čerstvá zelenina avokádo kôprová majonéza,,
+2022-02-01,Bioland,Svieža z mangoldu brokolice a limetky alergény neobsahuje,Tropica Sladkokyslá zelenina s ananásom ryža basmati alergény sója,Hliva na kurkume s červenou šošovicou a pečenými zemiakmi alergény neobsahuje,Banánové tiramisu alergény mlieko vajcia lepok,
+2022-02-01,Centr klub,Tekvicová krémová z maslovej tekvice opečený chleba,Cézar šalát s kuracím mäsom vajíčko krutóny,Pečená krkovička zemiaková kaša čalamáda,,
+2022-02-01,Ceska piv,Slepačí vývar s mäsom a rezancami,Šošovicová s párkom,A  Kuracie prsia s omáčkou quattro formaggi ryža,B  Bravčová panenka s omáčkou z lesných hríbikov pečené zemiaky,XXL Vyprážaný bravčový rezeň s hranolkami a tatárskou omáčkou
+2022-02-01,Dilema,Hrstkova s klobáskou,Kurací WOK so zeleninou dusená ryža,Pomaly pečená KRKOVIČKA na cibuľke a slaninke šuchané zemiaky kapustový šalát,Hlivový PERKELT špenátové halušky N  TI,
+2022-02-01,Galileo,Slepačia polievka s cestovinou,Kurací nožný perkelt s domácimi haluškami,,,
+2022-02-01,Kasa,Polievka Kulajda,Lasagne s modrým syrom a špenátom,Kura cacciatore s olivami,,
+2022-02-01,Milton,Hrachová krémová polievka s restovanou cibuľkou a slaninkou,Tradičné talianske mäsové guľky pečené v paradajkovej omáčke,Bravčová panenka plnená sušenými slivkami v opasku zo slaninky,Mangové tiramisu parfumované bielym rumom,
+2022-02-01,Red Cafe,Fazuľová so širokými rezancami polievka,Maďarský guláš domáca knedľa,Zeleninový šalát s kur mäsom a francúzskym dresingom,Vyprážaný syr hranolky tatárska omáčka,Pizza šunková salámová šampiňónová
+2022-02-01,Spilka,Cibuľová polievka s syrovými krutónmi,Hovädzie varené chrenová omáčka adomáca knedľa,Paprikáš shlivou ustricovou a maslovými haluškami,,
+2022-02-01,Suvlaki,Pečená bravčová KRKOVIČKA plnená špargľou syrom pomarančová omáčka,ŠALÁT s grilovaným SYROM CHALUMI,Pečené KURA s rozmarínom,Vyprážané CUKETOVO MRKVOVÉ GULIČKY na grécky spôsob,
+2022-02-01,Svadby a Kari,Z koláča diera,Streda piatok ešte uvidíme,Span class cff text data color MENU,,
+2022-02-01,Veda,Thajská karfiólová,Gobi beans karfiól a zelená fazuľka v indickej omáčke,Vegetariánske kuracie tikka masala,,
+2022-02-01,Veglife,Boršč polievka,Tofu v zeleninovo arašidovej omáčke ryža jasmínová B V P,Mrkvovo syrové karbonátky zemiakové pyré s maslom,Šalát Coleslaw,Dezert Ananásový koláč s tvarohovým krémom
+2022-02-03,Alzbetka,Šošovicová z červenej šošovice klobása jarná cibuľka   Rib eye Steak sťuchané zemiaky so slaninou demi glace,Kuracia Quesadilla hranolky avokádový dip,Wrap s údeným lososom mix listových šalátov čerstvá zelenina avokádo kôprová majonéza,,
+2022-02-03,Bioland,Zo žltého hrachu s horčičným semienkom alergény horčičné semienko,Karamelizované robi rezance basmati ryža s bazalkou zeleninový šalát alergény lepok sója,Soté z fazuľových strukov a ružičkovým kelom s polentou alergény neobsahuje,Bryndzový osúch s kôprom alergény lepok mlieko,
+2022-02-03,Centr klub,Fazuľová s klobásou,Parené buchty so slivkovým lekvárom kakao maslo,Bravčová panenka na zelenom korení krokety,,
+2022-02-03,Ceska piv,Slepačí vývar s mäsom a rezancami,Karotkový krém,Kuracie prsia zapekané s enciánom a sušenou paradajkou ryža miešaný šalát,Bravčové výpečky varené zemiaky kyslá uhorka,XXL Vyprážaný bravčový rezeň s hranolkami a tatárskou omáčkou
+2022-02-03,Dilema,Kapustová so zemiakmi a údeninou,Kurací ŠPÍZ so slaninkou a zeleninou dusená ryža cesnaková omáčka,Vyprážaná TRESKA zemiakové pyré cviklový šalát,Tvarohovo jablková ŽEMĽOVKA N  I,
+2022-02-03,Galileo,Čínska ostrokyslá polievka,Losos podávaný na špenáte s opekanými zemiakmi dezert,,,
+2022-02-03,Kasa,Zimná polievka s čiernou ryžou,Zeleninový wok s quinoou,Bôčiková roláda porchetta s bylinkami,,
+2022-02-03,Milton,Divinové consomé zelenina a pečeňové halušky,Kurací špíz z vykosteného kuracieho stehna slaninky a trio papriky,Semolinové cestoviny Penne all Arrabiata,V celku grilovaná teľacia sviečkovica Sous Vide,Kokosová Panna cotta plnená pralinkami Raffaello pyré z tmavého ovocia
+2022-02-03,Red Cafe,Kapustová s klobáskou polievka,Pečené kuracie stehno dusená ryža kompót,Bryndzové halušky so slaninkou,Vyprážaný syr hranolky tatárska omáčka,Pizza šunková salámová šampiňónová
+2022-02-03,Spilka,Pórová so zemiakmi     Se,Kurací rezeň s majonézovým šalátom,Hummus s pečenou repou pita chlebom a zeleninou,,
+2022-02-03,Suvlaki,Šošovicová polievka,Grilované Bravčovo hovädzie FAŠÍRKY plnené syrom,Zapečené špagety s tuniakom olivami a syrom,ŠALÁT s GYROS mäskom horčicovo majonézový dresing,Zapečená FAZUĽA GIGANTES so zelerom mrkvou paradajková omáčka
+2022-02-03,Svadby a Kari,Polievka z pečených paprík a paradajok VEGAN,Etiópske berberské kari s batátmi brokolicou a hráškom VEGAN,Thajské Panang kari s hovädzím mäsom z ekofarmy arašídmi paprikou a cuketou,,
+2022-02-03,Veda,Thajská zemiaková s mini kukuricou,Hubové kari,Vegetariánsky stroganov Vegetariánsky stroganov na indický spôsob,,
+2022-02-03,Veglife,Krém z bielej fazule s tymiánom,Zelené karí s tempehom ryža jasmínová B V P,Kapustové placky s údeným tofu zemiakové pyré,Šalát Mexický kukuricový šalát,Dezert Karamelový cheesecake
+2022-02-04,Alzbetka,Kačací vývar so špeclami     Kačacie Bao parená buchta trhaná kačka dusená kapusta nakladané brusnice,Rybacie curry s jazmínovou ryžou koriadner,Wrap s údeným lososom mix listových šalátov čerstvá zelenina avokádo kôprová majonéza,,
+2022-02-04,Bioland,Cícerovo zemiaková polievka s pečenou cviklou alergény neobsahuje,MOROCCO Tekvicový kotlík so zeleninou ryža jazmín alergény neobsahuje,Bezlepkové rezance s vegan tvarohom a makovou posýpkou alergény orechy,Svieži mrkvový koláč alergény lepok mlieko vajcia,
+2022-02-04,Centr klub,Mäsový vývar s celestínskymi rezancami,Hubové rizoto so sušenými paradajkami rukola parmezán,Kurací gordon blue petržlenové zemiaky uhorkový šalát,,
+2022-02-04,Ceska piv,Slepačí vývar s mäsom a rezancami,Kuracie medajlónky s anglickou zeleninou na masle ryža,Bravčový guláš s parenou knedľou,XXL Vyprážaný bravčový rezeň s hranolkami a tatárskou omáčkou,
+2022-02-04,Dilema,Slepačí vývar s rezancami a zeleninou N,Pivovarské kuracie rezance  a pečienky na pive dusená ryža kyslá uhorka,Šošovicový PRÍVAROK s grilovanou klobáskou kváskový chlieb,Vyprážaný SYR hranolky naša domáca tatárska omáčka    Mani nAarlávama  ŠŇAcCcna Ai,
+2022-02-04,Galileo,Špenátová polievka,Domáca faširka so zemiakovým prívarkom chlieb,,,
+2022-02-04,Kasa,Tekvicovo cícerová krémová polievka,Francúzske zemiaky,Kurací tikka masala špíz,,
+2022-02-04,Milton,Cesnaková krémová polievka krutóny,Grilované medailóniky z bravčovej panenky,Parené kysnuté buchty plnené jahodovým džemom a jahodami,Konfitované pečené kačacie stehno,Brownies bezlepkové s malinovým kompótom
+2022-02-04,Red Cafe,Zemiaková na kyslo polievka,Znojemské bravčové kocky tarhoňa,Kurací kebab v tureckej žemli,Vyprážaný syr hranolky tatárska omáčka,Pizza šunková salámová šampiňónová
+2022-02-04,Spilka,Tekvicová krémová polievka      fi,Kačacie stehno dusená kapusta lokše     AM,Šošovicový prívarok zeleninová fašírka zemiáky     vy,,
+2022-02-04,Suvlaki,Pečený LOSOS s rozmarínom citrónová omáčka,ŠALÁT s grilovaným SYROM CHALUMI,Grilovaný kurací STEAK s paprikou a syrom Feta,Zapečené CESTOVINY so šampiňonmi šparglou a syrom,
+2022-02-04,Svadby a Kari,Talianska paradajková s domácim bazalkovým pestom VEGAN,Indonézske arašidové VEGAN Satay kari so šampiňónmi paradajkami a mungo fazuľkami,Malajské kari s kuracím mäsom od farmára s maslom GHEE zelenými fazuľkami cuketou a baklažánom,,
+2022-02-04,Veda,Šampiónová,Pakora subzi zeleninové fašírky v indickej omáčke soup,Vegetariánsky stroganov Vegetariánsky stroganov na indický spôsob soup,,
+2022-02-04,Veglife,Hráškovo mätová polievka,Sedliacky paprikáš s BIO tempehom ryža natural,Gratinovaná hokaido tekvica s údeným syrom a tymiánom,Šalát Karfiolový šalát so sušenými paradajkami,Dezert Karamelový cheesecake
+2022-02-07,Alzbetka,Zemiakovo pórová bylinkové krutóny   Pečené kuracie stehno zemiaková kaša s opečenou cibuľkou kuriatkova omáčka,Lasagne Bolognese pomodoro omáčka strúhaný parmezán baby špenát,Caesar šalát kuracie prsia ančovičkový dressing strúhaný parmezán chlebová mrvenica,,
+2022-02-07,Bioland,Hrášková krémová polievka s mätou a kokosovým mliekom alergény neobsahuje,Syrové lasagne s hubami shmeji a čerstvými bylinkami alergény lepok,Segedín so slivkami varené zemiaky s vňaťou alergény neobsahuje,Raw karobovo banánová torta alergény orechy,
+2022-02-07,Centr klub,Brokolicová krémová s opečeným chlebom,Gnocchi s paradajkovou omáčkou mozzarella caprese rukola,Kurací steak pečený čili cícer s kyslou smotanou baby zemiaky,,
+2022-02-07,Ceska piv,Slepačí vývar s mäsom a rezancami,Tagliatelle so slaninkou hríbikmi sušenou paradajkou a kuracím mäsom,Bravčový steak s prírodnou omáčkou a šťuchanými zemiakmi,Šalát s grilovaným enciánom hroznom orechmi a brusnicami,XXL Vyprážaný bravčový rezeň so slovenským zemiakovým šalátom
+2022-02-07,Dilema,Slepačí vývar s rezancami a zeleninou N,Kurací STROGANOV kôpor dusená ryža,Bravčový REZEŇ v pivnom cestíčku pečené zemiaky coleslaw,Miešaný zeleninový ŠALÁT s baby mozzarellou domáce bazalkové pesto bagetka,
+2022-02-07,Kasa,Kelová polievka s hlivou,Cviklové krupotto,Krkovička s cesnakom a horčicou,,
+2022-02-07,Milton,Babičkina bryndzová polievka s mrveničkou,Sous Vide kuracia roláda vykostené stehná prsia a kuracie fauche v úprave Sous Vide,Grilovaná filetovaná ryba Mahi Mahi,Teľacia sviečková Sous Vide grilovaná v celku,Jahodovo smotanové Zucotto torta v tvare polgule
+2022-02-07,Red Cafe,Pórková so zemiakmi polievka,Kuracie nugetky BBQ omáčka americké zemiaky,Spaghetti Bolognesse,Vyprážaný syr hranolky tatárska omáčka,Pizza šunková salámová šampiňónová
+2022-02-07,Suvlaki,Cibuľová krémová,Bravčové SOTÉ so šampiňonmi a baklažanom,GRÉCKY ŠALÁT pita chlieb,Pečené KURA s rozmarínom medová omáčka,Gratinovaná cuketa s paprikou zemiakmi a syrom
+2022-02-07,Svadby a Kari,VEGAN kapustnica s lesnými hubami,VEGAN horčicové kari s fazuľou beluga šampiňónmi a paradajkami,Indické kari tisícich cesnakov s kuracím mäsom od farmára s tekvicou a oranžovou paprikou,,
+2022-02-07,Veda,Paradajková s ryžou,Cícerová masala,Vegetariánske kuracie tikka masala,,
+2022-02-07,Veglife,Mrkvový krém s kokosovým mliekom,Nasi goreng B P,Segedínsky guláš s údeným BIO tempehom parená knedľa,Karfiolový rezeň so syrom zemiakové pyré s maslom,Šalát Kapustovo rukolový šalát s tekvicovými semiačkami
+2022-02-08,Alzbetka,Hovädzí vývar s rezancami     Hovädzí stroganoff s dusenou ryžou smažená cibuľa,Kuracie nugetky s domácimi hranolkami syrový dip,Caesar šalát kuracie prsia ančovičkový dressing strúhaný parmezán chlebová mrvenica,,
+2022-02-08,Bioland,Šošovicová na kyslo s ryžovou smotanou alergény neobsahuje,AMERICA chrumkavý seitan v pomarančovej omáčke s brokolicou ryža dlhozrnná alergény lepok sója sezam,Bezlepkové penne s omáčkou arrabbiata s vegan syrom cheddar alergény neobsahuje,Strúhaný tvarohový koláč alergény lepok mlieko vajcia,
+2022-02-08,Centr klub,Zemiaková na kyslo s kôprom,Bravčové rizoto so syrom uhorkový šalát,Morčacie stehno na víne zemiaková kaša,,
+2022-02-08,Ceska piv,Paradajková so syrom,Kuracie nugetky s grilovanou zeleninou ryža,Bravčová kapsa plnená oštiepkom a slaninkou opekané zemiaky paradajkový šalát s cibuľkou,Sezamový šalát s kuracím mäsom,XXL Vyprážaný bravčový rezeň so slovenským zemiakovým šalátom
+2022-02-08,Dilema,Hrstkova s klobáskou,Kurací WOK so zeleninou dusená ryža,Pomaly pečená KRKOVIČKA na cibuľke a slaninke šuchané zemiaky kapustový šalát,Hlivový PERKELT špenátové halušky N  TI,
+2022-02-08,Galileo,Zeleninová jarná polievka s haluškami,Znojemské hovädzie mäso s tarhoňou,,,
+2022-02-08,Kasa,Zelerový krém,Cícer na grécky spôsob,Pečené kura pečeňová plnka,,
+2022-02-08,Milton,Morčací vývar mäso koreňová zelenina a niťovky,Fašírky z u nás mletého bravčového a hovädzieho mäsa a syrom Eidam v bezlepkovej úprave,Brokolicové karfiolové lasagne zapekané údeným oštiepkom,Viedenský vyprážaný teľací rezeň teľacie karé bezlepková úprava,Domáca torta podľa Rudka
+2022-02-08,Red Cafe,Šošovicová na kyslo polievka,Kurací Černohor pečené zeemiaky mix šalát,Brokolicové rizoto so syrom,Vyprážaný syr hranolky tatárska omáčka,Pizza šunková salámová šampiňónová
+2022-02-08,Spilka,Nových z MENU druhy,Šalát polievka dňa   SVÝCh Šalátov,Šalát s flanik steakom zmes listov cibuľka francúzsky dresing cherry paradajky,Šalát s feta syrom lieskové orechy francúzsky dresing cherry paradajky,
+2022-02-08,Suvlaki,Paradajková polievka,Pečený KRÁLIK s červenou cibuľkou rozmarínom a pivom,GRÉCKY ŠALÁT pita chlieb,Dusené kuracie mäso s červenou fazuľkou paradajková omáčka,PEPERIES JEMISTES zapečená paprika plnená ryžou na grécky spôsob
+2022-02-08,Svadby a Kari,Šošovicová polievka s kurkumou a opekanými kešu VEGAN,Indické VEGAN Aloo Gobi s karfiolom batátmi a hráškom,Perzské kari s BIO hovädzím mäsom mrkvou a pečeným baklažánom,,
+2022-02-08,Veda,Thajská karfiólová,Hubové kari,Vegetariánsky stroganov Vegetariánsky stroganov na indický spôsob,,
+2022-02-08,Veglife,Falošná držková z hlivy,Robi gyros zemiakové pyré s restovanou cibuľkou,Cviklové karí s batatmi ryža basmati,Francúzske zemiaky s tofu,Šalát Poké šalát z natural ryže a quinoy
+2022-02-09,Alzbetka,Kuracie prsia sous vide krémové hráškové rizoto demi glace,Caesar šalát kuracie prsia ančovičkový dressing strúhaný parmezán chlebová mrvenica,,,
+2022-02-09,Bioland,GREEK Kelová polievka alergény neobsahuje,Zeleninové guľôčky s jogurtovým dipom na zemiakovom pyré alergény neobsahuje,Tekvicové halušky so špenátovou omáčkou alergény lepok,Čokoládová quinoa s ovocím alergény neobsahuje,
+2022-02-09,Centr klub,Hrachová s párkom   L,Slivkové knedle s makom a maslom,BBQ hovädzie trhané pečené zemiaky majonéza,,
+2022-02-09,Ceska piv,Frankfurtská polievka,Lasagne s brokolicou a syrom,Pečené kuracie stehno ryža broskyňový kompót,Šalát s obaľovanými kuracími nugetkami medovo horčicový dresing,XXL Vyprážaný bravčový rezeň so slovenským zemiakovým šalátom
+2022-02-09,Dilema,Slepačí vývar s rezancami a zeleninou N,Grilovaný kurací Terchovský CORDON BLEU slaninka oštiepok dusená ryža kapustový šalát,Hovädzie varené s kôprovou omáčkou parená knedľa,Cuketové PLACKY mätovo jogurtový dressing listový šalát,
+2022-02-09,Galileo,Kelová polievka s údeným mäsom,Španielsky vtáčik s dusenou ryžou,,,
+2022-02-09,Kasa,Fazuľová polievka s feniklom,Cuketová moussaka,Morčací Bourguignon,,
+2022-02-09,Milton,Šošovicová polievka s parkom zemiakmi a koreňovou zeleninou,Konfitovaná hovädzia falošná sviečková,Steak z hovädzej sviečkovice s volským okom,Čokoládové Creme brulée domáci višňový kompót,
+2022-02-09,Red Cafe,Frankfurtská polievka,Br panenka v slaninkovom kabátiku šťuchané zemiaky,Zemiak guľky plnené údeným mäsom dusená kapusta,Vyprážaný syr hranolky tatárska omáčka,Pizza šunková salámová šampiňónová
+2022-02-09,Spilka,Brokolicová krémová polievka,Bravčové karbonátky zemiaková kaša kyslé uhorky,Vyprážaný syr hranolky tatárska omáčka,,
+2022-02-09,Suvlaki,Šošovicová polievka,Zapečená TORTILA plnená Lososom kapari zeleninou jogurtovo horčicová omáčka,GRÉCKY ŠALÁT PITA CHLIE,Grilovaný KURACÍ STEAK so slaninkou syrová omáčka,Vegetariánska MUSAKA
+2022-02-09,Svadby a Kari,Japonská polievka Miso s údeným tofu šampiňónmi a sezamom VEGAN,Vegan hubové kari s hlivou šampiňónmi a cuketou,Indická GHEE Tikka Masala s kuracím mäsom od farmára s mrkvou a hráškom,,
+2022-02-09,Veda,Brokolicová,Vegánske mäsové guľky,Mattar Panner Hrach paneer,,
+2022-02-09,Veglife,Miso zeleninový vývar s tofu,Celozrnné špagety s červeným pestom orechami rukolou a tempehom,Pohánkové guľky v paradajkovej kapuste petržlenové zemiaky,Seitan na spôsob Stroganoff pečené zemiaky,Šalát Kelový šalát so pšenom a pečeným cícerom
+2022-02-10,Alzbetka,Fazuľová Jókai kváskový chlieb  Bao Vepro zelo chrumkavý bôčik dusená kapusta,Penne s paradajkovou omáčkou slanina čierne olivy parmezán rukola,Caesar šalát kuracie prsia ančovičkový dressing strúhaný parmezán chlebová mrvenica,,
+2022-02-10,Bioland,Zemiaková s čerstvým kôprom alergény neobsahuje,SPANISH paella zeleninová ryža s artičokami a šafranom alergény neobsahuje,Hŕstková kaša s pečeným marinovaným robi pohánkový chlieb alergény lepok sója,Raw raffaello alergény orechy,
+2022-02-10,Centr klub,Pórová krémová s opečeným chlebom,Vyprážaný karfiól varené zemiaky tatarská omáčka,Segedínsky guláš parená knedľa,,
+2022-02-10,Ceska piv,Slepačí vývar s mäsom a rezancami,Hrachová polievka,Kuracie soté na smotane so slaninkou a kukuricou ryža a miešaný šalát,Bravčový karbonátok zemiaková kaša kyslá uhorka,XXL Vyprážaný bravčový rezeň so slovenským zemiakovým šalátom
+2022-02-10,Dilema,Guľášová so zemiakmi,Kurací REZEŇ zemiakovo majonézový šalát,Bravčový STEAK s volským oko pfeffer omáčka dusená ryža coleslaw,Parené BUCHTY s ovocnou marmeládou prepálené maslo granko N,
+2022-02-10,Galileo,Paradajková polievka s mozzarelou,Kurací rezeň v cestíčku so zemiakovou kašou a šalátom,,,
+2022-02-10,Kasa,Mrkvová polievka a chermoula,Plnený batát,Holandský rezeň na náš spôsob,,
+2022-02-10,Milton,M Hríbová krémová polievka zmes lesných hub a šampiňónov,Grilované kuracie prsia SK plnené prosciuttom a mozzarellou,Zeleninové taštičky Samosa plnka jemne pikantná zeleninová,Grilované teľacie medajlónky Sous Vide,Omáčka z teľacieho demi glacé kapár parfumované VSOP Brandy
+2022-02-10,Red Cafe,Šampiňónový krém polievka,Pulled pork burger hranolky,Francúzske zemiaky kyslá uhorka,Vyprážaný syr hranolky tatárska omáčka,Pizza šunková salámová šampiňónová
+2022-02-10,Spilka,Kelová polievka,Chilli con carne s cheddárom s dusenou ryžou a nachos,Domáce gnocchi shubami a parmezánom,,
+2022-02-10,Suvlaki,Hrášková polievka,MELITZANES PAPUTSAKIA Zapečený baklažan s mletým hovädzo bravčovým mäsom bešamel omáčka,GRÉCKY ŠALÁT pita chlieb,Dusená kuracia pečienka s cibuľkou paradajková omáčka,Grilovaný SYR CHALUMI so zeleninou
+2022-02-10,Svadby a Kari,Thajská kokosová polievka Tom Kha VEGAN,Mangovo datľové VEGAN kari s banánmi platanos a cuketou,Thajské červené kari s BIO hovädzím mäsom farebnými paprikami a brokolicou,,
+2022-02-10,Veda,,Fazuľa masala zeleninová krémová,Vegetariánsky stroganov Vegetariánsky stroganov na indický spôsob zeleninová krémová,,
+2022-02-10,Veglife,Harira marocká cícerová polievka,Gratinovaná sezónna zelenina s parmezánom,Goody foody fašírky s tekvicovým prívarkom pečené zemiaky,Teriyaki tempeh panvička ryža jasmínová,Šalát Rukolový šalát s olivami
+2022-02-14,Alzbetka,Fazuľová na kyslo   Wrap s kuracími stripsami čerstvá zelenina cheddar hranolky,Gnocchi s omáčkou z modrého syra vlašské orechy baby špenát,Wrap hovädzia sviečková čerstvá zelenina sweet chilli majonéza strúhaný cheddar,,
+2022-02-14,Bioland,Špenátová krémová alergény neobsahuje,Valentínske muffiny z pečenej cvikly s kápiou cherry paradajkami brusnicami a goji hráškovo zemiakové pyré alergény lepok,Rizoto z tarhone s pečenou zeleninou hubami a sušenými paradajkami mix šalát alergény neobsahuje,Raw ananásová torta alergény orechy,
+2022-02-14,Centr klub,Cesnaková so syrom a opečeným chlebom,Bryndzové pirohy so smotanou a chrumkavou cibuľou,Kuracie prsia wok zelenina ryža kapustový šalát,,
+2022-02-14,Ceska piv,Slepačí vývar s mäsom a rezancami,Grilovaný encián s brusnicami varené zemiaky,Kuracie prsia na grile s fazuľkovými lúskami a slaninkou ryža,XXL Vyprážaný bravčový rezeň zemiakový šalát s majonézou,
+2022-02-14,Dilema,Slepačí vývar s rezancami a zeleninou N,Kurací STROGANOV kôpor dusená ryža,Bravčový REZEŇ v pivnom cestíčku pečené zemiaky coleslaw,Miešaný zeleninový ŠALÁT s baby mozzarellou domáce bazalkové pesto bagetka,
+2022-02-14,Galileo,Slepačia polievka so špenátovými haluškami,Kurací gyros na ľadovom šaláte s dresingom   ryža   hranolky,,,
+2022-02-14,Kasa,Hrachová polievka s údenou paprikou,Bezlepková pasta pomodoro rukola,Bravčové karé s chimichurri,,
+2022-02-14,Milton,Krémová polievka zo strúhanej bielej tekvice a kôpru na kyslo,Dusená falošná hovädzia sviečková hovädzie zadné z mladého býčka,Grilovaný filet z morskej ryby,Grilované konfitované bravčové líčka na čiernom pive a zelenom korení,Schwarzwaldská torta
+2022-02-14,Red Cafe,Cesnaková s krutónmi polievka,Vypr kurací rezeň zemiakové pyré uhorkový šalát,Penne so schwarzwaldskou šunkou a rukolou,Vyprážaný syr hranolky tatárska omáčka,Pizza šunková salámová šampiňónová
+2022-02-14,Spilka,Na MENU nové Ú,Eninových dru,Minestrone     S šalátov,Kurací stroganov dusená ryža,Vyprážaný sy varené zemiaky tatárska omáčka
+2022-02-14,Suvlaki,Dusené bravčové mäso s olivami paradajková omáčka,GRÉCKY ŠALÁT pita chlieb,Kuracie soté so sušenými paradajkami horčicová omáčka,Zapečené zelené fazuľové struky s cuketou červenou paprikou a zemiakmi,
+2022-02-14,Svadby a Kari,Mexická fazuľová polievka s údenými chipotle paprikami,Srílanské cviklové VEGAN kari s bielymi fazuľami a zelenými fazuľkami,Indické pistáciovo jogurtové kari s kuracím mäsom od farmára s paradajkami zemiakmi a opekaným baklažánom,,
+2022-02-14,Veda,Paradajková s ryžou,Cícerová masala,Vegetariánsky stroganov Vegetariánsky stroganov na indický spôsob,,
+2022-02-14,Veglife,Zeleninová kari polievka s quinoou,Indické kofty s koriandrom v paradajkovo mätovej omáčke pečené zemiaky,Rigatoni s chedarovou omáčkou,Zemiakovo cibuľový gratin,Šalát Brokolicovo cviklový s polníčkom
+2022-02-15,Alzbetka,Paradajková s parmezánom bazalka   Kačacie prsia sous vide hubové krupoto demi glace,Bryndzové halušky strúhaný údený oštiepok opečená slanina chrumkavá cibuľa bylinky,Wrap hovädzia sviečková čerstvá zelenina sweet chilli majonéza strúhaný cheddar,,
+2022-02-15,Bioland,Vegánska marocká harira alergény zeler,ROMANIA Zeleninový pilaf s marinovanými šampiňónmi portobello a chilli alergény neobsahuje,Brokolicové tatérky s jogurtovým dresingom tekvicové pyré a kapustový šalát alergény neobsahuje,Tiramisu s ovocím alergény lepok mlieko vajcia,
+2022-02-15,BlueBear,Paradajková,Zemiakové knedličky plnené údeným mäsom s kyslou kapustou a slaninou,Bravčové výpečky tarhoňa,Kolenový guláš s chlebom,TYZDENNE
+2022-02-15,Centr klub,Zeleninová s mrvenicou,Gnocchi tekvicové pyré rukola feta,Obrátený rezeň zemiaková kaša červená repa,,
+2022-02-15,Ceska piv,Slepačí vývar s mäsom a rezancami,Zemiaková na kyslo,Vykostené kuracie stehno s bylinkovým maslom ryžou a paradajkovým šalátom,Znojemské bravčové s pečenými zemiakmi,XXL Vyprážaný bravčový rezeň zemiakový šalát s majonézou
+2022-02-15,Dilema,Cesnakový krém s krutónmi,Kurací ČIERNOHORSKÝ rezeň pečené zemiaky domáca tatárska omáčka,Zemiakové guľky s údeným mäsom dusená biela kapusta viedenská cibuľka,Penne ARRABIATA parmezán rukola N,
+2022-02-15,Galileo,Šampiňónová polievka,Plnený prírodný bravčový rezeň s dusenou ryžou a červenou repou,,,
+2022-02-15,Kasa,Zemiaková polievka na kyslo s kôprom,Hummus z bielej fazule s aioli  a pečenou mrkvou,Kura peri peri pikantné,,
+2022-02-15,Milton,Kari kuracia polievka so zeleninou ryžovými rezancami koriandrom a zelenou kari pastou,Bolonské lasagne gratinované syrom mozzarella,Gnocchi v krémovej omáčke z kozieho syru,Grilované kukuričné kuriatko Suprême Sous Vide,Domáca torta podľa Rudka
+2022-02-15,Red Cafe,Gulášová polievka,Chilli con Carne v tortille,Špenátové halušky so syrovou om a kuracím mäsom,Vyprážaný syr hranolky tatárska omáčka,Pizza šunková salámová šampiňónová
+2022-02-15,Spilka,Malevová krémová polievka s koriandrom,Francúzske zemiaky s klobásou a kyslými uhorkami,Špenátový prívarok pošírované vajíčka a varené zemiaky,,
+2022-02-15,Svadby a Kari,Hlivový VEGAN guláš s údeným tofu,Indická VEGAN Rajma Masala s paradajkami batátmi a maslovou fazuľou,Vietnamské kari s BIO hovädzím mäsom ananásom cuketou a mrkvou,,
+2022-02-15,Veda,Thajská karfiólová,Hubové kari,Vegetariánsky stroganov Vegetariánsky stroganov na indický spôsob,,
+2022-02-15,Veglife,Francúzska cibuľačka,Krémové rizoto s lesnými hríbmi a pórom,Zemiakovo syrové pampúchy so šošovicoým prívarkom,Cícerové ragú s tekvicou a špenátom ryža natural,Šalát Šalát s granátovým jablkom
+2022-02-16,Alzbetka,Krém z pečených zemiakov pažítka,Bravčová panenka sous vide zemiaková kaša omáčka zo zeleného korenia,Vyprážaný syr v panko strúhanke mlade zemiaky pažítka tatárska omáčka,Wrap hovädzia sviečková čerstvá zelenina sweet chilli majonéza strúhaný cheddar,
+2022-02-16,Bioland,Polievka krémová z pečenej žltej papriky s kokosovým mliekom alergény neobsahuje,INDIA Chana Dal cícerové karí ryža basmati alergény neobsahuje,Sviečková s grilovaným seitanom brusnicovou omáčkou a citrónovým tymianom zemiakové halušky alergény sója zeler horčica lepok,Mangová raw torta alergény orechy,
+2022-02-16,BlueBear,Šošovicová na kyslo,Šúľance s makom,Pečené kuracie stehno s parmezánom a ryžou,Kolenový guláš s chlebom,TYZDENNE
+2022-02-16,Centr klub,Šošovicová na kyslo    L,Francúzske zemiaky s kyslou uhorkou,Maďarský guláš parená knedľa,,
+2022-02-16,Ceska piv,Slepačí vývar s mäsom a rezancami,Moravská kapustnica,Kuracie kúsky s mexickými fazuľkami a kukuricou ryža,Údený oštiepok v zemiakovom cestíčku varené zemiaky tatárska omáčka,XXL Vyprážaný bravčový rezeň zemiakový šalát s majonézou
+2022-02-16,Dilema,Slepačí vývar s rezancami a zeleninou N,Kurací GYROS dusená ryža uhorkové tzatziky,Hovädzia SVIEČKOVÁ na smotane parená knedľa,Granatiersky pochod kyslá uhorka N I,
+2022-02-16,Galileo,Šošovicová polievka,Vyprážané vykostené kuracie stehno so slovenským zemiakovým šalátom,,,
+2022-02-16,Kasa,Polievka z červenej šošovice s paradajkou,Kokosovo limetové gratinované zemiaky,Hovädzia roštenka,,
+2022-02-16,Milton,Slepačí vývar cestovina niťovky zelenina a mäso,Bravčová krkovička konfitovaná pomaly pečená v zeleninovej remuláde,Grilovaná morská ryba,Stehno z daniela v kávovej marináde,Pomarančové Tiramisu parfumované bielym rumom
+2022-02-16,Red Cafe,Minestrone polievka,Br panenka na kráľovských fazuľkách so slaninkou šťuchané zemiaky,Vyprážaný karfiol varené zemiaky tatárska omáčka,Vyprážaný syr hranolky tatárska omáčka,Pizza šunková salámová šampiňónová
+2022-02-16,Spilka,Gulášová policvka podávaná s našim domácim cibuľovým chlebíkom,Burger s bravčovým trhaným mäsom šalátom coslelaw a hranolkami,Hubové krupoto s parmezánom a baby špenátom,,
+2022-02-16,Suvlaki,Rybacia polievka,Grilovaná BRAVČOVÁ PANENKA so slaninkou syrová omáčka,GRÉCKY ŠALÁT pita chlieb,Pečené KURACIE GULIČKY s tymiánom paradajková omáčka,Zapečené lístkové cesto plnené pórom kurkumou a syrom Feta
+2022-02-16,Svadby a Kari,Svieža šošovicová polievka s citrónovou šťavou,Indická VEGAN mandľová Korma s domácim sójovým jogurtom šampiňónmi cuketou a mätou,Indické maslové Butter Chicken s kuracím mäsom od farmára batátmi paradajkami a hráškom,,
+2022-02-16,Veda,Brokolicová,Fazuľa masala,Mattar Panner Hrach paneer,,
+2022-02-16,Veglife,Lusková polievka na kyslo,Mexické lasagne,Zeleninové stir fry s tofu ryža jasmínová,Fregola sarda s paradajkami,Šalát Thajský šalát s hráškom
+2022-02-17,Alzbetka,Boršč kváskový chlieb kyslá smotana,Burger Pulled Pork coleslaw šalát chceddar hranolky,L Divinový kotlíkový guláš s kváskovým chlebom,Wrap hovädzia sviečková čerstvá zelenina sweet chilli majonéza strúhaný cheddar,
+2022-02-17,Bioland,Polievka krémová z bielej reďkovky a zázvoru alergény neobsahuje,Restovaný stonkový zeler s tempehom v marináde s cibuľou a paradajkou mrkvovo zemiakové pyré alergény zeler sója lepok,Cuketovo mrkvové fašírky so štuchanými zemiakmi a cibuľkou alergény neobsahuje,Chia puding s ovocím alergény neobsahuje,
+2022-02-17,BlueBear,Kelová s klobásou,Vyprážaný kurací rezeň v hráškovom cestíčku kaša,Cviklové rizoto s kozím syrom,Kolenový guláš s chlebom,TYZDENNE
+2022-02-17,Centr klub,Mäsový vývar s fridatovými rezancami,Zeleninové lasagne s paradajkovou omáčkou,Kurací steak nivová omáčka hrášková ryža,,
+2022-02-17,Ceska piv,Slepačí vývar s mäsom a rezancami,Zeleninová krémová,Listový šalát s kuracím mäsom a grilovanou zeleninou,Krémové hríbikové rizoto s bravčovou panenkou a parmezánom,XXL Vyprážaný bravčový rezeň s hranolkami
+2022-02-17,Dilema,Čínska ostrokyslá,Zelené kari s kuracím mäsom  a zeleninou kokosové mlieko dusená ryža,Pečená KRKOVIČKA s údenou slaninkou a cibuľkou štuchané zemiaky domáca čalamáda,Brokolicovo karfiolové fašírky varené zemiaky bvlinkový dressina,
+2022-02-17,Galileo,Minestrone,Hovädzie varené mäso s kôprovou omáčkou a knedľou dezert,,,
+2022-02-17,Kasa,Karfiolová krémová polievka s bylinkami,Čierny urad dal,Morčacie meatballs,,
+2022-02-17,Milton,Gulášová polievka hovädzie zadné  Chlieb,Pečené kuracie stehno sk na spôsob Barbecue,Omáčka kuracia s chili papričkami cesnakom a bazalkou médium spice V peci pečené zemiaky s rascou  Uhorkový šalát so sladkokyslým nálevom,Pasta roláda so špenátom sušenými paradajkami a cheddarom,Sous vide jahňacie medajlónky
+2022-02-17,Red Cafe,Hráškový krém s bazalkou polievka,Segedínsky guláš domáca knedľa,Fish and chips,Vyprážaný syr hranolky tatárska omáčka,Pizza šunková salámová šampiňónová
+2022-02-17,Spilka,Šošovicová polievka,Bravčový rezeň Černohor s varenými zemiakmi,Domáce buchty na pare prepáleným maslom plnené našou nutellou sdi kalové zi,,
+2022-02-17,Suvlaki,Šošovicová polievka,Zapečená PALACINKA plnená bravčovým mletým mäsom bešamel omáčka,GRÉCKY ŠALÁT pita chlieb,Morčacie SOTÉ s cuketou červenou paprikou,Gratinovaný BAKLAŽAN s paradajkovou omáčkou bazalkou a syrom Feta
+2022-02-17,Svadby a Kari,Cviklový krém s kokosovým mliekom VEGAN,Vegan kokosovo hlivové kari s tekvicou kukuričkou a paprikou,Thajské Massaman kari s BIO hovädzím mäsom batátmi cuketou a paradajkami,,
+2022-02-17,Veda,,Cuketa chanadul cuketa kukurica a karfiól v indickej omáčke zeleninová krémová,Vegetariánsky stroganov Vegetariánsky stroganov na indický spôsob zeleninová krémová,,
+2022-02-17,Veglife,Kalerábová polievka s mrkvou,Shepherd s pie Pastiersky koláč,Špenátovo syrový rezeň šťuchané zemiaky s olivovým olejom,Seitan na červenom karí s pórom a šampiňónmi ryža jasmínová V P,Šalát Rosso medový s orechami
+2022-03-10,Alzbetka,Šošovicová s červenej šošovice klobása jarná cibuľka   Holandský rezeň v panko strúhanke zemiaková kaša hlávkový šalát,Kuracia Quesadilla hranolky avokádový dip,Listový šalát s grilovaným kozím syrom pečená tekvica tekvicové semiačka,,
+2022-03-10,BlueBear,Kulajda,Kuracie prsia na hrášku s tarhoňou,Tagliatelle s cuketovým pestom parmezán,Guláš podľa dennej ponuky,TYZDENNE
+2022-03-10,Centr klub,Frankfurtská s párkom,Parené buchty kakao maslo,Kurací paprikáš maslové halušky,,
+2022-03-10,Galileo,Cukinový krém,,,,
+2022-03-10,Kasa,Polievka z bielej fazule s kôprom a zemiakmi,Haruľa s cibuľou a medvedím cesnakom,Pečená krkovička na cibuli,,
+2022-03-10,Milton,Tom Yum kuracia polievka s kokosovým mliekom a ryžovými rezancami,Grilovaná bravčova panenka plnená slivkami,Grillcheese prírodný nezrejúci polotvrdý syr v kruste zo sušených divokých byliniek salad,Teľací vyzretý Rump steak pripravovaný technológiou Sous Vide,Tvarohové knedličky plnené čučoriedkami čokoládová poleva
+2022-03-10,Red Cafe,Paradajková so syrom polievka,Bačovský rezeň cibuľa slanina bryndza peč zemiaky,Grécky šalát s feta syrom a olivami pizza štangľa,Vyprážaný syr hranolky tatárska omáčka,Pizza šunková salámová šampiňónová
+2022-03-10,Suvlaki,Šošovicová polievka,MUSAKA,KRETA ŠALÁT,KURACIE SOTÉ s mix paprikou feniklom,Vyprážané CUKETOVÉ GULIČKY na grécky spôsob
+2022-03-10,Svadby a Kari,Laksa malajská kokosová polievka VEGAN,Thajské melónové VEGAN kari s galangalom citrónovom trávou tekvicou a cícerom,Thajské Massaman kari s BIO hovädzím mäsom batátmi cuketou a paradajkami,,
+2022-03-10,Veda,Thajská zemiaková s mini kukuricou,Cuketa chanadul cuketa kukurica a karfiól v indickej omáčke,Cuketa chanadul cuketa kukurica a karfiól v indickej omáčke,,
+2022-03-10,Veglife,Paradajkovo kelová s quinoou,Kapustné strapačky z jačmenných krúpkov s tempehom,Pšenovo tempehové guľky na sviečkovej omáčke pečené zemiaky,Cviklovo zemiakový gratin,Šalát Šalát s granátovým jablkom
+2022-03-11,Alzbetka,Kačací vývar s špeclami     Segedínsky guláš parená buchta kyslá smotana,Rybacie curry s jazmínovou ryžou koriander   Listový šalát s grilovaným kozím syrom pečená tekvica tekvicové semiačka,,,
+2022-03-11,BlueBear,Minestrone,Rizoto s kuracím mäsom strúhaný syr,Zeleninový rezeň so zemiakmi kôprový dip,Guláš podľa dennej ponuky,TYZDENNE
+2022-03-11,Centr klub,Mrkvový krém so zázvorom a opečeným chlebom,Vyprážaný karfiól varené zemiaky tatarská omáčka,Bravčová panenka na slanine a slivkách ryža,,
+2022-03-11,Ceska piv,Slepačí vývar s mäsom a rezancami,Kurací plátok s lesnými hríbikmi ryža a miešaný šalát,Bravčový černohor so zemiakovou kašou kyslá uhorka,XXL Vyprážaný bravčový rezeň s hranolkami a tatárskou omáčkou,
+2022-03-11,Galileo,Ml Paradajková polievka s parmezánom,,,,
+2022-03-11,Kasa,Kurací vývar,Cviklová placka,Morka na cesnaku s konfitovaným citrónom,,
+2022-03-11,Milton,Krémová polievka z maslovej kukurice s kúskami baby kukuričiek,Grilovaný steak z kuracích prs SK,Dukátové buchtičky,Grilovaný steak z tuniaka bazalkové maslo,Králičí chrbát Sous vide s tekvicovým olejom
+2022-03-11,Red Cafe,Hovädzia s pečeňovými knedličkami polievka,Br sviečková na smotane domáca knedľa,Tortilla Caesar šalát kur prsia slanina parmez caesar dres,Vyprážaný syr hranolky tatárska omáčka,Pizza šunková salámová šampiňónová
+2022-03-11,Suvlaki,Mrkvová polievka,Zapečené ŠPAGETY s tuniakom olivami a mätou,KRETA ŠALÁT,Zapečená TORTILA plnená kuracím mäsom slaninkou rukolou syrová omáčka,DOLMADAKIA Vinný list plnený ryžou na grécky spôsob
+2022-03-11,Svadby a Kari,Minestrone talianska číra zeleninová polievka,Indický VEGAN Dhal z červenej šošovice s paradajkami,Indická GHEE Tikka Masala s kuracím mäsom od farmára mrkvou a hráškom,,
+2022-03-11,Veda,Šampiónová,Pakora subzi zeleninové fašírky v indickej omáčke soup,Vegetariánsky stroganov Vegetariánsky stroganov na indický spôsob soup,,
+2022-03-11,Veglife,Zemiaková polievka na kyslo,Masala Masoor ryža natural B V P,Grilované robi plátky so šampiňónovou omáčkou pečené zemiaky,Karfiolový rezeň so syrom zemiakové pyré s maslom,Šalát Pikantný paradajkovo fazuľový šalát B V P
+2022-03-14,Alzbetka,Vyprážané bryndzové pirohy slanina smažená cibuľka kyslá smotana,Ceasar šalát kuracie prsia ančovičkový dressing strúhaný parmezán chlebová mrvenica,,,
+2022-03-14,BlueBear,Zeleninová krúpová,Kuracie curry s ryžou,Guláš podľa dennej ponuky,,TYZDENNE
+2022-03-14,Centr klub,Cesnaková krémová s opečeným chlebom,Grilovaný encián pečené zemiaky brusnice listový šalát,Steak s karé volské oko hranolky čili majonéza,,
+2022-03-14,Ceska piv,Slepačí vývar s mäsom a rezancami,Šalát s bravčovými rezančekmi a nivovým dresingom,Penne s kuracím mäsom sušenou paradajkou a parmezánom,XXL Vyprážaný bravčový rezeň s majonézovým šalátom,
+2022-03-14,Kasa,Paradajková polievka s bazalkou,Bezlepkové penne s pestom z medvedieho cesnaku,Kuracie curry s kokosovým mliekom,,
+2022-03-14,Milton,Zemiaková krémová polievka na kyslo,Steak z bravčového karé v úprave Sous Vide,Grilovaná morská ryba,Prudko grilované plátky z hovädzieho Rump steaku,Čokoládovo ríbezľová torta
+2022-03-14,Red Cafe,Karfiolová krémová polievka,Provensálsky kurací steak opekané zemiaky,Tekvicové rizoto s kúskami pečenej Hokkaido,Vyprážaný syr hranolky tatárska omáčka,Pizza šunková salámová šampiňónová
+2022-03-14,Suvlaki,Cuketová polievka,Pečené HOVäDZIE FAŠÍRKY plnené syrom FETA sweet chilly omáčka,GRÉCKY ŠALÁT pita chlieb,KURACIE SOTÉ s artičokmi kôprom mrkvou paradajková omáčka,Karfiolový QUICHE s červenou paprikou rukolou a parmezánom
+2022-03-14,Svadby a Kari,Polievka z pečených paprík a paradajok VEGAN,Mangovo baklažánové VEGAN kari s kešu tekvicou a cuketou,Japonské kari s kuracím mäsom z farmy s karfiólom a mrkvou,,
+2022-03-14,Veda,Paradajková s ryžou,Cícerová masala,Vegetariánsky stroganov Vegetariánsky stroganov na indický spôsob,,
+2022-03-14,Veglife,Paradajkovo feniklová polievka,Aloo gobi subji ryža jasmínová B V P,Robi v gravy omáčke pečené zemiaky,Tekvicový gratin s údeným syrom,Šalát Kukuricovo mrkvový so špenátom
+2022-03-15,Alzbetka,Fazuľová Jókai kvaskový chlieb  Bravčová roláda plnená bylinkami maslová kaša demi glace,Penne s paradajkovou omáčkou slanina čierne olivy parmezán rukola,Ceasar šalát kuracie prsia ančovičkový dressing strúhaný parmezán chlebová mrvenica,,
+2022-03-15,BlueBear,Šošovicová na kyslo,Bravčové mäsové guličky v paradajkovej omáčke varené zemiaky,Sójové ragú so slovenskou ryžou,Guláš podľa dennej ponuky,TYZDENNE
+2022-03-15,Centr klub,Zeleninová s krupicovými haluškami,Špagety bolognese,Kurací steak fazuľové čiliragú s kukuricou dusená ryža,,
+2022-03-15,Ceska piv,Slepačí vývar s mäsom a rezancami,Paradajková so syrom,Kuracie prsia s volským okom a listovým špenátom ryža,Bravčová krkovička pečená na cesnaku a čiernom pive pečené zemiaky miešaný šalát,XXL Vyprážaný bravčový rezeň s majonézovým šalátom
+2022-03-15,Kasa,Karfiolová polievka s pórom a hráškom,Risotto s baklažánom a špenátom,Lasagne Bolognese,,
+2022-03-15,Milton,Teľacie ragú s koreňovou zeleninou a šafranom krémová polievka,Vyprážaný syr so šunkou,Paradajkovo zeleninové lasagne prekladané syrom mozarella a eidam,Grilovaná bravčová panenka v bazalkovej kruste,U nás pripravovaná torta podľa Rudka
+2022-03-15,Red Cafe,Fazuľová s rezancami a klobáskou polievka,Br panenka v slaninkovom kabátiku tlačené zemiaky,Spagheti Carbonara,Vyprážaný syr hranolky tatárska omáčka,Pizza šunková salámová šampiňónová
+2022-03-15,Suvlaki,Špenátová krémová polievka,Pečený ZUBÁČ s kaparami cherry paradajkami citrónová omáčka,GRÉCKY ŠALÁT pita chlieb,Dusené kuracie mäso s červenou fazuľkou,Zapečený BAKLAŽAN s tahini bazalkou  druhmi syra
+2022-03-15,Svadby a Kari,Benefičný hlivový VEGAN guláš,Etiópske berberské kari s batátmi brokolicou a hráškom VEGAN,Thajské zelené kari s BIO hovädzím mäsom cuketou a zelenými fazuľkami,,
+2022-03-15,Veda,Thajská karfiólová,Hubové kari mushroom curry,Vegetariánsky stroganov Vegetariánsky stroganov na indický spôsob,,
+2022-03-15,Veglife,Karí polievka s kokosovým mliekom,Fašírky z kyslej kapusty petržlenové zemiaky,Shepherd s pie Pastiersky koláč,Fazuľový guláš s goody foody ryža natural,Šalát Vegan Caesar šalát
+2022-03-16,Alzbetka,Cícerová s curry a kokosovým mliekom   Sviečková na smotane s parenou buchtou nakladané brusnice,Kuracie prsia sous vide krémové hráškové rizoto demi glace,Ceasar šalát kuracie prsia ančovičkový dressing strúhaný parmezán chlebová mrvenica,,
+2022-03-16,BlueBear,Gulášová,Španielsky vtáčik s ryžou,Cviklové rizoto s kozím syrom,Guláš podľa dennej ponuky,TYZDENNE
+2022-03-16,Centr klub,Zemiaková krémová s údeným mäsom,Cézar šalát s kuracím mäsom,Sviečková na smotane parená knedľa,,
+2022-03-16,Ceska piv,Slepačí vývar s mäsom a rezancami,Brokolicová,Pečené kuracie stehno s ryžou a broskyňovým kompótom,Vyprážaný syr s hranolkami a tatárskou omáčkou,XXL Vyprážaný bravčový rezeň s majonézovým šalátom
+2022-03-16,Kasa,Šošovicová polievka na kyslo,Cuketovo zemiaková placka,Bravčová panenka s omáčkou,,
+2022-03-16,Milton,Francúzska cibuľová polievka krutóny a strúhaný syr ementál,Domáca sekaná plnená vareným vajíčkom u nás mleté hovädzie a bravčové mäsa,Talianske cestoviny garganelli v omáčke Quatro formaggi,Konfitované pečené kačacie stehno,Mandľová Panna cotta podávaná v studenej malinovej polievke
+2022-03-16,Red Cafe,Hríbová s mrveničkou polievka,Kuracia roláda plnená špenátom a mozzarellou dus ryža,Šošovicový prívarok klobáska chlieb,Vyprážaný syr hranolky tatárska omáčka,Pizza šunková salámová šampiňónová
+2022-03-16,Suvlaki,Fazuľová polievka,Pečený KRÁLIK s mrkvou cibuľkou pivová omáčka,GRÉCKY ŠALÁT pita chlieb,Pečené KURACIE GULIČKY s tymiánom paradajková omáčka,Zapečené CESTOVINY so šampiňonmi cuketou kukuricou a syrom
+2022-03-16,Svadby a Kari,Číra šampiňónová polievka na bielom víne s čerstvým tymiánom VEGAN,Thajské Panang VEGAN kari s arašídmi paprikou cuketou a tofu,Indické maslové Butter Chicken kuracím mäsom od farmára s batátmi paradajkami a hráškom,,
+2022-03-16,Veda,Brokolicová,Cuketa chanadul cuketa kukurica a karfiól v indickej omáčke,Mattar Panner Hrach paneer,,
+2022-03-16,Veglife,Šošovicová polievka na kyslo,Hokaido na rímskom kmíne so zelenou fazuľkou ryža natural,Bolonské lasagne,Vegan Paella,Šalát Zeleninový šalát s marinovaným tempehom
+2022-03-17,Alzbetka,Hovädzí vývar s rezancami     Hovädzí stroganoff s dusenou ryžou smažená cibuľa,Kuracia nugetky s domácimi hranolkami syrový dip,Ceasar šalát kuracie prsia ančovičkový dressing strúhaný parmezán chlebová mrvenica,,
+2022-03-17,BlueBear,Brokolicový krém s cesnakovým krutónom,Kurací rezeň v pórovom cestíčku zemiaková kaša,Špagety Bolognese,Guláš podľa dennej ponuky,TYZDENNE
+2022-03-17,Centr klub,Lúsková na kyslo s kôprom,Hubové rizoto sušené paradajky baby špenát parmezán,Marinované morčacie stehno v bylinkách pečené zemiaky jogurtový dresing,,
+2022-03-17,Ceska piv,Slepačí vývar s mäsom a rezancami,Hrášková polievka s krutónom,Kuracie mexické soté s ryžou,Bravčový steak s demi glace omáčkou a pučenými zemiakmi,XXL Vyprážaný bravčový rezeň s majonézovým šalátom
+2022-03-17,Kasa,Kelová detox polievka,Hrachový prívarok vajce na tvrdo,Paprikový kurací špíz,,
+2022-03-17,Milton,Cícerový krém s Tahinou sezamová pasta dochutený citrónovou šťavou,Hovädzia falošná sviečková dusená na zelenine s dijonskou horčicou,Hermelín vyprážaný v zemiakovom ceste šalát,Medailónky z daniela v kávovej marináde Sous Vide,Omáčka divinové demi glas V S O P
+2022-03-17,Red Cafe,Slepačí vývar s cestovinou polievka,Hovädzí Stroganoff dusená ryža,Vyprážané rybie filé zemiaková kaša,Vyprážaný syr hranolky tatárska omáčka,Pizza šunková salámová šampiňónová
+2022-03-17,Suvlaki,Rybacia polievka,ŠPAGETY BOLOGNESE,GRÉCKY ŠALÁT pita chlieb,Grilovaný KURACÍ STEAK s baklažanom olivami a tymiánom,Zapečená PAPRIKA plnená syrom FETA
+2022-03-17,Svadby a Kari,Poctivá ostro kyslá polievka s kuracím mäsom a údeným tofu,Indické špenátové kari VEGAN s rastlinným jogurtom tofu paneerom a paradajkami,Kokosové kari s BIO hovädzím mäsom mandľami batátmi cuketou a jablkami,,
+2022-03-17,Veda,Thajská zemiaková s mini kukuricou,Gobi beans karfiól a zelená fazuľka v indickej omáčke,Vegetariánsky stroganov Vegetariánsky stroganov na indický spôsob,,
+2022-03-17,Veglife,Zeleninová polievka s červenou šošovicou,Kukuričná polenta s batatmi a tempehom dusený špenát na cesnaku,Seitan na červenom karí s pórom a šampiňónmi ryža jasmínová V P,Gratinovaná sezónna zelenina s parmezánom zemiakové pyré s medvedím cesnakom,Šalát Cobb šalát
