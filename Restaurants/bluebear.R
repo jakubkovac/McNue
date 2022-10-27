@@ -8,7 +8,7 @@ bluebear <- function(){
     html_text()
   jedlo <- str_trim(jedlo)
   jedlo <- jedlo[str_length(jedlo) >0]
-
+  
   tyzden <- jedlo[which(str_detect(slovak_language_destroyer(jedlo),"Tyzdenna ponuka|Business menu")) + 3]
   tyzden <- tyzden[1]
   #day_index <- c(1,7,13,20,26)
@@ -17,25 +17,10 @@ bluebear <- function(){
   today <- format(Sys.Date(), "%A")
   today_i <- day_index[which(days_of_the_week %in% today)]
   
-  jedlo <- jedlo[(today_i+1):(today_i + 5)]
-  # jedlo <- jedlo[[today_i + 1]]
-  # jedlo <- str_split(jedlo, pattern = "obsahuje [0-9,]{1,}")[[1]]
-  jedlo <- jedlo[-2]
-  jedlo[2:4] <-
-    jedlo[2:4] %>%
-    str_replace_all("obsahuje","") %>%
-    str_sub(start = 12) %>%
-    str_trim()
-  jedlo[1] <- str_replace(str_to_lower(jedlo[1]), "polievka", "")
-  jedlo[1] <-
-    jedlo[1] %>%
-    str_extract("ml(.*)obsahuje") %>%
-    str_sub(start = 3, end = -9) %>%
-    str_trim()
-  jedlo <- str_remove_all(jedlo, "([\n\t])") %>% str_remove_all("obsahuje") %>% str_remove_all("EUR")
-  tyzden <- str_remove_all(tyzden,"obsahuje") %>% str_remove_all("EUR")
-  jedlo[is.na(jedlo)] <- ""
-  jedlo[5] <- paste("TYZDENNE",tyzden)
-  
+  jedlo <- jedlo[(today_i+2):(today_i+9)]
+  jedlo <- jedlo[!str_detect(jedlo, "Menu|Retro")]
+  jedlo <- 
+    str_squish(jedlo) %>%
+    str_remove_all("Menu [A-Z]|Retro XXL|obsahuje|Polievka")
   return(c("BlueBear",jedlo))
 }

@@ -5,15 +5,11 @@ centralna_klubovna <- function(sme = T){
     raw <- read_html("scrapedpage.html")
     jedlo <- raw %>%
       html_nodes(".dnesne_menu .jedlo_polozka .left") %>% html_text()
-    jedlo <- jedlo[3:5]
     jedlo <-
       jedlo %>%
-      str_remove_all("Menu A s polievkou") %>%
-      str_remove_all("Menu B s polievkou") %>%
-      str_remove_all("Menu C s polievkou") %>%
-      str_remove_all("Polievka") %>%
-      str_remove_all("obsahuje") %>%
-      str_trim()
+      str_squish()
+    jedlo <- jedlo[which(str_detect(jedlo, "Polievka|Menu")) + 1]
+    jedlo <- str_remove_all(jedlo, "obsahuje")
   }else{
     url <- "https://www.nasaklubovna.sk/sk/menu/centralna/tyzdenne-menu/"
     download.file(url, destfile = "scrapedpage.html", quiet=TRUE)

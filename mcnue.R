@@ -7,7 +7,7 @@ library(magick)
 #require(pdftools)
 #require(tesseract)
 
-setwd("~/Moje/Mcnue")
+setwd("C:/Users/jakub.kovac/Documents/Moje/McNue/")
 #run web scraper
 R.utils::sourceDirectory("utility_functions",encoding = "UTF-8")
 restaurant_fun_list <- map(list.files("Restaurants", full.names = TRUE), ~source(.x, encoding = "UTF-8"))

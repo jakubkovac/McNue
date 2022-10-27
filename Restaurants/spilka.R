@@ -2,7 +2,7 @@ spilka <- function(){
   url <- "https://www.spilkarestaurant.sk/"
   download.file(url, destfile = "scrapedpage.html", quiet=TRUE)
   raw <- read_html("scrapedpage.html")
-  pdf_link <- html_nodes(raw, ".et_pb_button_4") %>% html_attr("href")
+  pdf_link <- html_nodes(raw, ".et_pb_button_3") %>% html_attr("href")
   pdf_link <- str_replace(pdf_link,"https:", "http:")
   
   if(file.exists("spilka_menu.pdf")){
@@ -17,7 +17,7 @@ spilka <- function(){
     download.file(pdf_link, destfile = "spilka_menu.pdf", quiet=TRUE, mode = "wb")
   }
   
-  bitmap <- pdftools::pdf_render_page("spilka_menu.pdf", page = 1)
+  bitmap <- pdftools::pdf_render_page("spilka_menu.pdf", page = 1, dpi=300)
   png::writePNG(bitmap, "spilka_menu.png")
   
   #OCR
@@ -36,6 +36,6 @@ spilka <- function(){
   jedlo <- jedlo[[den]]
   jedlo <- jedlo[nchar(jedlo) > 6]
   jedlo <- jedlo[!str_detect(jedlo,"Dobrú")]
-  jedlo <- jedlo[1:3]
+  #jedlo <- jedlo[1:3]
   return(c("Spilka", jedlo))
 }
