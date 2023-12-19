@@ -2,7 +2,7 @@ spilka <- function(){
   url <- "https://www.spilkarestaurant.sk/"
   download.file(url, destfile = "scrapedpage.html", quiet=TRUE)
   raw <- read_html("scrapedpage.html")
-  pdf_link <- html_nodes(raw, ".et_pb_button_3") %>% html_attr("href")
+  pdf_link <- html_nodes(raw, ".et_pb_button_1") %>% html_attr("href")
   pdf_link <- str_replace(pdf_link,"https:", "http:")
   
   if(file.exists("spilka_menu.pdf")){

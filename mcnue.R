@@ -4,8 +4,10 @@ library(lubridate)
 library(pander)
 library(Zbot)
 library(magick)
-#require(pdftools)
-#require(tesseract)
+#require("pdftools")
+#require("tesseract")
+#require("png")
+#tesseract::tesseract_download("slk")
 
 setwd("C:/Users/jakub.kovac/Documents/Moje/McNue/")
 #run web scraper

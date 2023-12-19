@@ -6,12 +6,12 @@ edokin <- function(){
     t <- Sys.Date()
     if(lubridate::isoweek(t) != lubridate::isoweek(f)){
       message("PDF menu is not from this week. Downloading Edo kin menu.")
-      download.file(url, destfile = "edo_kin.pdf", quiet=TRUE, mode = "wb")
+      download.file(url, destfile = "edo_kin.pdf", quiet=TRUE, mode = "wb", method = "wininet")
     }else{
       message("PDF for Edo is fine")
     }
   }else{
-    download.file(url, destfile = "edo_kin.pdf", quiet=TRUE, mode = "wb")
+    download.file(url, destfile = "edo_kin.pdf", quiet=TRUE, mode = "wb", method = "wininet")
   }
 
   
@@ -36,6 +36,8 @@ edokin <- function(){
     str_remove_all("^Sushi rolka") %>% 
     str_squish() %>% 
     str_remove_all("^Wok:")
+  
+  jedlo <- jedlo[nchar(jedlo) >0]
   
   return(c("Edo Kin",jedlo))
   

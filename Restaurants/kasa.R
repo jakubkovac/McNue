@@ -1,8 +1,8 @@
 kasa <- function(sme = TRUE){
   if(!sme){
     url_kasa <- "https://www.kasabar.sk/?page_id=415"
-  download.file(url_kasa, destfile = "scrapedpage.html", quiet=TRUE)
-  raw <- read_html("scrapedpage.html")
+  #download.file(url_kasa, destfile = "scrapedpage.html", quiet=TRUE)
+  raw <- read_html(url_kasa)
   # jedlo <- raw %>% 
   #   html_nodes(".dnesne_menu .jedlo_polozka .left") %>% 
   #   html_text()
@@ -22,8 +22,8 @@ kasa <- function(sme = TRUE){
   jedlo[3] <- jedlo[3] %>% str_sub(14)
   }else{
     url_kasa <- "https://restauracie.sme.sk/restauracia/kasa-3_9938-stare-mesto_2949/denne-menu"
-    download.file(url_kasa, destfile = "scrapedpage.html", quiet=TRUE)
-    raw <- read_html("scrapedpage.html")
+    #download.file(url_kasa, destfile = "scrapedpage.html", quiet=TRUE)
+    raw <- read_html(url_kasa)
     jedlo <- raw %>%
       html_nodes(".dnesne_menu .jedlo_polozka .left") %>%
       html_text() %>%

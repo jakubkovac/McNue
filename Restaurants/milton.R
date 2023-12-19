@@ -1,7 +1,7 @@
 milton <- function(){
   milton_url <- "http://www.restauraciamilton.sk/"
-  download.file(milton_url, destfile = "scrapedpage.html", quiet=TRUE)
-  raw <- read_html("scrapedpage.html")
+  #download.file(milton_url, destfile = "scrapedpage.html", quiet=TRUE)
+  raw <- read_html(milton_url)
   day_diff <- as.numeric(ymd(Sys.Date()) - ymd("2020-02-03")) #thursday
   # daily_menu_number <- 7848 + day_diff - day_diff %/% 7
   # daily_menu_number <- 7852 + day_diff - day_diff %/% 7

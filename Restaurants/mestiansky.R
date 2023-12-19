@@ -1,7 +1,7 @@
 mestiansky <- function(){
   url_mestiansky <- "https://restauracie.sme.sk/restauracia/bratislavsky-mestiansky-pivovar-drevena_3951-stare-mesto_2949/denne-menu"
-  download.file(url_mestiansky, destfile = "scrapedpage.html", quiet=TRUE)
-  raw <- read_html("scrapedpage.html")
+  #download.file(url_mestiansky, destfile = "scrapedpage.html", quiet=TRUE)
+  raw <- read_html(url_mestiansky)
   jedlo <- raw %>% 
     html_nodes(".dnesne_menu .jedlo_polozka .left") %>% 
     html_text()

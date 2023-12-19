@@ -1,8 +1,8 @@
 veglife <- function(sme = TRUE){
   if(sme){
     url <- "https://restauracie.sme.sk/restauracia/veg-life-blumental_10024-stare-mesto_2949/denne-menu"
-    download.file(url, destfile = "scrapedpage.html", quiet=TRUE)
-    raw <- read_html("scrapedpage.html")
+    #download.file(url, destfile = "scrapedpage.html", quiet=TRUE)
+    raw <- read_html(url)
     jedlo <- raw %>%
       html_nodes(".dnesne_menu .jedlo_polozka .left") %>% html_text()
     jedlo <- str_trim(jedlo)
@@ -11,8 +11,8 @@ veglife <- function(sme = TRUE){
     
   }else{
    url_veglife <- "http://www.veglife.sk/sk/menu-2/" 
-  download.file(url_veglife, destfile = "scrapedpage.html", quiet=TRUE)
-  raw <- read_html("scrapedpage.html")
+  #download.file(url_veglife, destfile = "scrapedpage.html", quiet=TRUE)
+  raw <- read_html(url_veglife)
   jedlo <-
     raw %>% 
     html_nodes("#tab-1 > div:nth-child(2) > p:nth-child(3) > span:nth-child(1)") %>% 
